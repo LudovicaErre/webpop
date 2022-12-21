@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    <link rel="stylesheet" href="css/home.css">
+        <title>WebPop</title>
+         <link rel="icon" href="images/logodoc.jpg" type="image/png">
+  </head>
+  <body>
+    <!-- MODALS -->
+		
+		<div class="future"></div>
+		
+        <!-- disclaimer start -->
+        <div class="modal" tabindex="-1" id="disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                <p>
+                     The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "<a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a>" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a>.
+                </p>
+               <p>
+                     The documents contained in this web site have been selected for their length and complexity. Their publication here is not intended to be an alternative or replace their original locations:
+                </p>
+                  <ul>
+                      <li><a href="https://www.bbc.com/" target="_blank">BBC</a>: <a href="https://www.bbc.com/culture/article/20211022-historical-drama-and-tvs-reckoning-with-the-past" target="_blank">Historical drama and TV's reckoning with the past</a></li>
+                      <li><a href="https://www.theguardian.com" trarget="_blank">The Guardian</a>: <a href="https://www.theguardian.com/tv-and-radio/2021/jun/27/rewriting-history-how-imperfect-costume-dramas-make-the-past-relevant" target="_blank">Rewriting history: how imperfect costume dramas make the past relevant</a></li>
+                      <li><a href="https://www.themanual.com/" target="_blank">The Manual</a>: <a href="https://www.themanual.com/culture/why-vinyl-is-coming-back/" target="_blank">Why Vinyl Records Are Making a Comeback in 2022</a></li>
+                      <li><a href="https://www.theguardian.com" target="_blank">The Guardian</a>: <a href="https://www.theguardian.com/games/2022/jul/25/vinyl-fantasy-how-gamers-fell-in-love-with-records" target="_blank">Vinyl fantasy: how gamers fell in love with records</a></li>
+                  </ul>
+                <p>
+                     All copyrights and related rights on the content remain with their original owners.<br>
+ 		   			 All copyright on the typographic and layout choices are 2022 © WebPop.					
+                 </p> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
+
+    <!-- HEADER -->
+	    <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 nav-fixed fixed-top" id="navbar">
+            <div class="container-fluid">
+            <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html"><img src="images/WebPop.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="index.html" id="nav-active-link">Home</a>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Issues
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="html/series.html">TV Series</a></li>
+                    <li><a class="dropdown-item" href="html/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" tag="link" id="enable-default">Default</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-past">1500</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-futurism">First half of XX Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-present">Start of XXI Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-future">2030</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown ps-1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
+                About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<li><a class="dropdown-item" aria-current="page" href="html/documentation.html">Documentation</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </li>
+               
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+		
+    <div class="container-fluid" id="first">
+        <!-- start first row -->
+        <div class="row">
+          <div class="col-2" id="first-left"></div>
+            <div class="col-8" id="ttlframe">
+                <h1 id="main-title">
+                     <span id="web" class="glitch"><center>Web</span><span id="pop" class="glitch">Pop</center></span>
+                </h1>
+                <h2>To discover and stay up-to-date on all the news in the pop culture!<br><h5>Read them by choosing your favorite theme</h5></h2>
+                <div id="first-text">
+                  <div class="renaiss-left" id="rl1"></div>
+                  <div class="renaiss-right" id="rr1"></div>
+                    <p id="tap">Tap on logo↓</p>
+                </div>
+                <div class="btn btn-default justify-content-center">
+                 <a href="#gosecond"><img src="images/WebPop.png" width="50"/></a>
+                </div>
+            </div>
+        </div>
+   	</div>
+        <!-- end first row -->
+		<div id="gosecond">    
+        </div>
+	  <!-- start second container -->
+        <div class="container-fluid" id="second">
+            <div class="row">
+             <hr>  
+            <div class="col-12" id="renaiss-div">
+              <h2><span class="red">W</span>hat is WebPop?</h2>
+              <div id="about-proj">
+                <div class="renaiss-left" id="rl1"></div>
+                <div class="renaiss-right" id="rr1"></div>
+                <p id="par1"><b>Webpop</b> is a modern-day<b> pop culture</b> site for all the curious who wish to discover more about the latest news and insights of the Pop Culture.</p>
+                <p id="par1">You can read different articles about movies & tv-series, books & comics, music & podcasts, videogames & board games by choosing the writing <b>style</b> you prefer!<br>Stay tuned for news, and in the meantime...<br><center id="totheintro">Make your choice</center> 
+                </p>
+                </div>
+                <div class="d-grid d-flex justify-content-center sec-buttons">
+                  <a id="play-1980s" href="#gothird"></a>
+                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gothird">Look at the themes</a>
+                  <a id="rec-1980s" href="#gofourth"></a>
+                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gofourth">Choose the issue</a>
+              	</div>
+            </div>            
+            </div>            
+        </div>
+		
+		<div id="gothird">
+        </div>
+	  <!-- end second container -->
+	  
+	  <!-- start third container -->
+        <div class="container-fluid" id="third">
+            <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <div id="past">
+              <hr>
+                <h2><span class="red">T</span>hemes</h2>
+                <div>
+				  <p>Here you can select the theme you are most curious about to change the <b>design</b> of the entire site! Click the fab below for a quick switch.<br>But if you want to find out more, you can read the <b>documentation</b> for each of them!</p>
+                </div>
+                
+ <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card theme">
+    <button onclick="changeThemeHome(this.id)" href="#" id="enable-past" class="bor">
+      <img src="images/icons/past.jpg" class="card-img-top" alt="Past">
+      </button>
+      <div class="card-body">
+        <p class="card-text">If you are an irredeemable lover of the past we recommend the <b>1500</b> theme inspired by the font and layout of <b>ancient manuscripts</b>. <br>Go to the documentation if you want to find out which image we were inspired by!</p>
+      </div>
+      <a href="html/documentation.html#fab-docu" class="btn btn-doc">See 1500 documentation</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card theme">
+     <button onclick="changeThemeHome(this.id)" href="#" id="enable-futurism" class="bor">
+      <img src="images/icons/futurism1.jpg" class="card-img-top" alt="Futurism">
+      </button>
+      <div class="card-body">
+        <p class="card-text" id="textfu">How pleasant is the font and the memory of beautiful typewriters? If you are also nostalgic we recommend the <b>Futurism</b> theme.<br> But why "Futurism"?! Go to the documentation to find out!</p>
+      </div>
+      <a href="html/documentation.html#item-2-1-4" class="btn btn-doc">See Futurism documentation</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card theme">
+    <button onclick="changeThemeHome(this.id)" href="#" id="enable-present" class="bor">
+      <img src="images/icons/present.jpg" class="card-img-top" alt="Present">
+      </button>
+      <div class="card-body">
+      <p class="card-text" id="textpre">Do you buy magazine after magazine because you love the layout? But then choose the <b>present</b> theme, it will be a pleasure to read every article!<br>In the meantime, find out what we were inspired by clicking on the documentation!</p>
+      </div>
+      <a href="html/documentation.html#item-2-2-3" class="btn btn-doc">See Present documentation</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card theme">
+    <button onclick="changeThemeHome(this.id)" href="#" id="enable-future" class="bor">
+      <img src="images/icons/future.jpg" class="card-img-top" alt="Future">
+      </button>
+      <div class="card-body">
+        <p class="card-text">I know I know, you would like a time machine to find out what the future will be like... How about instead, in the meantime, you come travel with us trying the theme of the <b>future</b>?<br>But wait... why does a hamburger travel in space?! Find out in the documentation!</p>
+      </div>
+	<a href="html/documentation.html#item-2-3-3" class="btn btn-doc">See future documentation</a>
+    </div>
+  </div>
+</div>
+                <div class="d-grid gap-2 d-flex justify-content-center">
+                    <a class="btn btn-outline-info btn-lg justify-content-center btn-third" href="html/documentation.html">Full documentation here</a>
+                    <a class="btn btn-outline-info btn-lg justify-content-center btn-third" href="#gofourth">Check the issues</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-1"></div>
+            </div>
+        </div>
+	  <!-- end third container -->
+		
+		
+		<!-- start fourth container -->
+        <div id="gofourth">
+        </div>
+        <div class="container-fluid"id="fourth">
+          <div id="renaiss-bg">
+            <div class="row">
+            <hr>
+                <h2><span class="red">I</span>ssues</h2>
+            </div>
+            <div class="row">
+              <p id="issue-text">Relax, sit back and enjoy all the news and insights of your favourites <b>topics</b> from the Pop Culture.</p>
+          </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card text-center issue" id="card-iss1">
+                  <div class="card-body">
+                      <div class="fadedbox">
+                        <div class="title-text" id="tt1">TV Series</div>
+                        <p class="card-txt issue-description"><span>All trivia about TV series!</span></p>
+                        <button class="see-article"><a href="html/series.html"><span>See the articles</span></a></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+			    
+				
+				<div class="col-md-6">
+                    <div class="card text-center issue" id="card-iss2">
+                      <div class="card-body">
+                        <div class="fadedbox">
+                          <div class="title-text" id="tt2">Music</div>
+                          <p class="card-txt issue-description"><span>All trivia about music!</span></p>
+                          <button class="see-article"><a href="html/music.html"><span>See the articles</span></a></button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div> 
+          </div>
+
+          </div>
+          <!-- end fourth container -->
+		  
+		  
+		   <footer>
+            <div class="container-fluid p-3 bg-dark text-white">
+              <div class="row">
+                <div class="col-md-3" id="footer-left"></div>
+                <div class="col-md-3 info-footer">
+                  <p>This website is a project developed by Ludovica Russo and Carmela Santaniello for the 2021/2022 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
+                </div>
+                <div class="col-md-3 contacts">
+                  <h4>Contacts</h4>
+                    <a href="mailto: ludovica.russo4@studio.unibo.it">ludovica.russo4@studio.unibo.it</a>
+                    <a href="mailto: carmela.santaniello@studio.unibo.it">carmela.santaniello@studio.unibo.it</a>
+                </div>
+              </div>
+                
+              <div class="row">
+                <p id="cp">© 2022 Copyright: Ludovica Russo,  Carmela Santaniello</p>
+                  <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p>
+			  </div>
+              <a name="bottom" id="bottom"></a>
+              </div>
+              <!--fab-->
+              <div class="fab-container">
+                <div class="fab shadow">
+                  <div class="fab-content">
+                    <span class="material-icons"></span>
+                  </div>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="1500" data-content="1500" onclick="changeThemeHome(this.id)" href="#" id="enable-past">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="Futurism" data-content="Futurism" onclick="changeThemeHome(this.id)" href="#" id="enable-futurism">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Present" data-content="Present" onclick="changeThemeHome(this.id)" href="#" id="enable-present">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Future" data-content="Future" onclick="changeThemeHome(this.id)" href="#" id="enable-future">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+              </div>
+          </footer>
+		  
+    <!-- SCRIPTS -->
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="js/change.js"></script>
+        <script src="js/future.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+  </body>
+</html>
+
