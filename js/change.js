@@ -3,19 +3,19 @@ function changeTheme(id) {
   const theme = document.getElementsByTagName('link')[1];
   switch (id) {
       case "enable-past":
-          theme.href = "css/past.css";
+          theme.href = "./css/past.css";
           break;
       case "enable-default":
-          theme.href = "css/home.css";
+          theme.href = "./css/home.css";
           break;
       case "enable-futurism":
-          theme.href = "css/futurism.css";
+          theme.href = "./css/futurism.css";
           break;
       case "enable-present":
-          theme.href = "css/present.css";
+          theme.href = "./css/present.css";
           break;
       case "enable-future":
-          theme.href = "css/future.css";
+          theme.href = "./css/future.css";
           break;
   }
 }
@@ -24,19 +24,19 @@ function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-past":
-          theme.href = "css/past.css";
+          theme.href = "./css/past.css";
           break;
       case "enable-default":
-          theme.href = "css/home.css";
+          theme.href = "./css/home.css";
           break;
       case "enable-futurism":
-          theme.href = "css/futurism.css";
+          theme.href = "./css/futurism.css";
           break;
       case "enable-present":
-          theme.href = "css/present.css";
+          theme.href = "./css/present.css";
           break;
       case "enable-future":
-          theme.href = "css/future.css";
+          theme.href = "./css/future.css";
           break;
   }
 }
@@ -45,19 +45,19 @@ function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-past":
-          theme.href = "css/past.css";
+          theme.href = "./css/past.css";
           break;
       case "enable-default":
-          theme.href = "css/home.css";
+          theme.href = "./css/home.css";
           break;
       case "enable-futurism":
-          theme.href = "css/futurism.css";
+          theme.href = "./css/futurism.css";
           break;
       case "enable-present":
-          theme.href = "css/present.css";
+          theme.href = "./css/present.css";
           break;
       case "enable-future":
-          theme.href = "css/future.css";
+          theme.href = "./css/future.css";
           break;
   }
 }
@@ -66,19 +66,19 @@ function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-past":
-          theme.href = "css/past.css";
+          theme.href = "./css/past.css";
           break;
       case "enable-default":
-          theme.href = "css/home.css";
+          theme.href = "./css/home.css";
           break;
       case "enable-futurism":
-          theme.href = "css/futurism.css";
+          theme.href = "./css/futurism.css";
           break;
       case "enable-present":
-          theme.href = "css/present.css";
+          theme.href = "./css/present.css";
           break;
       case "enable-future":
-          theme.href = "css/future.css";
+          theme.href = "./css/future.css";
           break;
   }
 }
