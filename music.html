@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- script font awesome -->
+	<script src="https://kit.fontawesome.com/41743fb22f.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Music</title>
+	<link rel="icon" href="images/logodoc.jpg" type="image/png">
+	  
+  </head>
+  <body>
+    <!-- MODALS -->
+
+        <!-- disclaimer start -->
+		<div class="future"></div>
+        <div class="modal" tabindex="-1" id="disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+               <p>
+                    The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "<a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a>" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a>.
+                </p>
+                <p>
+                    The documents contained in this web site have been selected for their length and
+                    complexity. Their publication here is not intended to be an alternative or replace their original locations:
+                </p>
+                  <ul>
+                      <li><a href="https://www.bbc.com/" target="_blank">BBC</a>: <a href="https://www.bbc.com/culture/article/20211022-historical-drama-and-tvs-reckoning-with-the-past" target="_blank">Historical drama and TV's reckoning with the past</a></li>
+                      <li><a href="https://www.theguardian.com" trarget="_blank">The Guardian</a>: <a href="https://www.theguardian.com/tv-and-radio/2021/jun/27/rewriting-history-how-imperfect-costume-dramas-make-the-past-relevant" target="_blank">Rewriting history: how imperfect costume dramas make the past relevant</a></li>
+                      <li><a href="https://www.themanual.com/" target="_blank">The Manual</a>: <a href="https://www.themanual.com/culture/why-vinyl-is-coming-back/" target="_blank">Why Vinyl Records Are Making a Comeback in 2022</a></li>
+                      <li><a href="https://www.theguardian.com" target="_blank">The Guardian</a>: <a href="https://www.theguardian.com/games/2022/jul/25/vinyl-fantasy-how-gamers-fell-in-love-with-records" target="_blank">Vinyl fantasy: how gamers fell in love with records</a></li>
+                  </ul>
+                <p>
+                    All copyrights and related rights on the content remain with their original owners.<br>
+		    All copyright on the typographic and layout choices are 2022 © WebPop.					
+                </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
+
+   <!-- HEADER START -->
+
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 nav-fixed fixed-top" id="navbar">
+            <div class="container-fluid">
+            <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html"><img src="images/WebPop.png"></a>
+              
+          <!-- togglers start -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#metadata" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
+            About the articles
+          </button>
+          <!-- togglers end  -->
+          
+          <!-- offcanvas start  -->
+          <div class="offcanvas offcanvas-end overflow-auto" tabindex="-1" id="metadata" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">About the articles</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="metadata-style">
+             <!-- accordion start -->
+             <div class="accordion accordion-flush" id="accordionFlushOffCanvas">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="off-flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseOne" aria-expanded="false" aria-controls="off-flush-collapseOne">
+                      Why Vinyl Records Are Making a Comeback in 2022
+                  </button>
+                </h2>
+                <div id="off-flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body">
+                      <!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-1-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-1-people-tab-offcanvas-music" data-bs-toggle="tab" data-bs-target="#article-1-people-offcanvas-music" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-1-places-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-places-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-1-videogames-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-videogames-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Videogames</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-1-companies-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-companies-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Companies</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content text-center" id="myTabContent-offcanvas">
+                          <div class="tab-pane fade show active" id="article-1-people-offcanvas-music" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Scott Hagen: 7<span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Thomas Edison: 1 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Emile Berliner: 1 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Charlie Randall: 3 <span></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-1-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(1, this)" class="places-nav">America: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-1-videogames-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="videogames-nav">None <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-1-companies-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="companies-nav">Victrola: 4 <span></span></span></li>
+							<li><span onclick="highlightData(1, this)" class="companies-nav">Amazon: 1 <span></span></span></li>
+							<li><span onclick="highlightData(1, this)" class="companies-nav">Apple: 1 <span></span></span></li>
+							<li><span onclick="highlightData(1, this)" class="companies-nav">McIntosh Labs: 1 <span></span></span></li>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="off-flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseTwo" aria-expanded="false" aria-controls="off-flush-collapseTwo">
+                      Vinyl fantasy: how gamers fell in love with records
+                  </button>
+                </h2>
+                <div id="off-flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body">
+                      <!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-2-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-2-people-tab-offcanvas-music" data-bs-toggle="tab" data-bs-target="#article-2-people-offcanvas" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-2-places-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-places-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-2-videogames-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-videogames-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Videogames</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-2-companies-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-companies-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Companies</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content text-center" id="myTabContent-offcanvas">
+                          <div class="tab-pane fade show active" id="article-2-people-offcanvas-music" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Hideo Kojima: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Caroline Grace: 2 <span></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jamie Crook: 3 <span></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Yuzo Koshiro: 1 <span></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Data Discs: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Sega Japan: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Chris Hansen: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Chris Remo: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Austin Wintory: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Louise Blain: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Woody Jackson: 1 </span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jill Verhage: 1 </span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Northrop Grumman: 1 </span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Frederik Lauridsen: 1 </span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Mid-Ohio Valley: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Mississippi: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Leeds: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-videogames-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Streets of Rage: 4 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Shenmue: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Wonder Boy III: The Dragon’s Trap: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Goof Troop: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Sonic: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Okami: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Policenauts: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Ikaruga: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Metal Gear: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Castlevania: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Firewatch: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Journey: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="videogames-nav">Hotline Miami 2: 1 <span ></span></span></li>
+			    <li><span onclick="highlightData(2, this)" class="videogames-nav">Final Fantasy: 1 <span ></span></span></li>
+		            <li><span onclick="highlightData(2, this)" class="videogames-nav">Red Dead Redemption 2: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-companies-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="companies-nav">Sega Japan: 2<span ></span></span></li>
+                          </div>
+                        </div>
+                    <!-- nested nav tab start -->
+				  </div>
+                </div>
+              </div>
+              
+          
+            </div>
+          <!-- accordion end -->
+          
+            </div>
+          </div>
+          <!-- offcanvas end -->
+
+          <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="index.html" id="nav-active-link">Home</a>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Issues
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="html/series.html">TV Series</a></li>
+		    <li><a class="dropdown-item" href="html/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" tag="link" id="enable-default">Default</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-past">1500</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-futurism">First half of XX Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-present">Start of XXI Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-future">2030</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown ps-1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
+                About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		<li> <a class="dropdown-item" href="html/documentation.html">Documentation</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </li>
+               
+            </ul>
+            </div>
+        </nav>
+      <!-- navbar end -->
+    
+    <!-- article 1 -->
+  	
+  	<div id="new">
+  	<p><h1 id="what" class="glitch" id="titart">What's <span id="new1" class="red">new</span>?</h1></p>
+  	<hr style="border: solid; color: black">
+  	</div>
+
+	<div class="col-sm-8" id="article-1">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 id="vinyl">Why Vinyl Records Are Making a Comeback in 2022</h3>
+		<h2 class="accordion-header" id="stayOpen-headingOne">
+            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseOne" aria-expanded="true" aria-controls="stayOpen-collapseOne">
+              Article information:
+            </button>
+          </h2>
+		   <div id="stayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingOne">
+            <div class="accordion-body">
+                <div class="info">
+                  <p class="byline">By <a href="https://www.themanual.com/users/steven-john/" target="_blank">Steven John</a><span class="publicationDate">, 4th January 2022</span></p>
+                  <p class="sourceLine">Source: <a href="https://www.themanual.com/culture/why-vinyl-is-coming-back/" target="_blank">The Manual</a></p>
+                </div>
+            </div>
+          </div>
+		<img src="images/music/vin4.jpg"style="height: auto; max-width: 80%;">
+		<p id="citation"><span id="mention-1" class="mention company" about="Victrola"><i>Victrola</i></span>
+        </p>
+        <p class="mb-auto"><b>The first recorded sound was <span id="mention-1" class="mention person" about="Thomas Edison">Thomas Edison’s</span> voice, captured on phonograph in 1877 reciting part of the nursery rhyme song “Mary Had a Little Lamb.”</b></p>
+		<p id="visible">Continue reading</p>
+        <p id="invisible" class="hide">
+		<span class="red" id="ten">10</span> years later, <span id="mention-1" class="mention person" about="Emile Berliner"><a href="https://en.wikipedia.org/wiki/Emile_Berliner">Emile Berliner</a></span> created the first device that recorded and played back sound using a flat disc, the forerunner of the modern record.
+		</p>
+        <p id="same" class="hide"> Over the course of the next six decades, records and <a href="https://www.themanual.com/culture/how-to-buy-new-vintage-vinyl-record-player/">record players</a> were improved and standardized, with the 33 and 45 RPM records supplanting most other formats in the post WWII years.    
+        </p>
+        <p id="same" class="hide">
+          By the 1970s, record player technology had evolved to the point where it has changed little in the intervening half century. In that time, cassette tapes came and went. CDs came and are going. And MP3 players were replaced by phones, as were cameras, pocket planners, and our social lives, more or less.
+        </p> 
+        <p id="same" class="hide">This year, 2020, marks the first year in more than a generation since record sales — that is to say physical vinyl records — have surpassed CD sales. The reasons for this are twofold: CD sales have dropped dramatically in recent years, while sales of vinyl records are actually up this year. And while you might think it’s nostalgic Boomers or Gen Xers behind the renaissance of records, in fact surveys show it’s millennial consumers driving the <a href="https://www.themanual.com/culture/record-vinyl-albums-every-man-should-own/">rising trend in vinyl sales</a>.
+        </p>
+          <img id="citation" class="hide" src="images/music/vin5.jpg" style="height: auto; max-width: 70%;">
+		<p id="citation" class="hide"> <span id="mention-1" class="mention person" about="Scott Hagen"><i>Scott Hagen</i></span>
+        </p>
+		<hr id="same" class="hide">
+        <p id="same" class="hide">
+          The way most people listen to music has changed. “You hear music when you’re in the coffee shop, in the car, in the gym, just walking down the street sometimes, we hear it everywhere,” says <span id="mention-2" class="mention person" about="Scott Hagen"><a href="https://mobile.twitter.com/victrolaceo"> Scott Hagen</a></span>, CEO of <a href="https://victrola.com/"><span id="mention-2" class="mention company" about="Victrola">Victrola</span></a>. “In every store we go into we hear it, and we’re consuming more music than ever before, but not in the same way. The ability to stop and sit and listen to an album from beginning to end, that’s something that always has been and always will be relevant.” 
+        </p>
+        <p id="same" class="hide"> 
+          <span id="mention-1" class="mention person" about="Charlie Randall">Charlie Randall</span>, CEO of <span id="mention-1" class="mention company" about="McIntosh Labs">McIntosh Labs</span>, agrees, saying: “I think it’s natural for any generation to think that the technology of their time will be replaced by future technology and go extinct. In large part I think that’s the case except with vinyl records. There is something romantic about records, something satisfying about opening the album jacket, seeing the fantastic artwork and studying the liner notes while listening to the album. That’s something that today’s digital files just can’t replace.”
+        </p>
+        <p id="same" class="hide">
+          There is nothing fast about a record. Whereas you can tap on your phone and pull up a song on <span id="mention-1" class="mention company" about="Amazon">Amazon</span> Unlimited or <span id="mention-1" class="mention company" about="Apple">Apple</span> Music in a matter of seconds, with a record you have to remove it from the sleeve, open the top of the record player, place the vinyl disc carefully and set the stylus, then switch it all on and wait as that warm crackle prefaces that rare experience: music as the activity, not as the backdrop.
+        </p>
+          <img id="citation" class="hide" src="images/music/vin6.jpg" style="height: auto; max-width: 80%;">
+		<p id="citation" class="hide"><span id="mention-3" class="mention company" about="Victrola"><i>Victrola</i></span>
+        </p>
+		<hr id="same" class="hide">
+        <p id="same" class="hide">
+          In an epoch at once ever more frenzied yet also ever more hemmed in during the days of coronavirus social distancing, now more than ever people are embracing this classic “listening in” approach to music. And whereas in the past, a record player might have seemed a luxury item that may even have verged on the frivolous, not only is a new appreciation for how we listen a factor, but any more, high quality turntables are hardly priced out of range for the average consumer.
+        </p>
+        <p id="same" class="hide">
+        “We did a lot of insight gathering from our current customers and from people who expressed interest in being a first time record player owner,” said <span id="mention-3" class="mention person" about="Scott Hagen">Hagen</span>, “and what we learned is that people looking to play vinyl want something with the convenience, the ease of use of a classic suitcase record player, but that looked beautiful in the home and even had a little bit better sound than an entry level player might have sounded like.
+        </p>
+        <p id="same" class="hide">
+          “We not only identified those trends, but we also built a record player that looks and sounds great and is still just $99,” <span id="mention-4" class="mention person" about="Scott Hagen">Hagen</span> said, referring to <span id="mention-4" class="mention company" about="Victrola">Victrola’s</span> new <a href="https://victrola.com/products/victrola-eastwood-bluetooth-record-player?_pos=1&_sid=9e5a4ee78&_ss=r">Eastwood Hybrid Turntable</a>. Why hybrid? Because far from being a throwback, this device, like many similar pieces of audio hardware these days, is also a Bluetooth speaker, so your modern devices can stream just as your classic collection of 33s and 45s can spin. “This category of <a href="https://victrola.com/products/victrola-canvas-bluetooth-suitcase-record-player?_pos=1&_sid=4cd3aaea6&_ss=r">hybrid record players</a> is just a great way to bring people in to vinyl.” 
+        </p>
+        <p id="same" class="hide">
+          So vinyl is here to stay, it seems, despite all technological advances that would have seemed to threaten it. The <a href="https://www.riaa.com/wp-content/uploads/2020/09/Mid-Year-2020-RIAA-Revenue-Statistics.pdf">same RIAA study that found records surpassing CDs</a> also revealed that streaming music now account for more than 85% of all music enjoyed. Only 6% of music is now downloaded, even less than is physically purchased in the form of records, CDs, or the last tapes.  
+        </p>
+        <p id="same" class="hide">
+          So records don’t sell like digital, but that doesn’t mean they’re on the outs. 
+        </p>
+          <img id="citation" class="hide" src="images/music/vin7.jpg" style="height: auto; max-width: 80%;">
+		<p id="citation" class="hide"><span id="mention-2" class="mention person" about="Charlie Randall"><i>Charlie Randall</i></span>
+        </p>
+		<hr id="same" class="hide">
+        <p id="same" class="hide">
+        “I think they are certainly here to stay,” says <span id="mention-3" class="mention person" about="Charlie Randall">Charlie Randall</span>. “We are seeing records and turntables become more popular and more advanced in technology like [with] our <a href="https://www.mcintoshlabs.com/products/turntables/MTI100">MTI100</a> integrated turntable, for example.” 
+        </p>
+        <p id="same" class="hide">
+        “I think it’s got a ton of staying power,” <span id="mention-5" class="mention person" about="Scott Hagen">Scott Hagen</span> says. “In 2013, there were about $200 million in sales in the U.S. The year, we’re probably going to eclipse $600 million just in <span id="mention-1" class="mention place" about="America">America</span>. I see the future of vinyl being it becoming more a staple in homes where people value listening to music, not ever less. We just did a survey of more than 400 people, people between 18 and 70 years old, and asked them if they had a vinyl record player in the home, and more than 55% said yes. But what was really interesting, is of those people who had a record player, more than 70% said they had used it, had listened to a record within the last month.”
+        </p>
+        <p id="same" class="hide">
+         “But even more compelling for me,” <span id="mention-6" class="mention person" about="Scott Hagen">Hagen</span> added, “was that with the younger people 18 to 29, more than 60% had a record player. And others were planning to get one.”
+        </p>
+        <p id="same" class="hide">
+          Why does <span id="mention-7" class="mention person" about="Scott Hagen">Scott Hagen</span> think that record players are not only not going anywhere but are getting ever more popular?
+        </p>
+        <p id="same" class="hide">
+          “Because the world that we’re in needs this kind of format — it needs us to slow down and enjoy a really nice meal once in a while, a good bourbon or cocktail now and then, and to sit down and just listen to music sometimes.”
+        </p>
+		<a id="back" class="hide" href="#vinyl">Go Back</a>
+      </div>
+	  <div class="col-auto d-none d-lg-block">
+        
+        </div>
+      </div>
+	  </div>
+	  
+	  
+	    <div class="col" id="art2">
+		<div class="col-sm-8" id="article-2">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 id="videogame">Vinyl fantasy: how gamers fell in love with records</h3>
+		<h2 class="accordion-header" id="stayOpen-headingTwo">
+            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseTwo" aria-expanded="true" aria-controls="stayOpen-collapseTwo">
+              Article information:
+            </button>
+            </h2>
+            <div id="stayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingTwo">
+              <div class="accordion-body">
+                  <div class="info">
+                    <p class="byline">By <a href="https://www.theguardian.com/profile/keithstuart" target="_blank">Keith Stuart
+                      </a><span class="publicationDate">,
+                        25th July 2022</span></p>
+                    <p class="sourceLine">Source: <a href="https://www.theguardian.com/games/2022/jul/25/vinyl-fantasy-how-gamers-fell-in-love-with-records" target="_blank">The Guardian</a></p>
+                  </div>
+              </div>
+            </div>
+			<img src="images/music/1vin.jpg" style="height: auto; max-width: 80%;">
+            <p id="citationtwo"> <i>Press play … LP covers for <span id="mention-1" class="mention videogame" about="Streets of Rage">Streets of Rage</span> and <span id="mention-1" class="mention videogame" about="Shenmue">Shenmue</span> soundtracks.</i>
+            </p>
+            <p class="mb-auto" id="auto2"><b>
+              Gaming albums have been steadily rising in popularity since the early 2010s. Players and creators explain why</b></p>
+			<p id="visibletwo">Continue reading</p>
+            <p id="guardian" class="hide">
+              <span id="mention-1" class="mention person" about="Caroline Grace"><span class="red" id="c">C</span>aroline Grace</span> has always enjoyed vintage technology. An IT tech in the <span id="mention-1" class="mention place" about="Mid-Ohio Valley"> Mid-Ohio Valley</span>, they collect retro games, laser discs and cassette tapes, but mostly, vinyl records. Their collection is in the thousands, and hundreds of those are video game soundtracks. “I’ve been a big fan of games all my life,” says <span id="mention-2" class="mention person" about="Caroline Grace">Grace</span>. “Some of my earliest memories are playing games like <span id="mention-1" class="mention artwork" about="Wonder Boy III: The Dragon’s Trap">Wonder Boy III: The Dragon’s Trap</span> and <span id="mention-1" class="mention videogame" about="Goof Troop">Goof Troop</span> with my dad and brother. I get positive feelings from listening to the <span id="mention-2" class="mention videogame" about="Wonder Boy III: The Dragon’s Trap">Wonder Boy III</span> music now. I have a lot of pleasant memories of playing it with my family back in the day.”
+            </p>
+            <p id="sametwo" class="hide">
+              The idea of buying video game soundtracks on vinyl may seem counter-intuitive: the most hi-tech digital entertainment medium meeting this fragile relic of the analogue era. But gaming albums have been steadily rising in popularity since the early 2010s. Partly that’s thanks to the wider vinyl revival, but it’s also due to the efforts of specialist record labels such as <span id="mention-1" class="mention person" about="Data Discs"><a href="https://data-discs.com/">Data Discs</a></span>, which produces beautiful albums based on vintage video games. “When we started the label in late-2014 there wasn’t really anyone releasing game soundtracks on vinyl,” says co-founder <span id="mention-1" class="mention person" about="Jamie Crook">Jamie Crook</span>. “We had been half-joking about trying to release <span id="mention-2" class="mention videogame" about="Streets of Rage">Streets of Rage</span> for the best part of a decade and we’re still surprised that no one else beat us to it. It just seemed abundantly clear that game soundtracks were going to be one of the next growth areas, alongside Japanese ambient, especially after the huge popularity of film soundtrack labels from 2012 onward.”
+            </p>
+			<p id="sametwo" class="hide">
+			The idea became a reality when <span id="mention-2" class="mention person" about="Jamie Crook">Crook</span> sent a speculative email to <span id="mention-3" class="mention videogame" about="Streets of Rage">Streets of Rage</span> composer <span id="mention-1" class="mention person" about="Yuzo Koshiro">Yuzo Koshiro</span>: he was on board immediately, as was <span id="mention-1" class="mention company" about="Sega Japan">Sega Japan</a></span> (“though I think they were also a little bewildered”). Consequently, <span id="mention-2" class="mention person" about="Data Discs">Data Discs</span> was able to license a number of releases spanning <span id="mention-2" class="mention company" about="Sega Japan">Sega’s</span> history, from <span id="mention-1" class="mention videogame" about="Sonic">Sonic</span> to <span id="mention-2" class="mention videogame" about="Shenmue">Shenmue</span>, and has since broadened to other classic Japanese titles such as <span id="mention-1" class="mention videogae" about="Okami">Okami</span>, <span id="mention-1" class="mention videogame" about="Ikaruga">Ikaruga</span> and surprise best-seller <span id="mention-1" class="mention videogame" about="Policenauts">Policenauts</span>, the old cyberpunk thriller from <span id="mention-1" class="mention videogame" about="Metal Gear">Metal Gear</span> creator <span id="mention-1" class="mention person" about="Hideo Kojima">Hideo Kojima</span>.
+			</p>
+              <img id="citationtwo" class="hide" src="images/music/vin2.jpg" style="height: auto; max-width: 80%;">
+            <p id="citationtwo" class="hide"><i> Surprise best-seller … LP cover for the <span id="mention-2" class="mention videogame" about="Policenauts">Policenauts</span> soundtrack. Photograph: <span id="mention-3" class="mention person" about="Data Discs">Data Discs</span></i>
+            </p>
+            <hr id="sametwo" class="hide">
+            <p id="sametwo" class="hide">
+              Nostalgia seems to be a major draw for many collectors. Alongside <span id="mention-4" class="mention person" about="Data Discs">Data Discs</span>, labels such as <a href="https://www.lacedrecords.co/">Laced</a>, movie soundtrack specialist <a href="https://mondoshop.com/">Mondo</a> and hip New York-based indie <a href="https://shiptoshoremedia.com/">Ship to Shore PhonoCo</a> also produce high quality albums for classic games. “Nostalgia plays a big part in my vinyl collecting – I will go out of my way to acquire records for games that I enjoyed as a kid,” says <span id="mention-1" class="mention person" about="Chris Hansen">Chris Hansen</span>, an IT contractor for the Department of Homeland Security in <span id="mention-1" class="mention place" about="Mississippi">Mississippi</span>. “I got into collecting vinyl in 2016 when I heard about Mondo’s release of <span id="mention-1" class="mention videogame" about="Castlevania">Castlevania</span>. I own every <span id="mention-2" class="mention videogame" about="Castlevania">Castlevania</span> game, it’s my favourite series, so I had to get the record. When I started looking into other releases, I discovered that <span id="mention-5" class="mention person" about="Data Discs">Data Discs</span> had put out <span id="mention-4" class="mention videogame" about="Streets of Rage">Streets of Rage</span> and <span id="mention-1" class="mention videogame" about="Streets of Rage 2">Streets of Rage 2</span> on vinyl. I’ve been hooked ever since.”
+            </p>
+            <p id="sametwo" class="hide">
+              But it’s not all about the past; a huge number of contemporary video games are accompanied by vinyl soundtrack releases, whether that’s an orchestral score for a bestselling Triple A blockbuster, or an electronic soundtrack for a cult indie game composed entirely by a lone musician. For small studios, it can be tough to make a living from game sales alone in such an over-saturated market, so selling merch to a dedicated fanbase is an important source of revenue.
+            </p>
+              <img id="citationtwo" class="hide" src="images/music/vin3.jpg" style="height: auto; max-width: 80%;">
+            <p id="citationtwo" class="hide"> <i>the cover art for the <span id="mention-2" class="mention videogame" about="Ikaruga">Ikaruga</span> soundtrack LP. Photograph: <span id="mention-6" class="mention person" about="Data Discs">Data Discs</i></span>
+            </p>
+			<hr id="sametwo" class="hide">
+            <p id="sametwo" class="hide">
+                There is also an important community element to video game vinyl. Releases tend to be limited editions and not always widely marketed, so fans meet up on Discord servers and Reddit forums to swap tips and compare collections. “We sometimes help each other get our personal ‘holy grails’,” says Pete Boyle, a collector based in <span id="mention-1" class="mention place" about="Leeds">Leeds</span>. “Last year, I mentioned in passing that I missed the original release of the <span id="mention-1" class="mention videogame" about="Firewatch">Firewatch</span> soundtrack by <span id="mention-1" class="mention person" about="Chris Remo">Chris Remo</span>. Minutes later I received a message from someone offering to sell it to me at cost plus post. It was in my hands less than two weeks later! We look out for one another. I have made some incredible friends for life.”
+            </p>
+			<p id="sametwo" class="hide">
+			In the early 2010s, <span id="mention-1" class="mention person" about="Austin Wintory">Austin Wintory’s</span> beautiful cello-led soundtrack for <span id="mention-1" class="mention videogame" about="Journey">Journey</span> and the 1980s-splashed electropop of <span id="mention-1" class="mention videogame" about="Hotline Miami 2">Hotline Miami 2</span> showed how varied and musically accomplished game scores had become. Now, from global <span id="mention-1" class="mention videogame" about="Final Fantasy">Final Fantasy</span> concert tours to BBC Radio 3’s excellent Sound of Gaming programme to the <a href="https://www.theguardian.com/games/2022/apr/26/pokemon-goes-to-the-proms-2022-season-to-feature-first-video-game-music-concert">forthcoming gaming concert</a> at the BBC Proms, game soundtracks have been accepted as an art form alongside film scores. For many players, listening to game music is a personal, immersive experience, because we may have listened to it not just through a 90-minute film, but tens of hours of play.
+			</p>
+			<p id="sametwo" class="hide">
+			"The concept of dynamic music – or music that changes to your environment or actions – is unique to games," says Sound of Gaming presenter <span id="mention-1" class="mention person" about="Louise Blain">Louise Blain</span>. “As players, we have come to rely on music to tell us we’re in danger, to react when we draw our swords, and tell us to calm down when the coast is clear. It is our soundtrack, no one else’s.
+			</p>
+            <p id="sametwo" class="hide">
+              “Film music never needs to fill the gap when we get distracted and wander off the beaten path to see what we can find hiding deeper in the woods. <span id="mention-1" class="mention videogame" about="Red Dead Redemption 2">Red Dead Redemption 2</span> composer <span id="mention-1" class="mention person" about="Woody Jackson">Woody Jackson</span> jokingly called some of the 60 hours of music he’d composed for the game ‘cowboy yoga music’ because those atmospheric strings had to accompany us <i>everywhere</i>. Game music understands that we want to lose ourselves and take in the scenery as well as ticking off quest lists. It also means that the more time we spend, the stronger our emotional connection can be.”
+            </p>
+		<p id="cit2" class="hide"><i>We often play alongside friends,</br><i>so game music is the sound of a shared journey</i></i>
+		</p>
+        <p id="sametwo" class="hide blockquote-footer mb-0">
+            Steve Jobs in <cite title="Source Title">Source Title</cite>
+		</p>
+            <p id="sametwo" class="hide">
+              This is a really vital point. Game music reminds us of places that we have effectively lived in. What’s more, we often play alongside friends, so game music is the sound of a shared journey, bringing to life all the emotions that entails. “There are two soundtracks that will always remind me of a particular time in my life,” says Dutch vinyl collector <span id="mention-1" class="mention person" about="Jill Verhage">Jill Verhage</span>. “The soundtrack to <span id="mention-1" class="mention videogame" about="Ori and the Blind Forest">Ori and the Blind Forest</span>, as it is one of the last games my best friend played before she passed in 2017, and the soundtrack of <span id="mention-1" class="mention videogame" about="Ori and the Will of the Wisps">Ori and the Will of the Wisps</span>, which always brings me great sadness knowing she never got to experience that game.”
+            </p>
+            <p id="sametwo" class="hide">
+              Whatever else motivates collectors, these are beautiful artefacts. At <span id="mention-7" class="mention person" about="Data Discs">Data Discs</span>, the team spends days sourcing archival video game art for their releases. “On occasion, we’ve tracked down the original paintings, either from the licensor’s vaults or through private art collectors, and have had HD photographs taken,” explains <span id="mention-3" class="mention person" about="Jamie Crook">Crook</span>. “The rights for artwork can sometimes be complicated too. For example, for our <span id="mention-1" class="mention videogame" about="After Burner II">After Burner II</span> release, we had to license the cover image of the F-14 Tomcat directly from <span id="mention-1" class="mention person" about="Northrop Grumman">Northrop Grumman</span>, which was a very laborious (and expensive) process, but ultimately worth it.”
+            </p>
+            <p id="sametwo" class="hide">
+              Soundtrack albums so easily become an extension of a game’s aesthetic. They are large enough to show off its artwork, and they have an element of discovery too, with extensive liner notes, glossy inserts and luscious packaging. And like video games, they are tactile, concerned with skill and ritual. You treat vinyl records with reverence and care, dropping the needle so that it falls as softly as a good jump in a platform game. And when the music starts, you are transported.
+            </p>
+            <p id="sametwo" class="hide">
+              <i>Thanks to <span id="mention-1" class="mention person" about="Frederik Lauridsen">Frederik Lauridsen</span> at <a href="https://blipblop.net/">Blip Blop</a> for his help with this article</i>
+            </p>
+			<a id="backtwo" class="hide" href="#videogame">Go Back</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        
+        </div>
+      </div>
+	  </div>
+  
+      <div class="col" id="art3">
+	  <div class="col-sm-8" id="article-3">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h2 id="stay">Stay tuned!</h2>
+		<h2 class="accordion-header" id="stayOpen-headingOne">
+  
+ 		 </div>
+  	</div>
+	</div>
+	</div>
+
+  <!-- metadata viewer start -->
+  <div class="card row overflow-auto position-absolute top-50 end-0 translate-middle-x" id="meta">
+      <h5 class="card-title p-3">About the articles</h5>
+      <div class="card-body overflow-auto p-0">
+
+        <!-- accordion start -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Why Vinyl Records Are Making a Comeback in 2022
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-1-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-1-people-tab" data-bs-toggle="tab" data-bs-target="#article-1-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-1-places-tab" data-bs-toggle="tab" data-bs-target="#article-1-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-1-videogames-tab" data-bs-toggle="tab" data-bs-target="#article-1-videogames" type="button" role="tab" aria-controls="contact" aria-selected="false">Videogames</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-1-companies-tab" data-bs-toggle="tab" data-bs-target="#article-1-companies" type="button" role="tab" aria-controls="contact" aria-selected="false">Companies</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-center" id="myTabContent">
+                      <div class="tab-pane fade show active" id="article-1-people" role="tabpanel" aria-labelledby="home-tab">
+					  <div id="keywords">
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Scott Hagen: 7<span></span></span></li>
+						</div>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Thomas Edison: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Emile Berliner: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Charlie Randall: 3 <span></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-1-places" role="tabpanel" aria-labelledby="profile-tab">
+                        <li><span onclick="highlightData(1, this)" class="places-nav">America: 1 <span></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-1-videogames" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(1, this)" class="videogames-nav">None <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-1-companies" role="tabpanel" aria-labelledby="contact-tab">
+					    <li><span onclick="highlightData(1, this)" class="companies-nav">Victrola: 4 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="companies-nav">Amazon: 1 <span ></span></span></li>
+						<li><span onclick="highlightData(1, this)" class="companies-nav">Apple: 1 <span ></span></span></li>
+						<li><span onclick="highlightData(1, this)" class="companies-nav">McIntosh Labs: 1 <span></span></span></li>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Vinyl fantasy: how gamers fell in love with records
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-2-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-2-people-tab" data-bs-toggle="tab" data-bs-target="#article-2-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-places-tab" data-bs-toggle="tab" data-bs-target="#article-2-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-videogames-tab" data-bs-toggle="tab" data-bs-target="#article-2-videogames" type="button" role="tab" aria-controls="contact" aria-selected="false">Videogames</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-2-companies-tab" data-bs-toggle="tab" data-bs-target="#article-2-companies" type="button" role="tab" aria-controls="contact" aria-selected="false">Companies</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-center" id="myTabContent">
+                      <div class="tab-pane fade show active" id="article-2-people" role="tabpanel" aria-labelledby="home-tab">
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Hideo Kojima: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Caroline Grace: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Jamie Crook: 3 <span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Yuzo Koshiro: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Data Discs: 7 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Chris Hansen: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Chris Remo: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Austin Wintory: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Louise Blain: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Woody Jackson: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Jill Verhage: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Northrop Grumman: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Frederik Lauridsen: 1 <span></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-places" role="tabpanel" aria-labelledby="profile-tab">
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Mid-Ohio Valley: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Mississippi: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Leeds: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-videogames" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Streets of Rage: 4 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Shenmue: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Wonder Boy III: The Dragon’s Trap: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Goof Troop: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Sonic: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Okami: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Policenauts: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Ikaruga: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Metal Gear: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Castlevania: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Firewatch: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Journey: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="videogames-nav">Hotline Miami 2: 1 <span ></span></span></li>
+						<li><span onclick="highlightData(2, this)" class="videogames-nav">Final Fantasy: 1 <span ></span></span></li>
+						<li><span onclick="highlightData(2, this)" class="videogames-nav">Red Dead Redemption 2: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-companies" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(2, this)" class="companies-nav">Sega Japan: 2 <span ></span></span></li>
+                      </div>
+                    </div>
+                <!-- nested nav tab start -->
+              </div>
+            </div>
+          </div>
+		  
+		<!-- Metadata viewer end -->
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+<a href="#" class="to-top">
+ <i class="fas fa-chevron-up"></i>
+</a>
+
+
+<div class="fab-container">
+      <div class="fab shadow">
+        <div class="fab-content">
+          <span class="material-icons"></span>
+        </div>
+      </div>
+      <div class="sub-button shadow" data-bs-toggle="popover" title="1500" data-content="1500" onclick="changeTheme(this.id)" href="#" id="enable-past">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow" data-bs-toggle="popover" title="Futurism" data-content="Futurism" onclick="changeTheme(this.id)" href="#" id="enable-futurism">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow"  data-bs-toggle="popover" title="Present" data-content="Present" onclick="changeTheme(this.id)" href="#" id="enable-present">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow"  data-bs-toggle="popover" title="Future" data-content="Future" onclick="changeTheme(this.id)" href="#" id="enable-future">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow"  data-bs-toggle="popover" title="Default" data-content="Default" onclick="changeTheme(this.id)" href="#" tag="link" id="enable-default">
+          <a href="google.com" target="_blank">
+            <span class="material-icons"></span>
+          </a>
+        </div>
+    </div>
+    
+	<a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+	     <footer>
+            	<div class="container p-3">
+              	<div class="row">
+              	</div>
+              	</div>
+             </footer>
+
+    <!-- script-->
+        <script src="js/change.js"></script>
+		<script src="js/future.js"></script>
+        <script src="js/metadatamusic.js"></script>
+		<script src="js/scroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/showtext.js"></script>
+  </body>
+</html>

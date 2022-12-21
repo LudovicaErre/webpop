@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/documentation.css">
+    <title>Documentation</title>
+    <link rel="icon" href="../images/logodoc.jpg" type="image/png">
+    
+  </head>
+  <body>
+  
+   <div class="future"></div>
+
+    <!-- MODALS -->
+
+        <!-- disclaimer start -->
+        <div class="modal" tabindex="-1" id="disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                   <div class="modal-body p-4">
+                <p>
+                     The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "<a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a>" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a>.
+                </p>
+               <p>
+                     The documents contained in this web site have been selected for their length and complexity. Their publication here is not intended to be an alternative or replace their original locations:
+                </p>
+                  <ul>
+                      <li><a href="https://www.bbc.com/" target="_blank">BBC</a>: <a href="https://www.bbc.com/culture/article/20211022-historical-drama-and-tvs-reckoning-with-the-past" target="_blank">Historical drama and TV's reckoning with the past</a></li>
+                      <li><a href="https://www.theguardian.com" trarget="_blank">The Guardian</a>: <a href="https://www.theguardian.com/tv-and-radio/2021/jun/27/rewriting-history-how-imperfect-costume-dramas-make-the-past-relevant" target="_blank">Rewriting history: how imperfect costume dramas make the past relevant</a></li>
+                      <li><a href="https://www.themanual.com/" target="_blank">The Manual</a>: <a href="https://www.themanual.com/culture/why-vinyl-is-coming-back/" target="_blank">Why Vinyl Records Are Making a Comeback in 2022</a></li>
+                      <li><a href="https://www.theguardian.com" target="_blank">The Guardian</a>: <a href="https://www.theguardian.com/games/2022/jul/25/vinyl-fantasy-how-gamers-fell-in-love-with-records" target="_blank">Vinyl fantasy: how gamers fell in love with records</a></li>
+                  </ul>
+                <p>
+                     All copyrights and related rights on the content remain with their original owners.<br>
+ 		   			 All copyright on the typographic and layout choices are 2022 © WebPop.					
+                 </p> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
+        <!--website info start-->
+        <div class="modal" tabindex="-1" id="info-disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">About Webpop</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>This website is a project developed by Ludovica Russo and Carmela Santaniello for the 2021/2022 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali.</a></p>
+                    <p id="cp">© 2021 Copyright: Ludovica Russo, Carmela Santaniello</p>
+                    <h4>Contacts</h4>
+                    <p><a href="mailto: ludovica.russo4@studio.unibo.it">ludovica.russo4@studio.unibo.it</a></p>
+                    <p><a href="mailto: carmela.santaniello@studio.unibo.it">carmela.santaniello@studio.unibo.it</a></p>
+                    <p id="discl"><a href="###">About us</a></p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--DISCLAIMER FOOTER END-->
+    <!-- HEADER START -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 nav-fixed fixed-top" id="navbar">
+            <div class="container-fluid">
+            <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html"><img src="images/WebPop.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" href="index.html" id="nav-active-link">Home</a>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Issues
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="html/series.html">TV Series</a></li>
+                    <li><a class="dropdown-item" href="html/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" tag="link" id="enable-default">Default</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-past">1500</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-futurism">First half of XX Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-present">Start of XXI Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-future">2030</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown ps-1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
+                About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<li> <a class="dropdown-item" aria-current="page" href="html/documentation.html">Documentation</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </li>
+               
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    <!-- HEADER END -->
+    
+    <!-- DOCUMENTATION START -->
+
+        <!-- scrollspy grid start -->
+        <div class="container-fluid content" style="position: relative;">
+            <div class="row" id="text-start" data-bs-spy="scroll" data-bs-target="#navbar-documentation">
+                <!-- scrollspy navbar start -->
+                <div class="col-md-3 col-sm-1 d-none d-md-block" id="menu-card">
+                    <nav id="navbar-documentation" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                        <h2 class="navbar-brand glitch" href="#item-1" id="documentation"><span id="red1">D</span>ocumentation</h2>
+                            <a class="nav-link ms-3 my-1" href="#item-1" id="it1-1">The idea</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2" id="it1-2">How to navigate</a>
+                            <a class="nav-link ms-3 my-1" href="#fab-docu" id="it1-4">1500</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-1-4" id="it1-5">First half of XX century</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-2-3" id="it1-6">Start of XXI century</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-3-3" id="it1-7">2030</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-3" id="it1-3">About us</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-4" id="it1-3">Sitography</a>
+                        </nav>
+                    <a onclick="changeModeFutureDoc(this.id)" href="#" id="enable-futurelight" data-bs-toggle="tooltip" data-placement="top" title="Support our mission. Use light mode only if really necessary.">
+                      <button type="button" class="btn btn-dmode"> </button>
+                    </a>
+                    <a onclick="changeModeFutureDoc(this.id)" href="#" id="enable-futuredark">
+                        <button type="button" class="btn btn-lmode"> </button>
+                    </a>
+                </div>
+                <!-- scrollspy navbar end -->
+
+                <!-- content start -->
+                <div class="col-md-9 col-xs-11">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-documentation" class="scrollspy p-4" tabindex="0" id="main-background">
+                        <h1 id="item-1" class="doctitle">Webpop</h1>
+                        <p>
+                        	WebPop is a web platform that collects different trending articles concerning the world of pop culture. It refers to specific categories and the peculiarity lies in being able to enjoy reading through different <b>typographic styles</b>, including past and existent and future and imaginary.
+							The user will find himself interacting with an "at hand" environment full of curiosities and being catapulted into different periods.
+						</p>
+						
+                        <hr  id="item-1-1">
+                        <h2 class="doctitle">The idea</h2>
+                        <p>
+                        	The idea stems from the creators' interest in wanting to create a <b>virtual space</b> focused on the new <b>mass culture</b> and in which to report reference articles from a variety of sources. From this concept came the choice of the name "WebPop", which is intended to unite the two words, and of the logo that takes its initials. These were associated with the two colors purple and yellow that characterized the shades of the default style.<br>
+                        	<img src="images/logodoc.jpg" id="logodoc">
+                        	<p id="citation" align="center"><b>Webpop logo</b></p>
+ 							<div>
+                            	<div class="row img-row">
+                                    <div class="col-2 color-default">
+                                    	<div class="color-square" style="background-color: #FFDE00;" id="yel"></div>
+                                            <p id="yel">#FFDE00</p>
+                                    </div>
+                                	<div class="col-2 color-default">
+                                        <div class="color-square" style="background-color: #C151E1;" id="pur"></div>
+                                            <p id="pur">#C151E1</p>
+                                    </div>
+                                </div>
+                            </div>
+						</p>
+						<p>
+							At the moment it remains a prototype such that there are only four articles from two different categories, <i>Music and TV Series</i>, but the aim would be to expand them, as made explicit in the second section of the home page,<i>"What is webpop?"</i>. The fourth section, on the other hand, now hosts only the two categories with a link to the articles, but it will report the platform' news, thus new pieces that are constantly updated.
+                        </p>
+                        <p>
+                        	In addition and under directives, four themes have been set to fit the pages of the site and were inspired by the article <a href="http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html"><i>History of Layout Design and Modern Newspaper & Magazins</i></a>, which will be discussed in the following sections.
+							<br>The purpose is to allow the user to explore their typographical forms as well as layout features, typical of the texts of each period, or imagined, such as that of the future; these have been adapted to the layout of the site thereby allowing visual continuity for the user.
+                        </p>
+
+						<div id="item-1-2"></div>
+                        <hr>
+                        <h2 class="doctitle">How to navigate</h2>
+                        <p>
+                        	Starting from the homepage, the user is invited to click on the logo to be introduced to the website. To make the click on the button more intuitive, it was decided to report the <i>"tap on logo"</i> command above it.
+							The second section acts as a simple information window related to the site. At this point, the user will be invited to choose whether to continue with the introduction to the themes or to sling over the articles. The <b>theme change</b> can be done at first by clicking on the card, from later times and in a more efficient way through the fab located in the lower right, and through the navbar from which it is also possible to return to the default theme.
+								<br>
+								<img src="images/documentation/navth.jpg" class="htn">
+								<img src="images/documentation/fabth.jpg" class="htn">
+								<br>
+							The fourth section is the articles section: the user will choose the preferred category and can continue reading the texts. It's possibile to see the Issues through the dropdown menu of the navbar too.
+						</p>
+						<p>
+							The articles are introduced by an <i>"article information"</i> section, which contains some relevant information about the texts, and can be closed by clicking on the bar.
+								<img src="images/documentation/artinf.jpg" id="artinf">
+								<br>
+							In addition, it will be possible to locate certain <b>keywords</b> through the <i>"about articles"</i> bar. 
+							The user will be able to click on the desired word to retrieve it in the respective text; words with multiple <b>occurrences</b> will be tracked one at a time, and a button will be available to go back up if the user wants to view subsequent occurrences. However, if the articles are still closed, it is possible to click on the word as many times as there are occurrences, and once the article is opened with the <i>"continue reading"</i> function, these will all already be highlighted in the article. 
+								<br>
+								<img src="images/documentation/ata.jpg" id="ata">
+								<br>
+							At the end of the reading, in order to have a better and not confusing view, it is possible to go back to the beginning of the text by clicking <i>"go back"</i> and closing the article to continue with the next ones.
+								<br>
+							The <b>metadata</b> can also be viewed on a reduced screen in the <i>"about articles"</i> section of the navbar.
+                        </p>
+                        <p>
+                        	Finally, in the about section of the navbar, you can visit the disclaimer with some information about the project or the current page.
+                        </p>
+                        
+                    	<hr>
+                        <h2 id="item-1-2" class="doctitle">Stylistic choices</h2>
+                        <p>
+                        	The themes chosen were inspired by the article <i>A History of Graphic Design: History of Layout Design and Modern Newspaper & Magazins</i>. <br> Four different images were selected for their representation, referring to the idea of the pop genre and, in some cases, to pop art proper. In others, only the vastness of colors, the main element of the art movement itself, was adopted.
+                        </p>
+                        
+                        <div id="fab-docu"></div>
+                        <h3 class="doctitle">1500</h3>                 
+                        <p>
+                        	The card of the past theme presents the iconic image of the approach of Adam and God's fingers depicted in <b>Michelangelo</b>'s <i>"Creation of Adam"</i> in a pop art vision. The fresco scene evidently does not date back to the specific year linked to the manuscripts, but it certainly evokes an air of the past at first glance, which is why it was chosen for adoption.
+                        </p>
+                        
+                        <h4 class="doctitle">Layout</h4>
+                        <p>
+                        	The past theme is inspired by <b>early medieval manuscripts</b>, in particular the image shown below which refers to a <b>Spanish breviary</b> of 1450. The layout picks up on the motif of parchment, a material used for writing books, ornamental decorations, borders and justified layout. In the articles, a single long column with continuous text was made, and the spaces were adjusted to align the text on both sides. In addition, the feature of the red initial letter, in the case of articles embedded in four red lines to form a geometric figure, was added, occupying the space of the initial five lines on the left side; thus echoing the reference image in which there are three occupied lines.
+                        	<br>
+                        	<img src="images/documentation/spbreviary.jpg" class="sp">
+                        	<img src="images/documentation/miopast.jpg" id="docpast">
+                        	<img src="images/documentation/decp.jpg" class="dec">
+                        	<img src="images/documentation/decp1.jpg" class="dec">
+                       		<br>
+                       		Other examples can be seen here.
+                       		<br>
+                       		<img src="images/documentation/romanbr.png" class="sp">
+                       		<img src="images/documentation/manus.jpg" class="sp">
+                       		<img src="images/documentation/manus1.jpg" class="sp">
+                       		<img src="images/documentation/manus2.jpg" class="sp">
+                       		<img src="images/documentation/manus3.jpg" class="sp">
+                       		<img src="images/documentation/manus4.jpg" class="sp">
+                        </p>
+                        
+                        <h4 class="doctitle">Font</h4>
+                        <p>
+                        	Regarding the font, the research turned to all those fonts reminiscent of and inspired by local or European Gothic script, <b>Canterbury</b> in fact being a late medieval Gothic font. Considering the articles, the almost lack of spaces between lines and the font size chosen help to render the idea of density and fullness typical of medieval illuminated manuscripts.
+                        </p>
+                        <div class="content-fluid">
+                        	<div class="row img-row">
+                        		<h4 class="doctitle">Color</h4>
+                        		<p>The following are the main colors chosen for the theme.</p>
+                                    <div class="col-3 color-default">
+                                    	<div class="color-square" style="background-color: #c94444;"></div>
+                                            <p>#c94444</p>
+                                    </div>
+                                	<div class="col-3 color-default">
+                                        <div class="color-square" style="background-color: #f5eca8;"></div>
+                                            <p>#f5eca8</p>
+                                    </div>
+                                    <div class="col-3 color-default">
+                                        <div class="color-square" style="background-color: #697e66;"></div>
+                                            <p>#697e66</p>
+                                    </div>
+                        	</div>
+                        </div>
+                        
+                         <hr id="item-2-1-4">
+                           <h3 class="doctitle">First half of XX century</h3>
+						<p>
+						The artwork <i>Skyscrapers and Tunnel</i> selected for the theme card is done by Fortunato Depero, an italian futurist painter and designer. <br>The painting represents the overlapping of several dynamic planes, this kind of dynamicity marks the 20th century historic avant-garde movements, such as Futurism, Dadaism and Constructivisim. All of them also influenced the European layout and typography.<br>
+						Thus, we decided to represent this theme as an example of the futurist current, in doing so we chose from the chapter <b>Layout Design in 20th century</b> one particular main image reference, namely a page of the futurist magazine Lacerba, published in 1914.</p>
+						<img src="images/documentation/lacerba.jpg" style="height: auto; max-width: 70%;" id="lacerba">
+						<h4 class="doctitle">Layout</h4>
+						<p>Among the most noticeable features, there is the intention to create visual images through peculiar typographical choices as the bold character of the font with the distorsion of some headlines, then there are the lines separator between the columns that organizes the space of the issue.</p>
+                        <p>Other reference images:</p>
+						<img src="images/documentation/futurist2.png" id="futurist2">
+						<img src="images/documentation/futurist3.jpg" id="futurist3">
+			            <img src="images/documentation/futurist4.jpg" id="futurist4">
+                        <h4 class="doctitle">Font</h4>
+						<p> 						
+						We tried to repreduce some of these features, in order to emulate the character of the headlines we picked the <b>Cinematografica Regular</b> from <a href="https://www.dafont.com/">dafont.com</a>, which is characterized by a bold font weight and very minimum letter spacing as it was typical in the reference images.<br>While for the character used in the paragraphs we chose <b>Leorio</b> always from dafont website, this font was useful to get a similar feeling to the words typed with the typewriter.
+						For always reminding this feeling we also used a <a href="https://www.sitepoint.com/css-typewriter-effect/">CSS effect</a> for the headlines.</p>
+						<h4 class="doctitle">Color</h4>
+						<p>As it regards the color palette, we chose tones from a very pale yellow to reproduce the color of the paper and we added light brown and grey to represent the other parts of the layout so that they did not contrast with the background color.</p>
+ 							<div class="content-fluid">
+                          <div class="row img-row">
+                            <div class="col-3">
+                              <div class="color-square" style="background-color: #F4F2DC;"></div>
+                              <p>Color #F4F2DC</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="color-square" style="background-color: #C1BFAC;"></div>
+                              <p>Color #C1BFAC</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="color-square" style="background-color: #D7D8BF;"></div>
+                              <p>Color #D7D8BF</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="color-square" style="background-color: #E8E8E8;"></div>
+                              <p>Color #E8E8E8</p>
+                            </div>
+                          </div>
+                        </div>
+						
+                        
+                        
+                        <hr id="item-2-2-3">
+                        <h3 class="doctitle">Start of XXI century</h3>
+						<p>The artwork <i>El Adios de las Niñas</i> (The Girls' Goodbye) selected for the theme card is done by Enrique Pichardo, a mexican contemporary painter. This painting represents the meeting of the symbolisms of the Pre-Hispanic past and indigenous traditions with the modern Expressionism.<br>
+						Then, as the painter re-thought the past in the modern sense, similarly it is happened with the modern layout and design magazines, the topic of this theme.</p>
+						<h4 class="doctitle">Layout</h4>
+                        <p>Here we wanted to create a sort of contemporary layout, so from the chapter <b>Using Layout Grids Effectively</b> we took as the main image reference an example of a modern design from a magazine.</p>
+						<img src="images/documentation/magazine.jpg" style="height: auto; max-width: 100%;" id="magazine">
+						
+						<p>This kind of design is characterized by a simple and geometrical composition, also the colors in the headlines recall the ones from the abstract image placed on the right page. In that chapter this particular layout is accompanied by the following description: <i>"An elegant integration of type and image via color"</i>.<br>
+						Thus, we focused on reproducing a simple layout, inserting a decorative  image that conveys some contrastive colors of the palette, and choosing very clear fonts in the shapes that offer the maximum readability.</p>
+						<p>Other reference images:</p>
+						<img src="images/documentation/magaz2.jpg" id="magaz2">
+						<img src="images/documentation/magaz4.jpg" id="magaz4">
+						<img src="images/documentation/magaz3.jpg" id="magaz3">
+						<h4 class="doctitle">Font</h4>
+						<p>
+						For the headlines we used <b>Mermaid</b> from dafont.com, that is a serif font with round and smooth curves, while for the paragraphs we picked the classical font <b>Oxford</b> from <a href="https://www.1001freefonts.com/">1001freefonts</a>, that is really close to the standard used in the modern magazines.</p>
+						<h4 class="doctitle">Color</h4>
+						<p>
+						Lastly for the color palette, we tried to get a similar yellow/orange as in the main reference image and we used it for some words of the headlines combined to a CSS effect, then we selected some darker colors to realize the contrast between yellow and the darker ones.</p>
+                        
+                        <div class="content-fluid">
+                          <div class="row img-row">
+                            <div class="col-3 color-80">
+                              <div class="color-square" style="background-color: #212529;"></div>
+                              <p>Color #212529</p>
+                            </div> 
+                            <div class="col-3 color-80">
+                              <div class="color-square" style="background-color: #C9C9C9;"></div>
+                              <p>Color #C9C9C9</p>
+                            </div>
+                            <div class="col-3 color-80">
+                              <div class="color-square" style="background-color: #FFDE00;"></div>
+                              <p>Color #FFDE00</p>
+                            </div>
+                            <div class="col-3 color-80">
+                              <div class="color-square" style="background-color: #A89D8E;"></div>
+                              <p>Color #A89D8E</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+						<hr id="item-2-3-3">
+                       	<h3 class="doctitle">2030</h3>                 
+                        <p>
+							The card representing the future theme is again inspired by pop art. <br>Female astronauts look amusedly at a hamburger floating in space: no specific source of the image was found, probably just wanted to recreate a design manifesting the spread of fast food conjugated with early space travel between the 1950s and 1960s; but we like to think that the hamburger theme was inspired by the initiative of astronaut <b>Terry Virts</b> who, in February 2015, tweeted a photo of his <i>"space cheeseburger""</i> eaten while aboard the <b>International Space Station - Expedition 42</b>. The mixture consisted of beef paddy, cheese, tomato paste and Russian mustard on a tortilla.
+							<br>Of course, the depiction of the sandwich in the card image is surreal; introducing bread inside a spacecraft is absolutely dangerous because of the crumbs, which is why Virts opted for the tortilla.
+                        	<br>
+                        	<img src="images/documentation/fumetto.jpg" id="fum">
+                        	<img src="images/documentation/hamb.jpg" id="ham">
+                        </p>
+                        
+                        <h4 class="doctitle">Layout</h4>
+                        <p>
+							Elements of the <i>"Star Wars""</i> movie saga were chosen for the realization of the future theme. The fictional galaxy in a timeless space that is almost certainly futuristic meets well with the idea of the future had in mind.
+							<br>The layout is inspired by the original opening titles or <i>“opening crawl”</i> of the series: words float in a space background, the title "WebPop" features a laser effect taking up the motif of lightsabers, but only in the articles does the effect recall the saga's introduction; the text, arranged in a justified column and slanted, is scrolled upward by the user's scroll recalling the effect of the rising words from the film.
+                        	<br>
+                        	<img src="images/documentation/starwars.png" class="swt">
+                        	<img src="images/documentation/wpfut.jpg" class="wpfut">
+                        	<img src="images/documentation/laser.jpg" class="swt">
+                        	<img src="images/documentation/textsw.png" class="wpfut">
+							<img src="images/documentation/textsw1.png" class="wpfut">
+							<img src="images/documentation/miofut.jpg" class="wpfut">
+							<img src="images/documentation/miofut1.jpg" class="wpfut">
+                        </p>
+                        
+                        <h4 class="doctitle">Font</h4>
+                        <p>
+							Regarding the font, it was decided to use a different one from the one proposed in the saga. <br>The <b>Future Z</b> font more easily gives the idea of the future because of its curves and edges, only the yellow color turns out to be a reminder of the saga.
+                        </p>
+                        <div class="content-fluid">
+                        	<div class="row img-row">
+                        	<h4 class="doctitle">Color</h4>
+                        		<p>The following are the main colors chosen for the theme.</p>
+                                	<div class="col-3 color-default">
+                                		<div class="color-square" style="background-color: #9400ff;"></div>
+                                        	<p>#9400ff</p>
+                    	            </div>
+                            		<div class="col-3 color-default">
+                                    	<div class="color-square" style="background-color: #9aaee2;"></div>
+                                       	<p>#9aaee2</p>
+                                	</div>
+                                    	<div class="col-3 color-default">
+    	                                	<div class="color-square" style="background-color: #ffed5e;"></div>
+                                            	<p>#ffed5e</p>
+                                    	</div>
+                                    	<div class="col-3 color-default">
+                                       		<div class="color-square" style="background-color: #feda4a;"></div>
+                                            	<p>#feda4a</p>
+                                    	</div>
+                        		</div>
+                        </div>
+                        <hr>
+                        <h2 id="item-1-3" class="doctitle">About us</h2>
+						<p>The team is composed of <i>Carmela Santaniello</i> and <i>Ludovica Russo</i>, who both worked on the complete realization of the site, from idea to design, dividing the themes and topics. After an initial phase of collecting materials, inspirations and ideas, everything was implemented through the structure of the pages and the work was divided by some of their parts. In particular, Carmela was responsible for selecting the articles regarding the <i>Music</i> category and the themes of <b>futurism</b> and the <b>present</b> on all site pages. Conversely, Ludovica selected the articles regarding the <i>TV Series</i> theme and worked on the <b>past</b> and <b>future</b> themes on all pages of the site. <br>The default theme was developed by both of them.
+							<br>The structure of the various parts of the platform was created through the use of <a href="https://getbootstrap.com"><b>Bootstrap</b></a>.
+						</p>
+						<p>
+							Lastly, the parts pertaining to the interactivity of the site, as well as the construction of the metadata structure in the article section, were selected from various sources from which we were inspired. Look at the <a href="#item-2">sitography</a> to learn more
+						</p>
+						<hr>
+                        <h2 id="item-1-4" class="doctitle">Sitography</h2>
+						<ol type="1" id="sito">
+							<li><i>1stDibs</i> - https://www.1stdibs.com/fr/</li>
+							<li><i>1001freefonts</i> - https://www.1001freefonts.com/</li>
+							<li><i>Arte.it</i> - https://www.arte.it/</li>
+							<li><i>BBC</i> - https://www.bbc.com</li>
+							<li><i>Bootstrap</i> - https://getbootstrap.com/</li>
+							<li><i>Canstockphoto</i> - https://www.canstockphoto.com</li>
+							<li><i>Canva</i> - https://www.canva.com</li>
+							<li><i>Codeopen</i> - https://codepen.io/</li>
+                        	<li><i>Dafont.com</i> - https://www.dafont.com/it/</li>
+							<li><i>Firstwefeast</i> - https://firstwefeast.com/eat/2015/02/space-cheeseburgers-are-pure-struggle</li>
+							<li><i>Font Awesome</i> - https://fontawesome.com/</li>
+							<li><i>Guity Novin's blogspot</i> - http://guity-novin.blogspot.com/</li>
+							<li><i>HTML.it</i> - https://www.html.it/</li>
+							<li><i>Nasa</i> - https://www.nasa.gov/content/space-cheeseburger/</li>
+							<li><i>Sitepoint</i> - https://www.sitepoint.com/</li>
+							<li><i>Stackoverflow</i> - https://stackoverflow.com/</li>
+							<li><i>The Guardian</i> - https://www.theguardian.com/ </li>
+							<li><i>The Manual</i> - https://www.themanual.com/ </li>
+							<li><i>VectorStock</i> - https://www.vectorstock.com/</li>
+							<li><i>W3schools</i> - https://www.w3schools.com/</li>
+                        </ol>
+                    </div>
+                    </div>
+                <!-- scrollspy content end -->
+                 </div>
+            </div>
+            <!--FAB START-->
+        <footer>
+            <div class="container-fluid p-3 bg-dark text-white">
+              <div class="row">
+                <div class="col-md-3" id="footer-left"></div>
+                <div class="col-md-3 info-footer">
+                  <p>This website is a project developed by Ludovica Russo and Carmela Santaniello for the 2021/2022 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
+                </div>
+                <div class="col-md-3 contacts">
+                  <h4>Contacts</h4>
+                    <a href="mailto: ludovica.russo4@studio.unibo.it">ludovica.russo4@studio.unibo.it</a></br>
+                    <a href="mailto: carmela.santaniello@studio.unibo.it">carmela.santaniello@studio.unibo.it</a>
+                </div>
+              </div>
+                
+              <div class="row">
+                <p id="cp">© 2022 Copyright: Ludovica Russo,  Carmela Santaniello</p>
+                  <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p>
+			  </div>
+              <a name="bottom" id="bottom"></a>
+              </div>
+              <!--fab-->
+              <div class="fab-container">
+                <div class="fab shadow">
+                  <div class="fab-content">
+                    <span class="material-icons"></span>
+                  </div>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="1500" data-content="1500" onclick="changeThemeHome(this.id)" href="#" id="enable-past">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="Futurism" data-content="Futurism" onclick="changeThemeHome(this.id)" href="#" id="enable-futurism">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Present" data-content="Present" onclick="changeThemeHome(this.id)" href="#" id="enable-present">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Future" data-content="Future" onclick="changeThemeHome(this.id)" href="#" id="enable-future">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+              </div>
+          </footer>
+    
+        <!-- scrollspy grid end -->
+
+    <!-- DOCUMENTATION END -->
+    
+    <!-- SCRIPTS START-->
+
+        <!-- Bootstrap Bundle with Popper -->
+		<script src="js/change.js"></script>
+		<script src="js/future.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- SCRIPTS END -->
+  </body>
+</html>
