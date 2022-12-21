@@ -1,0 +1,763 @@
+@font-face {
+font-family: "Regular";
+src: url("fonts/ChewieDEMO-Regular.otf");
+}
+
+@font-face {
+font-family: "Bold";
+src: url("fonts/ChewieDEMO-Bold.otf");
+}
+
+@font-face {
+font-family: "Pop";
+src: url("fonts/Simplicity-Regular-A.ttf");
+}
+
+@font-face {
+font-family: "Web";
+src: url("fonts/Blacklightning.ttf");
+}
+
+/*navbar*/
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link{
+    padding-left: 2em;
+    font-size: 3.5vh;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    background-color: #212529 !important;
+}
+
+#navbar{
+  height: 10vh;
+  position: fixed;
+  font-family: "Regular";
+  font-size: 1.5vw;
+}
+
+.dropdown-menu{
+  background-color: #ffed5e;
+}
+
+.dropdown-item:hover{
+    color: #9400ff !important;
+    background-color: #D4ADE0;
+    font-size: 1.2vw;
+}
+
+/*body*/
+
+p {
+  font-family: "Regular";
+}
+
+.row{
+  font-family: "Bold";
+}
+
+body {
+	display: block;
+    background-color: #efd9f8;
+}
+  
+h1{
+	font-size: 3.5em;
+}
+  
+h2{
+    font-size: 6vh;
+}
+  
+#first{
+	margin-top: 8rem;
+	padding: 2em;
+  	height: auto;
+  	background-color: #efd9f8;
+  	text-align: center;
+}
+
+#first h1{
+    color: black;
+}
+
+#main-title{
+	margin-top: -0.5em;
+}
+
+#web{
+    color: #000000 !important;
+    font-family: "Web";
+    font-size: 18vh;
+}
+
+#pop {
+	width: 18rem;
+    margin-left: -3.5rem !important;
+    font-family: "Pop";
+    font-size: 30vh;
+    text-transform: uppercase;
+  	background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  	background-size: auto auto;
+  	background-clip: border-box;
+ 	background-size: 200% auto;
+  	color: #fff;
+  	background-clip: text;
+  	text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 2s linear infinite;
+  	display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#new1, #documentation{
+	background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  	background-size: auto auto;
+  	background-clip: border-box;
+ 	background-size: 200% auto;
+  	color: #fff;
+  	background-clip: text;
+  	text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#documentation{
+	font-size: 1.3em;
+}
+
+.btn-default{
+    cursor: pointer;
+}
+
+.btn-default:hover {
+            animation: shake 0.3s ease-out;
+        }
+  
+@keyframes shake {
+            0% {
+                transform: skewX(-10deg);
+            }
+  
+            25% {
+                transform: skewX(10deg);
+            }
+  
+            50% {
+                transform: skewX(-10deg);
+            }
+  
+            75% {
+                transform: skewX(10deg);
+            }
+  
+            100% {
+                transform: skewX(-10deg);
+            }
+        }
+
+#first h2{
+    font-size: 5vh;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+#tap{
+	margin-top: 4em;
+	margin-bottom: -0.5em;
+    font-size: 1em;
+}
+
+#about-proj p{
+	padding-top: 2em;
+}
+
+#btn-themes{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 3vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+#btn-themes:hover, 
+#btn-issues:hover{
+    color: #9400ff !important;
+}
+
+#btn-issues{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 3vh;
+    margin-top: 3rem !important;
+    border-style: none; 
+}
+
+a, #visible, #visibletwo {
+	outline: none;
+	text-decoration: none;
+	color: #9400ff;
+} 
+
+a:hover, #visible:hover, #visibletwo:hover {
+	color: #9aaee2;
+}
+
+#visible, #visibletwo {
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas,
+#article-2-institutions-tab-offcanvas, #article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas,
+#article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	color: #9400ff;
+	padding-left:1em;
+	border: solid 1px #bbb9b9;
+	font-weight: bold;
+	font-size: 1.3vw;
+}
+
+#article-1-tvseries-tab-offcanvas:hover, #article-1-histcharacters-tab-offcanvas:hover,
+#article-1-people-tab-offcanvas:hover, #article-1-events-tab-offcanvas:hover, #article-2-tvseries-tab-offcanvas:hover, 
+#article-2-histcharacters-tab-offcanvas:hover, #article-2-people-tab-offcanvas:hover, #article-2-institutions-tab-offcanvas:hover,
+#article-1-places-tab-offcanvas:hover, #article-1-people-tab-offcanvas-music:hover, #article-1-companies-tab-offcanvas:hover, #article-1-videogames-tab-offcanvas:hover
+#article-2-places-tab-offcanvas:hover, #article-2-people-tab-offcanvas-music:hover, #article-2-companies-tab-offcanvas:hover, #article-2-videogames-tab-offcanvas:hover{
+	color: #9aaee2;
+	padding-left:1em;
+}
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas, 
+#article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas
+#article-2-institutions-tab-offcanvas, #article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	font-weight: bold;
+	font-size: 3vh;
+	border: solid 1px #bbb9b9;
+	padding-right: 1em;
+	padding-left:1em;
+	font-size: 1.3vw;
+}
+
+#second{
+  	min-height:100vh;
+  	padding: 8em;
+  	background-color: #dfdfeb;
+}
+
+#par1{
+    font-size: 1.5em;
+}
+
+#totheintro{
+	margin-top: 2em;
+	margin-bottom: -1.5em;
+	font-size: 1.5em;
+}
+
+#third{
+  	min-height:100vh;
+  	padding: 5.5%;
+  	background-color: #f5f8f9;
+}
+
+.btn-third:first-child{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 3vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+.btn-third:first-child:hover{
+   color: #9400ff !important;
+}
+
+.btn-third:nth-child(2){
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 3vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+.btn-third:nth-child(2):hover{
+   color: #9400ff !important;
+}
+
+#third p{
+    font-size: 1.3em;
+}
+
+.btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+.btn-doc:hover{
+    color: #9400ff;
+}
+
+.theme{
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-bottom:3em;
+	background: #fff;
+  	overflow: hidden;
+  	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  	border-radius: 5px;
+  	-webkit-transition:all .9s ease; 
+  	-moz-transition:all .9s ease; 
+  	-o-transition:all .9s ease;
+  	-ms-transition:all .9s ease;
+}
+
+.theme:hover{
+	opacity: 0.7;
+  	-webkit-transform:scale(1.15);
+  	-moz-transform:scale(1.15);
+  	-ms-transform:scale(1.15);
+  	-o-transform:scale(1.15);
+  	transform:scale(1.15);
+}
+
+.bor{
+	margin: -1em;
+}
+
+#fourth{
+	padding:5%;
+  	height:auto;
+  	background-color: #efd9f8;
+}
+
+#issue-text{
+    font-size: 1.3em;
+}
+
+#card-iss1 .fadedbox{
+    background-color: #ffed5e;
+    font-size: 3vh;
+    font-family: "Bold";
+    border: solid;
+}  
+
+#card-iss2 .fadedbox{
+    background-color: #ffed5e;
+    font-size: 3vh;
+    font-family: "Bold";
+    border: solid;
+}
+
+.card-txt{
+    font-size: 2.5vh;
+}
+
+.see-article{
+    background-color: #D4ADE0;
+}
+
+.see-article a{
+    font-size: 2.5vh;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.see-article:hover{
+    background-color: #d9cbde;
+}
+
+#fourth .card{
+    margin: 2em;
+    margin-top: 2em;
+}
+
+/*footer*/
+
+footer p, .contacts, #discl, #cp{
+	overflow: auto;
+    font-size: 2.5vh !important;
+    padding-top: 2em;
+}
+
+#footer-left, #footer-right{
+    width: 15% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
+}
+
+footer p{
+    text-align: left;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
+#discl{
+    text-align: center !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+/*fab*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+.fab-container:hover{
+	height: 100%;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-25vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-35vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-45vh);
+}
+
+.fab-container .fab {
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.fab-container .fab::before {
+    content: "";
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+
+.fab-container .sub-button .material-icons {
+    padding-top: 6px;
+}
+
+.fab{
+    background-image: url("images/icons/tavolozza.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url("images/icons/past.jpg");
+    background-size: 13vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url("images/icons/futurism1.jpg");
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url("images/icons/present.jpg");
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url("images/icons/future.jpg");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*disclaimer*/
+
+li{
+	font-family: "Regular";
+}
+
+.modal-dialog{
+    max-width: 100vh !important;
+}
+
+.modal-body p{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+}
+
+.modal-title{
+  font-family: "Bold";
+  font-size: 3.5vh;
+  text-transform: uppercase;
+}
+
+.modal-header, .discl-basic .modal-footer{
+    background-color: #D4ADE0;
+}
+
+.modal-footer .btn{
+    background-color: #D4ADE0;
+    border: none;
+    color: black;
+}
+
+#art2{
+	padding-top: 1.5rem;
+}
+
+#meta{
+	width: 15em;
+	padding-right: 2em;
+	margin-top: 3.5em;
+	margin-right: 2em;
+	background-color: #D4ADE0;
+}
+
+@media only screen and (max-width: 1026px) {
+    #meta {
+        display: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffed5e  !important;
+  background-color: #D4ADE0 !important;
+}
+
+.accordion-button:hover, .accordion-button:active  {
+  	background-color: #9aaee2 !important;
+    color:#ffed5e !important; 
+}
+
+.accordion-button{
+	background-color: #9aaee2 !important;
+}
+
+.accordion-button::after {
+	background-image: url("images/WebPop.png");
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("images/WebPop.png");
+	color: #000;
+}
+
+#new{
+	margin-top: 3rem;
+	padding: 2rem;
+	font-family: "Bold";
+}
+
+#box{
+	margin-left: 3em;
+}
+
+
+.mb-auto{
+	margin-top: 1em;
+	font-size: 1.5vw;
+}
+
+#auto2{
+	margin-top: 0em;
+}
+
+#citation, #citationtwo{
+	font-size: 1vw;
+	padding: 0.5em;
+}
+
+#cit, #cit2{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-left: 1em;
+  border-left: 0.25em solid #9400ff;
+} 
+
+#titart{
+	margin-top: 0.2em;
+	font-size: 3em;
+}
+
+/*showtext*/
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+/*music*/
+#article-1-people-tab, #article-1-places-tab, #article-1-videogames-tab, #article-1-companies-tab{
+	color: #9400ff;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+#article-2-people-tab, #article-2-places-tab, #article-2-videogames-tab, #article-2-companies-tab{
+	color: #9400ff;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+/*tvseries*/
+ #article-1-people-tab, #article-1-histcharacters-tab, #article-1-tvseries-tab, #article-1-events-tab{
+ 	color: #9400ff;
+ 	font-size:1.3vw;
+ 	padding-left:1em;
+ }
+
+ #article-2-people-tab, #article-2-histcharacters-tab, #article-2-tvseries-tab, #article-2-institutions-tab{
+ 	color: #9400ff;
+ 	font-size:1.3vw;
+ 	padding-left:1em;
+ }
+
+ #meta{
+ 	margin-top: -5em;
+ 	margin-right: -4em;
+ 	padding-right: 0;
+ }
+ 
+/*metadata selector*/
+li:hover{
+    background-color: #d9cbde !important;
+}
+
+/*scroll to-top*/
+
+.to-top{
+	background: grey;
+	position: fixed;
+	bottom: 16px;
+	right: 32px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:32px;
+	color: #1f1f1f;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+	margin-top: 10 em;
+	margin-right: 10em;
+}
+
+.fas{
+	margin-right: 1em;
+}
+
+.to-top.active {
+	bottom:32px;
+	pointer-events: auto;
+	opacity:1;
+}
+
+html{
+ 	scroll-behavior: smooth;
+ }
+ 
+.d-grid{
+ 	margin-right: 6.5rem;
+ 	margin-left: 3em;
+ }
+ 
+#sito{
+	font-family: "Regular";
+}
+ 
+ /*documentation selector*/
+.nav-link:hover{
+    background-color: #d9cbde;
+}

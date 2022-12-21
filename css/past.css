@@ -1,0 +1,904 @@
+@font-face {
+	font-family: "Past";
+	src: url("fonts/CanterburyRegular.ttf");
+}
+
+/*navbar*/
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link{
+    padding-left: 2em;
+    font-size: 1.5em;
+    color: #c94444;
+}
+
+.nav-link:hover{
+	color: #697e66;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    background-color: #212529 !important;
+}
+
+#navbar{
+  height: 10vh;
+  position: fixed;
+  font-family: "Past";
+  font-size: 1.5vw;
+}
+
+.dropdown-menu{
+  background-color: #f5eca8;
+   font-size: 1em;
+}
+
+.dropdown-item:hover{
+    color: #c94444 !important;
+    background-color: #697e66;
+}
+
+/*body*/
+
+p, #tt1, #tt2, .see-article, .modal-title {
+  font-family: "Past";
+}
+
+.row{
+  font-family: "Past";
+}
+
+body {
+	display: block;
+    box-shadow: 2px 3px 20px black, 0 0 60px #bc9f55 inset;
+    background: #fffef0;
+}
+
+#drama, #costume{
+	font-size: 2.7em;
+}
+  
+h2{
+    font-size: 3em;
+}
+
+hr{
+	color: #fffef0;
+}  
+  
+#first{
+    padding: 10em;
+    text-align: center;
+    background-image: url("images/past/manuscript.png");
+    background-repeat: no-repeat;
+    background-size: 20em;
+    background-position: 2em 5em;
+}
+
+@media only screen and (max-width: 750px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+#first h1{
+    color: black;
+}
+
+#web{
+    color: #c94444;
+    font-family: "Past";
+    font-size: 3.5em;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+#pop{
+	color: #000; !important
+    font-family: "Past";
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.red, #red1{
+	color: #c94444;
+}
+
+#red1{
+	font-size: 2em;
+}
+
+#first h2{
+    padding-bottom: 1rem;
+    color: black;
+}
+
+#project-description{
+    font-size: 1.5em;
+}
+
+#about-proj p{
+	padding-top: 1.5em;
+    font-size: 1em;
+}
+
+.btn-default{
+    cursor: pointer;
+}
+
+.btn-default:hover {
+            animation: shake 0.3s ease-out;
+        }
+  
+@keyframes shake {
+            0% {
+                transform: skewX(-10deg);
+            }
+  
+            25% {
+                transform: skewX(10deg);
+            }
+  
+            50% {
+                transform: skewX(-10deg);
+            }
+  
+            75% {
+                transform: skewX(10deg);
+            }
+  
+            100% {
+                transform: skewX(-10deg);
+            }
+        }
+
+.btn-outline-info {
+	border-color: #4f3902;
+}
+
+#btn-themes{
+    background-color: #f5eca8;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 0.16em;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    cursor: pointer;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+#btn-themes:hover, 
+#btn-issues:hover{
+    color: #9aaee2 !important;
+    border-color: #4f3902;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(2px, 3px, 0);
+}
+
+#btn-issues{
+    background-color: #f5eca8;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 0.16em;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    cursor: pointer;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+a, #visible, #visibletwo {
+	outline: none;
+	text-decoration: none;
+	color: #c94444;
+} 
+
+a:hover, #visible:hover, #visibletwo:hover {
+	color: #9aaee2;
+}
+
+#visible, #visibletwo {
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas,
+#article-2-institutions-tab-offcanvas, #article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas,
+#article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	color: #c94444;
+	padding-left:1em;
+	border: solid 1px #bbb9b9;
+	font-weight: bold;
+}
+
+#article-1-tvseries-tab-offcanvas:hover, #article-1-histcharacters-tab-offcanvas:hover,
+#article-1-people-tab-offcanvas:hover, #article-1-events-tab-offcanvas:hover, #article-2-tvseries-tab-offcanvas:hover, 
+#article-2-histcharacters-tab-offcanvas:hover, #article-2-people-tab-offcanvas:hover, #article-2-institutions-tab-offcanvas:hover,
+#article-1-places-tab-offcanvas:hover, #article-1-people-tab-offcanvas-music:hover, #article-1-companies-tab-offcanvas:hover, #article-1-videogames-tab-offcanvas:hover
+#article-2-places-tab-offcanvas:hover, #article-2-people-tab-offcanvas-music:hover, #article-2-companies-tab-offcanvas:hover, #article-2-videogames-tab-offcanvas:hover{
+	color: #9aaee2;
+	padding-left:1em;
+}
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas, 
+#article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas
+#article-2-institutions-tab-offcanvas, #article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	font-weight: bold;
+	font-size: 3vh;
+	border: solid 1px #bbb9b9;
+	padding-right: 1em;
+	padding-left:1em;
+}
+
+#second{
+	margin-top: 2.5em;
+	padding: 6em;
+  	background-image: url("images/past/line.jpg");
+  	background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 5%;
+}
+
+#renaiss-div{
+	margin-top: 5em;
+}
+
+#second p{
+    font-size: 1.5em;
+}
+
+#tap{
+	margin-top: 3em;
+	margin-bottom: -0.5em;
+	font-size: 1em;
+}
+
+#totheintro{
+	margin-top: 2em;
+	font-size: 1.5em;
+}
+
+.sec-buttons{
+	margin-top: -4em;
+}
+
+#third{
+	margin-top: 1.5rem;
+	padding-top: 10em;
+  	background-image: url("images/past/line.jpg");
+  	background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 5%;
+}
+
+.bor{
+	padding: 1em;
+}
+
+.col-10{
+	padding: 3em;
+}
+
+#past{
+	margin-top: 3rem;
+}
+
+.btn-third{
+    background-color: #ffed5e;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+.btn-third:first-child{
+    background-color: #f5eca8;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  	border-style: solid;
+  	border-width: 0.16em;
+  	box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  	cursor: pointer;
+  	transition: all 235ms ease-in-out;
+  	border-bottom-left-radius: 15px 255px;
+  	border-bottom-right-radius: 225px 15px;
+  	border-top-left-radius: 255px 15px;
+  	border-top-right-radius: 15px 225px;
+}
+
+.btn-third:first-child:hover{
+   	color: #9aaee2 !important;
+    border-color: #4f3902;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  	transform: translate3d(2px, 3px, 0);
+}
+
+.btn-third:nth-child(2){
+    background-color: #f5eca8;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  	border-style: solid;
+  	border-width: 0.16em;
+  	box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  	cursor: pointer;
+  	transition: all 235ms ease-in-out;
+  	border-bottom-left-radius: 15px 255px;
+  	border-bottom-right-radius: 225px 15px;
+  	border-top-left-radius: 255px 15px;
+  	border-top-right-radius: 15px 225px;
+}
+
+.btn-third:nth-child(2):hover{
+   color: #9aaee2 !important;
+    border-color: #4f3902;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  	transform: translate3d(2px, 3px, 0);
+}
+
+#third .card-body .btn:first-of-type{    
+    font-size: 1.5em;
+}
+
+/*#third .card-body img{
+    height: 40vh !important;
+}*/
+
+#third p{
+    font-size: 1.5em;
+}
+
+.btn-doc{
+    background-color: #ffed5e;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1em;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+.btn-doc:hover{
+    color: #9aaee2;
+}
+
+#card-past .btn-doc{
+    background-color: #ffed5e;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#card-past .btn-doc:hover{
+    color: #9aaee2;
+}
+
+#card-futurism .btn-doc{
+    background-color: #ffed5e;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#card-futurism .btn-doc:hover{
+    color: #9aaee2;
+}
+
+#card-present .btn-doc{
+    background-color: #ffed5e;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#card-present .btn-doc:hover{
+    color: #9aaee2;
+}
+
+#textpre{
+	margin-bottom: 1.5em;
+}
+
+#card-future .btn-doc{
+    background-color: #ffed5e;
+    color: #c94444;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#card-future .btn-doc:hover{
+    color: #9aaee2;
+}
+
+#fourth{
+	margin-top: 3rem;
+	padding: 8em;
+  	padding-top: 10em;
+  	background-image: url("images/past/line.jpg");
+  	background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 5%;
+}
+
+#card-iss1 .fadedbox{
+    background-color: #e5c9a8;
+    font-size: 1.5em;
+    font-family: "Bold";
+    border: solid;
+}  
+
+#card-iss2 .fadedbox{
+    background-color: #e5c9a8;
+    font-size: 1.5em;
+    font-family: "Bold";
+    border: solid;
+}
+
+#tt1, #tt2{
+	font-size: 1.5em;
+}
+
+#issue-text{
+	font-size: 1.8em;
+}
+
+.card-txt{
+    font-size: 1em;
+}
+
+.see-article{
+    background-color: #f5eca8;
+}
+
+.see-article a{
+    font-size: 0.8em;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.see-article:hover{
+    background-color: #d9cbde;
+}
+
+#fourth .card{
+    margin: 2em;
+    margin-top: 2em;
+}
+
+/*footer*/
+
+footer p, .contacts, #discl, #cp{
+	overflow: auto;
+    font-size: 3vh !important;
+    padding: 3rem 0 0 0 !important;
+}
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
+}
+
+footer p{
+    text-align: left;
+    padding-left: 0;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
+#discl{
+    text-align: center !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+/*fab*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-25vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-35vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-45vh);
+}
+
+.fab-container .fab {
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.fab-container .fab::before {
+    content: "";
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+
+.fab-container .sub-button .material-icons {
+    padding-top: 6px;
+}
+
+.fab{
+    background-image: url("images/icons/tavolozza.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url("images/icons/past.jpg");
+    background-size: 13vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url("images/icons/futurism1.jpg");
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url("images/icons/present.jpg");
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url("images/icons/future.jpg");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*disclaimer*/
+
+.modal-dialog{
+    max-width: 100vh !important;
+}
+
+.modal-body, .btn-secondary{
+	font-family: "Past";
+}
+
+.modal-body p{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+}
+
+.modal-title{
+  font-size: 3.5vh;
+  text-transform: uppercase;
+}
+
+.modal-header, .discl-basic .modal-footer{
+    background-color: #e5c9a8;
+}
+
+.modal-footer .btn{
+    background-color: #D4ADE0;
+    border: none;
+    color: black;
+    background-color: #e5c9a8;
+}
+
+#new{
+	margin-top: 3rem;
+	padding: 2rem;
+	font-family: "Past";
+}
+
+#p, #w , #ten, #c{
+	float: left;
+	line-height: 0.98em;
+	font-size: 6em;
+	border: solid #c94444;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-right: 0.1em;
+	padding-left: 0.1em;
+	margin-right: 0.1em;
+	margin-bottom: -0.1em;
+}
+
+#titart{
+	margin-top: 0.2em;
+	font-size: 3.5em;
+}
+
+#cit, #cit2{
+	border-left: 8px double #722727;
+	border-radius: 40px 0px 0px 40px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+
+/*showtext*/
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+#art2{
+	padding-top: 1.5rem;
+}
+
+#meta{
+	width: 15em;
+	padding-right: 0;
+	margin-top: -4em;
+	margin-right: -4em;
+	background-color: #e5c9a8;
+}
+
+@media only screen and (max-width: 1026px) {
+    #meta {
+        display: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000  !important;
+  background-color: #697e66 !important;
+  font-size: 0.45em;
+}
+
+.accordion-button:hover, .accordion-button:active  {
+  	background-color: #e5c9a8 !important;
+    color:#000 !important; 
+    font-size: 0.45em;
+}
+
+.accordion-button{
+	background-color: #697e66 !important;
+	font-size: 0.45em;
+}
+
+.accordion-button:not(.collapsed)::after {
+	color: #000;
+	font-size: 0.45em;
+}
+
+#box{
+	margin-left: 3.5em;
+}
+
+.card-title{
+	font-size: 1.5em;
+}
+
+#visible, #invisible, #same, #cora, #cit, #mcqueen, #title, #pose, #crown, #back, #far, #visibletwo,
+#guardian, #sametwo, #corrin, #cit2, #backtwo, #auto2, #vin4, #vin5, #vin6, #vin7{
+	font-size: 1.4em;
+}
+
+#same, #sametwo, #invisible, #guardian, #title{
+	text-align: justify;
+	padding: 1.5em;
+	margin-top: -1em;
+	margin-bottom: -1.5em;
+}
+
+/*metadata selector*/
+li:hover{
+    background-color: #f5eca8 !important;
+}
+
+/*music*/
+#article-1-people-tab, #article-1-places-tab, #article-1-videogames-tab, #article-1-companies-tab{
+	color: #c94444;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+#article-2-people-tab, #article-2-places-tab, #article-2-videogames-tab, #article-2-companies-tab{
+	color: #c94444;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+/*tvseries*/
+#article-1-people-tab, #article-1-histcharacters-tab, #article-1-tvseries-tab, #article-1-events-tab{
+ 	color: #c94444;
+ 	font-size:1.3vw;
+ 	padding-left:1em;
+ }
+
+#article-2-people-tab, #article-2-histcharacters-tab, #article-2-tvseries-tab, #article-2-institutions-tab{
+ 	color: #c94444;
+ 	font-size:1.3vw;
+ 	padding-left:1em;
+ }
+ 
+#article-1-people-tab:hover, #article-1-places-tab:hover, #article-1-videogames-tab:hover, #article-1-companies-tab:hover{
+	color: #9aaee2;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+#article-2-people-tab:hover, #article-2-places-tab:hover, #article-2-videogames-tab:hover, #article-2-companies-tab:hover{
+	color: #9aaee2;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+#article-1-people-tab:hover, #article-1-histcharacters-tab:hover, #article-1-tvseries-tab:hover, #article-1-events-tab:hover{
+ 	color: #9aaee2;
+ 	font-size:1.3vw;
+ 	padding-left:1em;
+ }
+
+#article-2-people-tab:hover, #article-2-histcharacters-tab:hover, #article-2-tvseries-tab:hover, #article-2-institutions-tab:hover{
+ 	color: #9aaee2;
+ 	font-size:1.3vw;
+ 	padding-left:1em;
+ }
+ 
+ /*scroll to-top*/
+
+ .to-top{
+ 	background: #697e66;
+ 	position: fixed;
+ 	bottom: 16px;
+ 	right: 32px;
+ 	width: 50px;
+ 	height: 50px;
+ 	border-radius: 50%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	font-size: 2em;
+ 	color: #000;
+ 	opacity: 0;
+ 	pointer-events: none;
+ 	transition: all .4s;
+ 	margin-top: 10 em;
+ 	margin-right: 10em;
+ }
+
+.to-top.active {
+ 	bottom:32px;
+ 	pointer-events: auto;
+ 	opacity:1;
+}
+
+html{
+ 	scroll-behavior: smooth;
+}
+ 
+/*documentation*/
+ 
+#item-1{
+	font-size: 5em;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+h2{
+	font-size: 4em;
+}
+ 
+h3{
+	font-size: 3em;
+}
+
+h4{
+	font-size: 2em;
+}
+
+#sito{
+ 	font-family: "Past";
+ }
+
+/*documentation selector*/
+.nav-link:hover{
+    background-color: #697e66;
+}

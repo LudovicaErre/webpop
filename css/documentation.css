@@ -1,0 +1,111 @@
+/*documentation*/
+
+#navbar-documentation{
+	margin-top: 3em;
+}
+
+#main-background{
+	margin-top: 2.5em;
+}
+
+body{
+     margin-top: 8vh;
+}
+
+#menu-card, #it1, #it1-1, #it1-2, #it1-3, #it1-4, #it1-5, #it1-6, #it1-7{
+    font-size: 2.5vh;
+	color: black;
+}
+
+h6{
+    padding-top: 1rem;
+}
+
+/*img doc*/
+
+#logodoc{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+/*quadretti colori*/
+ .color-square{
+    padding: 3rem; 
+    width: 3rem;
+ 	border:solid;
+ }
+
+ .color-default{
+ 	display: block;
+ }
+
+
+ #yel, #pur{
+ 	margin-left: 28em;
+ 	margin-right: 28em;
+ 	font-size: 0.7em;
+ }
+ 
+/*images*/ 										
+
+.htn{
+	margin-left: 10em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#artinf, #magazine{
+	padding: 3em;
+}
+
+#ata{
+	margin-left: 20em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.dec{
+	width: 35em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#docpast{
+	width: 25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+.sp{
+	width: 15em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+#ham, .wpfut{
+	width: 25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.swt{
+	width: 15em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#lacerba, #futurist2, #futurist3, #futurist4, #magaz2, #magaz3, #magaz4{
+	width: 25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#fum{
+	width: 10em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}

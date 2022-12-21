@@ -1,0 +1,953 @@
+@font-face {
+font-family: "Present";
+src: url("fonts/Mermaid.ttf");
+}
+
+@font-face {
+font-family: "Present-macch";
+src: url("fonts/Oxford.ttf");
+}
+
+/*navbar*/
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link{
+    padding-left: 2em;
+    font-size: 3.5vh;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    background-color: #212529 !important;
+}
+
+#navbar{
+  height: 10vh;
+  position: fixed;
+  font-family: "Present";
+  font-size: 1.7vw;
+}
+
+.dropdown-menu{
+  background-color: #C9C9C9;
+  font-size: 1.3vw;
+}
+
+.dropdown-item:hover{
+    color: #FFDE00 !important;
+    background-color: #A89D8E;
+	font-size: 1.6vw;
+}
+
+/*body*/
+
+p {
+  font-family: "Present-macch";
+  font-size: 1.2em;
+}
+
+.row{
+  font-family: "Present";
+}
+
+body {
+    background-color: #C9C9C9;
+  }
+  
+h2{
+    font-size: 2.7em;
+    font-weight: 600;
+	color: black;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1.2px 1.2px #D1D7DB;
+}
+
+h3{
+	text-shadow: 1.2px 1.2px #D1D7DB;
+	font-size: 2.5em;
+}
+  
+#totheintro{
+	font-size: 2.5em;
+	color: black;
+	-webkit-text-stroke:0.5px black;
+	text-shadow: 1px 1px #D1D7DB;
+}  
+
+#tt1,#tt2{
+	text-shadow: 1px 1px #D1D7DB;
+}
+  
+#first{
+	margin-top: 5rem;
+	padding: 5%;
+  	height:90vh;
+  	background-color: #C9C9C9;
+	text-align:center;
+}
+
+#vinyl, #videogame{
+	font-size:2.5em;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1px 1px #D1D7DB;
+}
+
+#what{
+	text-shadow: 1px 1px #D1D7DB;
+	font-size:4em;
+}
+
+#first h1{
+    color: black;
+}
+
+#web{
+    color: #000000 !important;
+    font-family: "Present";
+    font-size: 18vh;
+	word-wrap: break-word;
+	-webkit-text-stroke:2px #D1D7DB;
+}
+
+#pop{
+	width: 18rem;
+    margin-left: 0rem !important;
+    font-family: "Present";
+    font-size: 18vh;
+	color: #FFDE00;
+    -webkit-text-stroke:2px white;
+    position:relative;
+    letter-spacing: 0.5vw;
+    font-weight: 700;
+	transition: 0.5s;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                 0 3px 0 #ccc, 0 4px 0 #ccc,
+                 0 5px 0 #ccc, 0 6px 0 #ccc,
+                 0 7px 0 #ccc, 0 8px 0 #ccc,
+                 0 9px 0 #ccc, 0 10px 0 #ccc,
+                 0 11px 0 #ccc, 0 12px 0 #ccc,
+                 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+#new{
+	margin-top: 3rem;
+	padding: 2rem;
+	font-family: "Present";
+	font-weight: 900;
+}
+
+#new1{
+	width: 18rem;
+    margin-left: 0rem !important;
+    font-family: "Present";
+    font-size: 8vh;
+	color: #FFDE00;
+    -webkit-text-stroke:2px white;
+    position:relative;
+    letter-spacing: 0.5vw;
+    font-weight: 700;
+	transition: 0.5s;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                 0 3px 0 #ccc, 0 4px 0 #ccc,
+                 0 5px 0 #ccc, 0 6px 0 #ccc,
+                 0 7px 0 #ccc, 0 8px 0 #ccc,
+                 0 9px 0 #ccc, 0 10px 0 #ccc,
+                 0 11px 0 #ccc, 0 12px 0 #ccc,
+                 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.btn-default{
+    cursor: pointer;
+}
+
+.btn-default:hover {
+            animation: shake 0.3s ease-out;
+        }
+  
+@keyframes shake {
+            0% {
+                transform: skewX(-10deg);
+            }
+  
+            25% {
+                transform: skewX(10deg);
+            }
+  
+            50% {
+                transform: skewX(-10deg);
+            }
+  
+            75% {
+                transform: skewX(10deg);
+            }
+  
+            100% {
+                transform: skewX(-10deg);
+            }
+        }
+
+#first h2{
+    font-size: 5vh;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+#project-description{
+    font-size: 3vh;
+}
+
+
+
+#about-proj p{
+	color: white;
+	font-size: 1.3em;
+	text-shadow: 1.2px 1.2px #6D6B60;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	text-align: left;
+	margin-left:1rem;
+}
+
+#whatis{
+	margin-left:1rem;
+}
+
+
+#btn-themes{
+    background-color: #C9C9C9;
+    color: #91877A;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+#btn-themes:hover, 
+#btn-issues:hover{
+    color: #FFDE00 !important;
+	-webkit-text-stroke:0.5px white;
+}
+
+#btn-issues{
+    background-color: #C9C9C9;
+    color: #91877A;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    border-style: none; 
+}
+
+a, #visible, #visibletwo {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, #visible:hover, #visibletwo:hover{
+	color: #91877A;
+}
+
+#visible, #visibletwo{
+	margin-top: 1rem;
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+#second{
+  	min-height:100vh;
+  	padding: 10%;
+	background-image: url("images/icons/presentsfondo.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+#third{
+  	min-height:100vh;
+  	padding: 5.5%;
+	background-color: #A89D8E;
+}
+
+.btn-third{
+    background-color: #C9C9C9;
+    color: #91877A;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+.btn-third:first-child{
+    background-color: #C9C9C9;
+    color: #91877A;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+.btn-third:first-child:hover{
+   color: #FFDE00 !important;
+   -webkit-text-stroke:0.5px white;
+}
+
+.btn-third:nth-child(2){
+    background-color: #C9C9C9;
+    color: #91877A;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+.btn-third:nth-child(2):hover{
+   color: #FFDE00 !important;
+   -webkit-text-stroke:0.5px white;
+}
+
+#third .card-body .btn:first-of-type{    
+    font-size: 3vh;
+}
+
+#third .card-body img{
+    height: 40vh !important;
+}
+
+#third p{
+    font-size: 2.5vh;
+}
+
+#card-past .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-past{
+	border-style: none;
+    border: none;
+}
+
+.btn-doc:hover{
+    color: #C9C9C9;
+}
+
+.theme{
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-bottom:3em;
+	background: #fff;
+  	overflow: hidden;
+  	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  	border-radius: 5px;
+  	-webkit-transition:all .9s ease; 
+  	-moz-transition:all .9s ease; 
+  	-o-transition:all .9s ease;
+  	-ms-transition:all .9s ease;
+}
+
+.theme:hover{
+	opacity: 0.7;
+  	-webkit-transform:scale(1.15);
+  	-moz-transform:scale(1.15);
+  	-ms-transform:scale(1.15);
+  	-o-transform:scale(1.15);
+  	transform:scale(1.15);
+}
+
+#card-futurism .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-futurism{
+	border-style: none;
+    border: none;
+}
+
+#card-present .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-present{
+	border-style: none;
+    border: none;
+}
+
+#card-future .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-future{
+	border-style: none;
+    border: none;
+}
+
+#fourth{
+	padding:5%;
+  	height:auto;
+  	background-color: #C9C9C9;
+}
+
+#card-iss1 .fadedbox{
+    background-color: #A89D8E;
+    font-size: 4vh;
+    font-family: "Present";
+    border: solid;
+}  
+
+#card-iss2 .fadedbox{
+    background-color: #A89D8E;
+    font-size: 4vh;
+    font-family: "Present";
+    border: solid;
+}
+
+.card-txt{
+    font-size: 2.5vh;
+}
+
+.see-article{
+    background-color: #C9C9C9;
+}
+
+.see-article a{
+    font-size: 2.5vh;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.see-article:hover{
+    background-color: #FFDE00;
+}
+
+#fourth .card{
+    margin: 2em;
+    margin-top: 2em;
+}
+
+/*footer*/
+
+footer p, .contacts, #discl, #cp{
+	overflow: auto;
+    font-size: 2.5vh !important;
+    padding: 3rem 0 0 0 !important;
+}
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
+}
+
+footer p{
+    text-align: left;
+    padding-left: 0;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
+#discl{
+    text-align: center !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+
+
+/*fab*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-25vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-35vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-45vh);
+}
+
+.fab-container .fab {
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.fab-container .fab::before {
+    content: " ";
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+
+.fab-container .sub-button .material-icons {
+    padding-top: 6px;
+}
+
+.fab-content{
+    background: url('images/icons/tavolozza.png');
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url('images/icons/past.jpg');
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url('images/icons/futurism1.jpg');
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url('images/icons/present.jpg');
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url('images/icons/future.jpg');
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*disclaimer*/
+
+.modal-dialog{
+    max-width: 100vh !important;
+}
+
+.modal-body{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+	background-color: #C9C9C9;
+}
+
+.modal-title{
+  font-family: "Present";
+  font-size: 3.5vh;
+  text-transform: uppercase;
+}
+
+.modal-header, .modal-footer{
+    background-color: #A89D8E;
+}
+
+.modal-footer .btn{
+    background-color: #C9C9C9;
+    border: none;
+    color: black;
+}
+
+.modal-footer .btn:hover{
+	color:white;
+}
+
+
+#box{
+	margin-left: 3em;
+}
+
+
+.mb-auto{
+	margin-top: 1em;
+	font-size: 1.5vw;
+}
+
+#auto2{
+	margin-top: 0em;
+}
+
+#citation, #citationtwo{
+	font-size: 1vw;
+	padding: 0.5em;
+}
+
+#cit, #cit2{
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	border-left: 3px solid white;
+  	height: 55px;
+  	font-size: 1.5vw;
+	text-align: left;
+}
+
+i {
+	margin-left: 1em;
+}
+
+/*showtext*/
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+
+
+#meta{
+	width: 15em;
+	padding-right: 2em;
+	margin-top: 3.5em;
+	margin-right: 2em;
+}
+
+@media only screen and (max-width: 1026px) {
+    #meta {
+        display: none;
+    }
+}
+
+/*METADATA VIEWER*/
+.metad, #metadata-style {
+    background-color: #A89D8E;
+	color: #FFDE00;
+}
+
+.accordion-item{
+    background-color: #A89D8E; 
+    border:1px solid #A89D8E; 
+	color: #FFDE00;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #A89D8E;
+    color: #FFDE00;
+    box-shadow: #C9C9C9 !important;
+}
+
+.accordion-button:focus{
+    border-color: #FFDE00;
+    box-shadow: #FFDE00 !important;
+}
+
+.accordion-button::after:active{
+    color: #FFDE00;
+    box-shadow: #FFDE00 !important;
+}
+
+.accordion-button{
+    font-weight: 900;	
+	-webkit-text-stroke:0.5px #FFDE00;
+	color: #FFDE00;
+	background-color: #A89D8E; 
+}
+
+#metadata .nav-link{
+    color: #FFDE00 !important;
+}
+
+#metadata .nav-link:hover, #metadata .nav-link.active{
+    color: black !important;
+    background-color: #FFDE00 !important;
+}
+
+
+/*METADATA highlight*/
+#metadata .tab-content li:hover{
+    color: black;
+    background-color: #FFDE00 !important;
+}
+
+.tab-pane li:hover{
+    color: black;
+    background-color: #FFDE00 !important;
+}
+
+.nav-tabs li:hover{
+    color: black;
+    background-color: #FFDE00 !important;
+}
+
+#metadata .offcanvas-header{
+    background-color: #C9C9C9 !important;
+}
+
+.nav-link:hover{
+	color: black;
+    background-color: #FFDE00 !important;
+}
+
+#meta{
+	background-color: #C9C9C9 !important;
+}
+
+/*music*/
+#article-1-people-tab, #article-1-places-tab, #article-1-videogames-tab, #article-1-companies-tab{
+	color: black;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+
+#article-2-people-tab, #article-2-places-tab, #article-2-videogames-tab, #article-2-companies-tab{
+	color: black;
+	font-size: 1.3vw;
+	padding-left:1em;
+}
+
+/*tvseries*/
+ #article-1-people-tab, #article-1-histcharacters-tab, #article-1-tvseries-tab, #article-1-events-tab{
+ 	color: black;
+ 	font-size: 1.3vw;
+	padding-left:1em;
+ }
+
+ #article-2-people-tab, #article-2-histcharacters-tab, #article-2-tvseries-tab, #article-2-institutions-tab{
+ 	color: black;
+ 	font-size: 1.3vw;
+	padding-left:1em;
+ }
+ 
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas,
+#article-2-institutions-tab-offcanvas, #article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas,
+#article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	color: black;
+	padding-left:1em;
+	border: solid 1px #bbb9b9;
+	font-weight: bold;
+	font-size: 1.3vw;
+
+}
+
+#article-1-tvseries-tab-offcanvas:hover, #article-1-histcharacters-tab-offcanvas:hover,
+#article-1-people-tab-offcanvas:hover, #article-1-events-tab-offcanvas:hover, #article-2-tvseries-tab-offcanvas:hover, 
+#article-2-histcharacters-tab-offcanvas:hover, #article-2-people-tab-offcanvas:hover, #article-2-institutions-tab-offcanvas:hover,
+#article-1-places-tab-offcanvas:hover, #article-1-people-tab-offcanvas-music:hover, #article-1-companies-tab-offcanvas:hover, #article-1-videogames-tab-offcanvas:hover
+#article-2-places-tab-offcanvas:hover, #article-2-people-tab-offcanvas-music:hover, #article-2-companies-tab-offcanvas:hover, #article-2-videogames-tab-offcanvas:hover{
+	color: black;
+	padding-left:1em;
+}
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas, 
+#article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas
+#article-2-institutions-tab-offcanvas, #article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	font-weight: bold;
+	font-size: 1.3vw;
+	border: solid 1px #bbb9b9;
+	padding-left: 1em;
+}
+
+#it{
+	-webkit-text-stroke:1px black;
+}
+
+#meta{
+	margin-top: -5em;
+	margin-right: -4em;
+ 	padding-right: 0;
+}
+
+/*scroll to-top*/
+
+.to-top{
+	background: grey;
+	position: fixed;
+	bottom: 16px;
+	right: 32px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:32px;
+	color: #1f1f1f;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+	margin-top: 10 em;
+	margin-right: 12em;
+}
+
+.fas{
+	margin-right: 1em;
+}
+
+.to-top.active {
+	bottom:32px;
+	pointer-events: auto;
+	opacity:1;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#documentation{
+	color: #FFDE00;
+	width: 1.5em;
+    margin-left: 0rem !important;
+    font-family: "Present";
+    font-size: 1.2em;
+    -webkit-text-stroke: 0.3px white;
+    position:relative;
+    letter-spacing: 0.5vw;
+	transition: 0.5s;
+	text-shadow: 0 0.5px 0 #FFDE00, 0 1px 0 #FFDE00,
+                 0 1.5px 0 #FFDE00, 0 2px 0 #FFDE00,
+                 0 2.5px 0 #ccc, 0 3px 0 #ccc,
+                 0 3px 0 #ccc, 0 4px 0 #ccc,
+                 0 3.5px 0 #ccc, 0 5px 0 #ccc,
+                 0 5px 0 #ccc, 0 6px 0 #ccc,
+                 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*allineamento bottoni full doc e check the issues*/
+.d-grid{
+	margin-right: 6rem;
+	margin-left: 1.5em;
+}
+
+/*documentation*/
+
+li{
+	font-size:1.1em;
+}
+
+#disclaimer li{
+	font-family: "Present";
+}
+
+#sito li{
+	font-family: "Present-macch";
+}
+
+
+h1{
+	font-size:3em;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1.2px 1.2px #D1D7DB;
+}
+
+h4{
+	font-size:2em;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1.2px 1.2px #D1D7DB;
+}

@@ -1,0 +1,918 @@
+
+@font-face {
+font-family: "Futurism";
+src: url("fonts/Cinematografica-Regular.ttf");
+}
+
+@font-face {
+font-family: "Futurism-macch";
+src: url("fonts/Leorio.ttf");
+}
+
+
+/*navbar*/
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link{
+    padding-left: 2em;
+    font-size: 5vh;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    background-color: #212529 !important;
+}
+
+#navbar{
+  height: 10vh;
+  position: fixed;
+  font-family: "Futurism";
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.dropdown-menu{
+  background-color: #F4F2DC;
+  font-size: 2vw;
+}
+
+.dropdown-item:hover{
+    color: black !important;
+    background-color: #D7D8BF;
+	font-size: 2.3vw;
+}
+
+#enable-past, #enable-future {
+	font-family: "Futurism-macch";
+}
+
+.col {
+	font-family: "Futurism-macch";
+}
+
+/*body*/
+
+p{
+  font-family: "Futurism-macch";
+}
+
+.row{
+  font-family: "Futurism";
+}
+
+body{
+    background-color: #F4F2DC;
+  }
+  
+h2, #offcanvasRightLabel{
+    font-size: 3.5em;
+	text-shadow: 4px 4px #C1BFAC;
+}
+
+h1{
+	font-size: 4em;
+	text-shadow: 4px 4px #C1BFAC;
+}
+
+
+h5, #totheintro{
+	font-size: 2em;
+}
+
+#tt1, #tt2{
+	font-size: 1.5em;
+	text-shadow: 1px 1px #C1BFAC;
+}
+  
+#first{
+	margin-top: 5rem;
+	padding: 5%;
+  	height:90vh;
+  	background-color: #F4F2DC;
+  	text-align: center;
+}
+
+#first h1{
+    color: black;
+}
+
+#web, #what{
+    color: #000000 !important;
+    font-family: "Futurism";
+    font-size: 18vh;
+	text-shadow: 4px 4px #C1BFAC;
+    word-break: break-all;
+    height: 1.2em;
+    width:0%;
+    overflow: hidden;
+    animation:t 5s linear infinite;
+	content:" ";
+    display:inline-block;
+}
+
+@keyframes t{
+  50%,55% {width:100%}
+}
+
+.btn-default{
+    cursor: pointer;
+}
+
+.btn-default:hover {
+            animation: shake 0.3s ease-out;
+        }
+  
+@keyframes shake {
+            0% {
+                transform: skewX(-10deg);
+            }
+  
+            25% {
+                transform: skewX(10deg);
+            }
+  
+            50% {
+                transform: skewX(-10deg);
+            }
+  
+            75% {
+                transform: skewX(10deg);
+            }
+  
+            100% {
+                transform: skewX(-10deg);
+            }
+        }
+
+
+#first h2{
+    font-size: 5vh;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+#project-description{
+    font-size: 3vh;
+}
+
+#about-proj p{
+    font-size: 3.5vh;
+}
+
+#btn-themes{
+    background-color: #D7D8BF;
+    color: grey;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+#btn-themes:hover, 
+#btn-issues:hover{
+    color: black !important;
+}
+
+#btn-issues{
+    background-color: #D7D8BF;
+    color: grey;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    border-style: none; 
+}
+
+a, #visible, #visibletwo {
+  outline: none;
+  text-decoration: none;
+  color: #BCBB96;
+}
+
+a:hover, #visible:hover, #visibletwo:hover{
+	color: #a5a5a4;
+}
+
+#visible, #visibletwo{
+	margin-top: 1rem;
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+
+#second{
+  	min-height:100vh;
+  	padding: 10%;
+  	background-color: #F4F2DC;
+}
+
+#second p{
+    font-size: 2.5vh;
+}
+
+#third{
+  	min-height:100vh;
+  	padding: 5.5%;
+  	background-color: #F4F2DC;
+}
+
+.btn-third{
+    background-color: #D7D8BF;
+    color: grey;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+.btn-third:first-child{
+    background-color: #D7D8BF;
+    color: grey;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+.btn-third:first-child:hover{
+   color: black !important;
+}
+
+.btn-third:nth-child(2){
+    background-color: #D7D8BF;
+    color: grey;
+    letter-spacing: 0.1rem;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+}
+
+.btn-third:nth-child(2):hover{
+   color: black !important;
+}
+
+#third .card-body .btn:first-of-type{    
+    font-size: 3vh;
+}
+
+#third .card-body img{
+    height: 40vh !important;
+}
+
+#third p{
+    font-size: 2.5vh;
+}
+
+#card-past .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-past{
+	border-style: none;
+    border: none;
+}
+
+.btn-doc:hover{
+    color: #C9C9C9;
+}
+
+.theme{
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-bottom:3em;
+	background: #fff;
+  	overflow: hidden;
+  	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  	border-radius: 5px;
+  	-webkit-transition:all .9s ease; 
+  	-moz-transition:all .9s ease; 
+  	-o-transition:all .9s ease;
+  	-ms-transition:all .9s ease;
+}
+
+.theme:hover{
+	opacity: 0.7;
+  	-webkit-transform:scale(1.15);
+  	-moz-transform:scale(1.15);
+  	-ms-transform:scale(1.15);
+  	-o-transform:scale(1.15);
+  	transform:scale(1.15);
+}
+
+#card-futurism .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-futurism{
+	border-style: none;
+    border: none;
+}
+
+#card-present .btn-doc{
+    background-color: #ffed5e;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-present{
+	border-style: none;
+    border: none;
+}
+
+#card-future .btn-doc{
+    background-color: #F4F2DC;
+    color: #D4ADE0;
+    letter-spacing: 0.1rem;
+    font-size: 2vh;
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+#enable-future{
+	border-style: none;
+    border: none;
+}
+
+#fourth{
+	padding:5%;
+  	height:auto;
+  	background-color: #F4F2DC;
+}
+
+#card-iss1 .fadedbox{
+    background-color: #E8E8E8;
+    font-size: 4vh;
+    font-family: "Futurism";
+    border: solid;
+}  
+
+#card-iss2 .fadedbox{
+    background-color: #E8E8E8;
+    font-size: 4vh;
+    font-family: "Futurism";
+    border: solid;
+}
+
+.card-txt{
+    font-size: 3vh;
+}
+
+.see-article{
+    background-color: #F4F2DC;
+}
+
+.see-article a{
+    font-size: 3vh;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.see-article:hover{
+    background-color: #D7D8BF;
+}
+
+#fourth .card{
+    margin: 2em;
+    margin-top: 2em;
+}
+
+/*footer*/
+
+footer p, .contacts, #discl, #cp{
+	overflow: auto;
+    font-size: 2.5vh !important;
+    padding: 3rem 0 0 0 !important;
+}
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
+}
+
+footer p{
+    text-align: left;
+    padding-left: 0;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.col-md-3{
+	font-family: "Futurism-macch";
+}
+
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
+#discl{
+    text-align: center !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+/*fab*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-25vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-35vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-45vh);
+}
+
+.fab-container .fab {
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.fab-container .fab::before {
+    content: " ";
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+
+.fab-container .sub-button .material-icons {
+    padding-top: 6px;
+}
+
+.fab-content{
+    background: url('images/icons/tavolozza.png');
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url('images/icons/past.jpg');
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url('images/icons/futurism1.jpg');
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url('images/icons/present.jpg');
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url('images/icons/future.jpg');
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*disclaimer*/
+
+.modal-dialog{
+    max-width: 100vh !important;
+}
+
+.modal-body{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+}
+
+.modal-title{
+  font-family: "Futurism";
+  font-size: 4vh;
+  text-transform: uppercase;
+}
+
+.modal-header, .modal-footer{
+    background-color: #F4F2DC;
+}
+
+.modal-footer .btn{
+    background-color: #F4F2DC;
+    border: solid 1px black;
+    color: black;
+}
+
+.modal-footer .btn:hover{
+	color:white;
+}
+
+
+#art2{
+	padding-top: 1.5rem;
+}
+
+
+#new{
+	margin-top: 3rem;
+	padding: 2rem;
+	font-family: "Futurism";
+	color: #000000 !important;
+	text-shadow: 4px 4px #C1BFAC;
+}
+
+#new1, #what{
+	font-size: 12vh;
+}
+
+#meta{
+	width: 15em;
+	padding-right: 2em;
+	margin-top: 3.5em;
+	margin-right: 2em;
+}
+
+#box{
+	margin-left: 3em;
+}
+
+
+.mb-auto{
+	margin-top: 1em;
+	font-size: 1.5vw;
+}
+
+#auto2{
+	margin-top: 0em;
+}
+
+#citation, #citationtwo{
+	font-size: 1vw;
+	padding: 0.5em;
+}
+
+#cit, #cit2{
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	border-left: 3px solid #848474;
+  	height: 55px;
+  	font-size: 1.5vw;
+}
+
+i {
+	margin-left: 1em;
+}
+
+/*showtext*/
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+@media only screen and (max-width: 1026px) {
+    #meta {
+        display: none;
+    }
+}
+
+/*METADATA VIEWER*/
+.metad, #metadata-style {
+    background-color: #F4F2DC;
+}
+
+#meta{
+	background-color:#D7D8BF; 
+}
+
+.accordion-header:not(.collapsed){
+    border: #F4F2DC;
+	background-color: #D7D8BF !important;
+}
+
+.accordion-flush .accordion-item:active{
+    border-right-color:
+	#F4F2DC;
+}
+
+.accordion-button{
+    border-color: #D7D8BF;
+    box-shadow: #D7D8BF;
+	background-color: #F4F2DC; 
+}
+
+.accordion-item{
+    background-color: #F4F2DC;
+    border: #D7D8BF;
+}
+
+.accordion-button:not(.collapsed){
+	box-shadow: #D7D8BF !important;
+    color: #212529;
+	background-color: #D7D8BF; 
+}
+
+.accordion-button:focus{
+	border-color: #D7D8BF;
+    box-shadow: #D7D8BF !important;
+}
+
+.accordion-button::after:active{
+    color: #212529;
+    box-shadow: #D7D8BF !important;
+}
+
+#metadata .nav-link{
+    color: #212529 !important;
+}
+
+#metadata .nav-link:hover, #metadata .nav-link.active{
+    color: #212529 !important;
+    background-color: #D7D8BF !important;
+}
+
+#metadata .tab-content li:hover{
+    color: #212529;
+    background-color: #D7D8BF !important;
+}
+
+.tab-pane li:hover{
+    color: #212529;
+    background-color: #D7D8BF !important;
+}
+
+#metadata .offcanvas-header{
+    background-color: #D7D8BF !important;
+}
+
+.nav-link:hover{
+	color: #212529;
+    background-color: #D7D8BF !important;
+}
+
+.accordion{
+	font-family: "Futurism-macch";
+}
+
+#metadata{
+	font-size:1.3vw;
+}
+
+/*music*/
+#article-1-people-tab, #article-1-places-tab, #article-1-videogames-tab, #article-1-companies-tab{
+	color: #212529;
+	font-size:1.3vw;
+	padding-left:1em;
+}
+
+
+#article-2-people-tab, #article-2-places-tab, #article-2-videogames-tab, #article-2-companies-tab{
+	color: #212529;
+	font-size: 1.3vw;
+	padding-left:1em;
+}
+
+/*tvseries*/
+ #article-1-people-tab, #article-1-histcharacters-tab, #article-1-tvseries-tab, #article-1-events-tab{
+ 	color: #212529;
+ 	font-size: 1.3vw;
+	padding-left:1em;
+ }
+
+ #article-2-people-tab, #article-2-histcharacters-tab, #article-2-tvseries-tab, #article-2-institutions-tab{
+ 	color: #212529;
+ 	font-size: 1.3vw;
+	padding-left:1em;
+ }
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas,
+#article-2-institutions-tab-offcanvas, #article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas,
+#article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	color: #212529;
+	padding-left:1em;
+	border: solid 1px #bbb9b9;
+	font-weight: bold;
+	font-size: 1.3vw;
+
+}
+
+#article-1-tvseries-tab-offcanvas:hover, #article-1-histcharacters-tab-offcanvas:hover,
+#article-1-people-tab-offcanvas:hover, #article-1-events-tab-offcanvas:hover, #article-2-tvseries-tab-offcanvas:hover, 
+#article-2-histcharacters-tab-offcanvas:hover, #article-2-people-tab-offcanvas:hover, #article-2-institutions-tab-offcanvas:hover,
+#article-1-places-tab-offcanvas:hover, #article-1-people-tab-offcanvas-music:hover, #article-1-companies-tab-offcanvas:hover, #article-1-videogames-tab-offcanvas:hover
+#article-2-places-tab-offcanvas:hover, #article-2-people-tab-offcanvas-music:hover, #article-2-companies-tab-offcanvas:hover, #article-2-videogames-tab-offcanvas:hover{
+	color: #212529;
+	padding-left:1em;
+}
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas, 
+#article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas
+#article-2-institutions-tab-offcanvas, #article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	font-weight: bold;
+	font-size: 1.3vw;
+	border: solid 1px #bbb9b9;
+	padding-right: 1em;
+	padding-left:1em;
+}
+
+
+#meta{
+	margin-top: -5em;
+	margin-right: -4em;
+ 	padding-right: 0;
+}
+
+/*documentation selector*/
+.nav-link:hover{
+    background-color: #D7D8BF !important;
+}
+
+/*scroll to-top*/
+
+.to-top{
+	background: grey;
+	position: fixed;
+	bottom: 16px;
+	right: 32px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:32px;
+	color: #1f1f1f;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+	margin-top: 10 em;
+	margin-right: 12em;
+}
+
+.fas{
+	margin-right: 1em;
+}
+
+.to-top.active {
+	bottom:32px;
+	pointer-events: auto;
+	opacity:1;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#documentation{
+    color: black !important;
+    font-family: "Futurism";
+    font-size: 2em;
+	text-shadow: 0 0.5px 0 black, 0 0.5px 0 black,
+                 0 1.5px 0 #C1BFAC, 0 2px 0 #C1BFAC,
+                 0 2.5px 0 #C1BFAC, 0 3px 0 #C1BFAC,
+                 0 3px 0 #C1BFAC, 0 4px 0 #C1BFAC;
+    height: 1.2em;
+    width:2em;
+	letter-spacing: 1vw;
+	color: #000000 !important;
+    font-family: "Futurism";
+	text-shadow: 4px 4px #C1BFAC;
+    word-break: break-all;
+    height: 1.2em;
+    width:0%;
+    overflow: hidden;
+    animation:t 5s linear infinite;
+	content:" ";
+    display:inline-block;
+}
+
+/*allineamento bottoni full doc e check the issues*/
+.d-grid{
+	margin-right: 2.2rem;
+	margin-left: 1.5em;
+}
+
+/*documentation*/
+
+#threeway li{
+	font-family: "Futurism-macch";
+	font-weight: Bold;
+}
+
+h5{
+	letter-spacing:0.2vh;
+	text-shadow: 1px 1px #C1BFAC;
+	font-size:3em;
+}
+
+h3{
+	letter-spacing:0.2vh;
+	text-shadow: 1px 1px #C1BFAC;
+	font-size:2em;
+	font-family: "Futurism-macch"
+}
+
+#disclaimer li{
+	font-family: "Futurism-macch";
+}
+
+#sito li{
+	font-family: "Futurism-macch";
+}
+
+h4{
+	font-size:2.5em;
+}
