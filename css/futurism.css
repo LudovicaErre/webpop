@@ -526,35 +526,35 @@ footer p{
 }
 
 .fab-content{
-    background: url('images/icons/tavolozza.png');
+    background: url('../images/icons/tavolozza.png');
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center center !important;
 }
 
 .sub-button:nth-child(2){
-    background: url('images/icons/past.jpg');
+    background: url('../images/icons/past.jpg');
     background-size: 20vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(3){
-    background: url('images/icons/futurism1.jpg');
+    background: url('../images/icons/futurism1.jpg');
     background-size: 25vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(4){
-    background: url('images/icons/present.jpg');
+    background: url('../images/icons/present.jpg');
     background-size: 20vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(5){
-    background: url('images/icons/future.jpg');
+    background: url('../images/icons/future.jpg');
     background-size: 12vh;
     background-repeat: no-repeat;
     background-position: right;
