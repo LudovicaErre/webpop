@@ -77,7 +77,7 @@ hr{
 #first{
     padding: 10em;
     text-align: center;
-    background-image: url("images/past/manuscript.png");
+    background-image: url("../images/past/manuscript.png");
     background-repeat: no-repeat;
     background-size: 20em;
     background-position: 2em 5em;
@@ -259,7 +259,7 @@ a:hover, #visible:hover, #visibletwo:hover {
 #second{
 	margin-top: 2.5em;
 	padding: 6em;
-  	background-image: url("images/past/line.jpg");
+  	background-image: url("../images/past/line.jpg");
   	background-repeat: no-repeat;
     background-size: 70%;
     background-position: 50% 5%;
@@ -291,7 +291,7 @@ a:hover, #visible:hover, #visibletwo:hover {
 #third{
 	margin-top: 1.5rem;
 	padding-top: 10em;
-  	background-image: url("images/past/line.jpg");
+  	background-image: url("../images/past/line.jpg");
   	background-repeat: no-repeat;
     background-size: 70%;
     background-position: 50% 5%;
@@ -468,7 +468,7 @@ a:hover, #visible:hover, #visibletwo:hover {
 	margin-top: 3rem;
 	padding: 8em;
   	padding-top: 10em;
-  	background-image: url("images/past/line.jpg");
+  	background-image: url("../images/past/line.jpg");
   	background-repeat: no-repeat;
     background-size: 70%;
     background-position: 50% 5%;
@@ -616,35 +616,35 @@ footer p{
 }
 
 .fab{
-    background-image: url("images/icons/tavolozza.png");
+    background-image: url("../images/icons/tavolozza.png");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center center !important;
 }
 
 .sub-button:nth-child(2){
-    background: url("images/icons/past.jpg");
+    background: url("../images/icons/past.jpg");
     background-size: 13vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(3){
-    background: url("images/icons/futurism1.jpg");
+    background: url("../images/icons/futurism1.jpg");
     background-size: 20vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(4){
-    background: url("images/icons/present.jpg");
+    background: url("../images/icons/present.jpg");
     background-size: 20vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(5){
-    background: url("images/icons/future.jpg");
+    background: url("../images/icons/future.jpg");
     background-size: 12vh;
     background-repeat: no-repeat;
     background-position: right;
