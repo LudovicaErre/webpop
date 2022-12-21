@@ -1,21 +1,21 @@
 @font-face {
 font-family: "Regular";
-src: url("fonts/ChewieDEMO-Regular.otf");
+src: url("../fonts/ChewieDEMO-Regular.otf");
 }
 
 @font-face {
 font-family: "Bold";
-src: url("fonts/ChewieDEMO-Bold.otf");
+src: url("../fonts/ChewieDEMO-Bold.otf");
 }
 
 @font-face {
 font-family: "Pop";
-src: url("fonts/Simplicity-Regular-A.ttf");
+src: url("../fonts/Simplicity-Regular-A.ttf");
 }
 
 @font-face {
 font-family: "Web";
-src: url("fonts/Blacklightning.ttf");
+src: url("../fonts/Blacklightning.ttf");
 }
 
 /*navbar*/
