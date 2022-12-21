@@ -1,11 +1,11 @@
 @font-face {
 font-family: "Present";
-src: url("fonts/Mermaid.ttf");
+src: url("../fonts/Mermaid.ttf");
 }
 
 @font-face {
 font-family: "Present-macch";
-src: url("fonts/Oxford.ttf");
+src: url("../fonts/Oxford.ttf");
 }
 
 /*navbar*/
@@ -280,7 +280,7 @@ a:hover, #visible:hover, #visibletwo:hover{
 #second{
   	min-height:100vh;
   	padding: 10%;
-	background-image: url("images/icons/presentsfondo.jpg");
+	background-image: url("../images/icons/presentsfondo.jpg");
     background-position: center;
 	background-repeat: no-repeat;
 }
@@ -594,35 +594,35 @@ footer p{
 }
 
 .fab-content{
-    background: url('images/icons/tavolozza.png');
+    background: url('../images/icons/tavolozza.png');
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center center !important;
 }
 
 .sub-button:nth-child(2){
-    background: url('images/icons/past.jpg');
+    background: url('../images/icons/past.jpg');
     background-size: 20vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(3){
-    background: url('images/icons/futurism1.jpg');
+    background: url('../images/icons/futurism1.jpg');
     background-size: 25vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(4){
-    background: url('images/icons/present.jpg');
+    background: url('../images/icons/present.jpg');
     background-size: 20vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(5){
-    background: url('images/icons/future.jpg');
+    background: url('../images/icons/future.jpg');
     background-size: 12vh;
     background-repeat: no-repeat;
     background-position: right;
