@@ -620,10 +620,10 @@ li{
 }
 
 .accordion-button::after {
-	background-image: url("images/WebPop.png");
+	background-image: url("../images/WebPop.png");
 }
 .accordion-button:not(.collapsed)::after {
-	background-image: url("images/WebPop.png");
+	background-image: url("../images/WebPop.png");
 	color: #000;
 }
 
