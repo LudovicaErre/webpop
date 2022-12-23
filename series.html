@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- script font awesome -->
+ 		<script src="https://kit.fontawesome.com/41743fb22f.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <title>TV Series</title>
+    <link rel="icon" href="images/logodoc.jpg" type="image/png">
+
+  </head>
+  
+  <body>
+    <!-- MODALS -->
+    <div class="future"></div>
+
+        <!-- disclaimer start -->
+        <div class="modal" tabindex="-1" id="disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                   <div class="modal-body p-4">
+                <p>
+                     The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "<a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information Modeling and Web Technologies</a>" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a>.
+                </p>
+               <p>
+                     The documents contained in this web site have been selected for their length and complexity. Their publication here is not intended to be an alternative or replace their original locations:
+                </p>
+                  <ul>
+                      <li><a href="https://www.bbc.com/" target="_blank">BBC</a>: <a href="https://www.bbc.com/culture/article/20211022-historical-drama-and-tvs-reckoning-with-the-past" target="_blank">Historical drama and TV's reckoning with the past</a></li>
+                      <li><a href="https://www.theguardian.com" trarget="_blank">The Guardian</a>: <a href="https://www.theguardian.com/tv-and-radio/2021/jun/27/rewriting-history-how-imperfect-costume-dramas-make-the-past-relevant" target="_blank">Rewriting history: how imperfect costume dramas make the past relevant</a></li>
+                      <li><a href="https://www.themanual.com/" target="_blank">The Manual</a>: <a href="https://www.themanual.com/culture/why-vinyl-is-coming-back/" target="_blank">Why Vinyl Records Are Making a Comeback in 2022</a></li>
+                      <li><a href="https://www.theguardian.com" target="_blank">The Guardian</a>: <a href="https://www.theguardian.com/games/2022/jul/25/vinyl-fantasy-how-gamers-fell-in-love-with-records" target="_blank">Vinyl fantasy: how gamers fell in love with records</a></li>
+                  </ul>
+                <p>
+                     All copyrights and related rights on the content remain with their original owners.<br>
+ 		   			 All copyright on the typographic and layout choices are 2022 © WebPop.					
+                 </p> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
+
+ <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 nav-fixed fixed-top" id="navbar">
+            <div class="container-fluid">
+            <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html"><img src="images/WebPop.png"></a>
+              
+          <!-- togglers start -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#metadata" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
+            About the articles
+          </button>
+          <!-- togglers end  -->
+          
+          <!-- offcanvas start  -->
+          <div class="offcanvas offcanvas-end overflow-auto" tabindex="-1" id="metadata" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">About the articles</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="metadata-style">
+             <!-- accordion start -->
+             <div class="accordion accordion-flush" id="accordionFlushOffCanvas">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="off-flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseOne" aria-expanded="false" aria-controls="off-flush-collapseOne">
+					Historical drama and TV's reckoning with the past
+                  </button>
+                </h2>
+                <div id="off-flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body">
+                      <!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-1-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-1-tvseries-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-tvseries-offcanvas" type="button" role="tab" aria-controls="home" aria-selected="true">TVSeries</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-1-histcharacters-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-histcharacters-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Histcharacters</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-1-people-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-people-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-1-events-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-events-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content  text-center" id="myTabContent-offcanvas">
+                        	<div class="tab-pane fade show active" id="article-1-tvseries-offcanvas" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Small Axe: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Crown: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Downton Abbey: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Underground Railroad: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Pose: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Roots: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Mad Men: 1 <span ></span></span></li>
+                          </div>
+                         <div class="tab-pane fade" id="article-1-histcharacters-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Frank Crichlow: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Leroy Logan: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Princess Elizabeth: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Charles: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Diana: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Margaret Thatcher: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade show active" id="article-1-people-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Caryn James: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Steve McQueen: 6 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Barry Jenkins: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Colson Whitehead: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Thuso Mbedu: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Shaun Parkes: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">John Boyega: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Alex Haley: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Steven Canals: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Brad Falchuk: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Janet Mock: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Our Lady J: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Billy Porter: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Mj Rodriguez: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Claire Foy: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Peter Morgan: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Olivia Colman: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Josh O'Connor: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Emma Corrin: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Gillian Anderson: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Elisabeth Moss: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Christina Hendricks: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Jon Hamm: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Michelle Dockery: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Dan Stevens: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Rob James-Collier: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Lily James: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-1-events-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="events-nav">West Indians in Britain: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
+                        	<li><span onclick="highlightData(1, this)" class="events-nav">The Mangrove Nine: 2 <span ></span></span></li>
+                        	<li><span onclick="highlightData(1, this)" class="events-nav">World War One: 1 <span ></span></span></li>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+                <div class="accordion-item">         
+                <h2 class="accordion-header" id="off-flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseTwo" aria-expanded="false" aria-controls="off-flush-collapseTwo">
+					Rewriting history: how imperfect costume dramas make the past relevant
+                  </button>
+                </h2>
+                <div id="off-flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body">
+                      <!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-2-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-2-tvseries-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-tvseries-offcanvas" type="button" role="tab" aria-controls="home" aria-selected="true">TVSeries</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-2-histcharacters-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-histcharacters-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Histcharacters</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-2-people-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-people-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-2-institutions-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-institutions-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Institutions</button>
+                          </li>
+                        </ul>
+                       <div class="tab-content text-center" id="myTabContent-offcanvas">
+                         	<div class="tab-pane fade show active" id="article-2-tvseries-offcanvas" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Peaky Blinders: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Tudors: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Crown: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Terror: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Bridgerton: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Harry Wild: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Penny Dreadful: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Pursuit of Love: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-histcharacters-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(2, this)" class="histcharacters-nav">Anne Boleyn: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="histcharacters-nav">Marie Antoinette: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-people-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Oliver Dowden: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Madeleine Pelling: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Anthony Delaney: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jane Seymour: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Sofia Coppola: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Colin Firth: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-institutions-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="institutions-nav">York University: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="institutions-nav">Exeter University: 2 <span ></span></span></li>
+                          </div>
+                        </div>
+                    <!-- nested nav tab start -->
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
+          <!-- accordion end -->
+          
+            </div>
+          </div>
+          <!-- offcanvas end -->
+
+   <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="index.html" id="nav-active-link">Home</a>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Issues
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="html/series.html">TV Series</a></li>
+                    <li><a class="dropdown-item" href="html/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" tag="link" id="enable-default">Default</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-past" >1500</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-futurism">First half of XX Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-present">Start of XXI Century</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeAbout(this.id)" href="#" id="enable-future">2030</a></li>
+                   </ul>
+              </li>
+             <li class="nav-item dropdown ps-1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
+                About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<li><a class="dropdown-item" aria-current="page" href="html/documentation.html">Documentation</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </li>
+        	</ul>
+            </div>
+        </nav>
+      <!-- navbar end -->
+        
+  	<!-- article 1 -->
+  	
+  	<div id="new">
+  	<h1 class="glitch" id="titart">What's <span class="red" id="new1">new</span>?</h1>
+  	<hr style="border: solid; color: black">
+  	</div>
+
+        <div class="col-sm-8" id="article-1">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 id="drama">Historical drama and TV's reckoning with the past</h3>
+		<h2 class="accordion-header" id="stayOpen-headingOne">
+            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseOne" aria-expanded="true" aria-controls="stayOpen-collapseOne">
+              Article information:
+            </button>
+          </h2>
+           <div id="stayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingOne">
+            <div class="accordion-body">
+                <div class="info">
+                  <p class="byline">By <a href="https://twitter.com/carynjames" target="_blank">Caryn James</a><span class="publicationDate">, 26th October 2021</span></p>
+                  <p class="sourceLine">Source: <a href="https://www.bbc.com/culture/article/20211022-historical-drama-and-tvs-reckoning-with-the-past" target="_blank">BBC</a></p>
+                </div>
+            </div>
+          </div>
+           <img src="images/tvseries/BBC.jpg" style="height: auto; max-width: 100%;">
+        <p class="mb-auto" id="far"><b>Far from being a comforting vision of the past, the best period drama reclaims history for now. That's because these clear-eyed series are rooted in the real world, argues <span id="mention-1" class="mention person" about="Caryn James">Caryn James.</span></b></p>
+        <p id="visible">Continue reading</p>
+        <p id="invisible" class="hide">
+          	<span class="red" id="p">P</span>eriod pieces are often thought of as soothing escapes to a simpler past. Not so in the 21st Century. Discussing <span id="mention-1" class="mention tvserie" about="Small Axe">Small Axe</span>, his politically-charged, revisionist series about <span id="mention-1" class="mention event" about="West Indians in Britain">West Indians</span> in Britain from the 1960s through to the '80s, <a href="https://www.bfi.org.uk/sight-and-sound/interviews/steve-mcqueen-small-axe-black-britain-david-olusoga"><span id="mention-1" class="mention person" about="Steve McQueen">Steve McQueen</span> told the BFI</a>, "That's what art can do: rewrite history in the way it should be written... That's what you do with your TV programmes."
+        </p>
+        <p id="same" class="hide">
+          	<span id="mention-2" class="mention person" about="Steve McQueen">McQueen</span>'s assertion could be a mantra for the best, most ambitious television dramas today. From the quietly subversive <a href="https://www.bbc.com/culture/article/20201105-the-new-series-of-the-crown-is-a-glorious-spectacle"><span id="mention-1" class="mention tvserie" about="The Crown">The Crown</span></a> and <span id="mention-1" class="mention tvserie" about="Downton Abbey">Downton Abbey</span> to the jolting, radical <a href="https://www.bbc.com/culture/article/20201005-small-axe-the-most-exhilarating-director-working-today"><span id="mention-2" class="mention tvserie" about="Small Axe">Small Axe</span></a>, <a href="https://www.bbc.com/culture/article/20210504-the-underground-railroad-review-a-remarkable-american-epic"><span id="mention-1" class="mention tvserie" about="The Underground Railroad">The Underground Railroad</span></a> and <span id="mention-1" class="mention tvserie" about="Pose">Pose</span> – all on BBC Culture's poll of the <a href="https://www.bbc.com/culture/article/20211015-the-100-greatest-tv-series-of-the-21st-century">100 greatest series of the 21st Century</a> – television is correcting history's distortions in matters of race, gender, class and power. The gay footman Thomas in Downton and the runaway slave Cora in <span id="mention-2" class="mention tvserie" about="The Underground Railroad">The Underground Railroad</span> are presented to us as avatars of change. And now is an especially rich moment for series to reclaim the past. Previously muted voices from black, gay and transgender creators are offering new, more authentic ways of seeing their histories. Their series are clear-eyed period pieces for the present.
+        </p>
+           <img id="cora" class="hide" src="images/tvseries/cora.jpg" style="height: auto; max-width: 100%;">
+        <p id="citation" class="hide"><i>
+           	In The Underground Railroad, Cora (Thuso Mbedu) attempts to break free from slavery in the deep South (Credit: Alamy)</i>
+        </p>
+        <hr id="same" class="hide">
+        <p id="same" class="hide">
+           	<span id="mention-1" class="mention person" about="Barry Jenkins">Barry Jenkins</span>'<span id="mention-3" class="mention tvserie" about="The Underground Railroad">The Underground Railroad</span> and <span id="mention-3" class="mention person" about="Steve McQueen">McQueen</span>'s <span id="mention-3" class="mention tvserie" about="Small Axe">Small Axe</span> make the point that racism, whether in the antebellum American South or the UK's recent past, has been and remains deeply embedded in the fabric of society. It's notable that the series' creators are also two of today's finest filmmakers, taking full advantage of what  television has to offer: the time to delve into thorny social issues from multiple angles, and the ability to reach a large global audience through drama that engages us with the personal lives and loves of characters over years.
+		</p>
+		<p id="same" class="hide">
+			In the dazzling, imaginative Underground Railroad (number 59 in the poll), based on <span id="mention-1" class="mention person" about="Colson Whitehead">Colson Whitehead</span>'s novel, the metaphorical route leading escaped slaves to freedom becomes a physical railroad line. Artistic licence becomes a way to access harsh truths.
+		</p>
+		<p id="cit" class="hide"><i>
+			Because we've been afraid to re-experience some of these traumas… we've inadvertently almost avoided some of this history – Barry Jenkins</i>
+		</p>
+		<p id="same" class="hide">
+		   	The first instalment of the series is the most graphic, showing an enslaved person punished by being burned alive. <span id="mention-2" class="mention person" about="Barry Jenkins">Jenkins</span> carefully modulates the violence he depicts, and includes scenes of lyrical beauty. But he also uses the power of the screen to immerse his audience in the characters' worst experiences. It is not enough to acknowledge the horrors of slavery in an abstract way. Cora (<span id="mention-1" class="mention person" about="Thuso Mbedu">Thuso Mbedu</span>), escapes from the plantation, only to find herself in an apparently better world that cannot last, as a slave hunter pursues her into hiding and eventually out of a town in which lynched bodies of black people hang on trees lining the road.
+		</p>
+		<p id="same" class="hide">
+			Through Cora and the other enslaved characters, <span id="mention-3" class="mention person" about="Barry Jenkins">Jenkins</span> creates a tragedy that exists on both an immediate, intensely personal level and on a grand, historical scale. Nothing in flat, school-room stories of slavery can compete with this harrowing vision on screen. And the 2021 series arrives at a time when <a href="https://www.bbc.com/news/world-us-canada-57908808">some school boards in the US</a> are resistant to teaching the history of racism at all.
+		<p id="same" class="hide">
+			<span id="mention-4" class="mention person" about="Barry Jenkins">Jenkins</span>' acknowledged purpose is to reclaim the truth of the past as a way of moving forward. In an <a href="https://www.buzzfeednews.com/article/sagalmohammed/barry-jenkins-on-avoiding-the-exploitation-of-black-trauma">interview with Buzzfeed</a>, he pointedly tied his series to the Trump years and the distortions that history has passed down. While he was working on the series, he said, "There was this president who kept talking about 'Make America Great Again'... I realised that there was this vacuum that kept travelling that needed to be filled. Because America hasn't always been great." He added, "Because we've been afraid to re-experience some of these traumas, because we've been afraid of triggering people to re-experience that trauma, we've inadvertently almost avoided some of this history."
+		</p>
+			<img id="mcqueen" class="hide" src="images/tvseries/mcqueen.jpg" style="height: auto; max-width: 100%;">
+        	<p id="citation" class="hide"><i>
+			UK director Steve McQueen's Small Axe – Mangrove tells a true story of the police harassment that led to a historic court case in the 1970s (Credit: Alamy)</i>
+		</p>
+		<hr id="same" class="hide">
+		<p id="same" class="hide">
+			With a more directly realistic style, <span id="mention-4" class="mention person" about="Steve McQueen">McQueen</span>'s searing <span id="mention-4" class="mention tvserie" about="Small Axe">Small Axe</span> (number 51 in the poll) achieves the same goal, reconceiving a past that echoes through to the present. Four of the five independent instalments in the series are fact-based stories that reposition people from recent decades in a new, heroic light. It is remarkable, and deliberate, that those stories resonate so powerfully with the <span id="mention-1" class="mention event" about="Black Lives Matter">Black Lives Matter</span> movement and calls for police reform today.
+ 		</p>
+ 		<p id="title" class="hide"><b>
+ 			A rush of authenticity</b>
+ 		</p>
+ 		<p id="same" class="hide">
+ 			In Mangrove, one of those heroes is <span id="mention-1" class="mention histcharacter" about="Frank Crichlow">Frank Crichlow</span> (<span id="mention-1" class="mention person" about="Shaun Parkes">Shaun Parkes</span>) whose restaurant in London was repeatedly the subject of police harassment in the late 1960s and early '70s, leading to street protests, police violence against the activists, and charges against the protest leaders, who became known as <span id="mention-1" class="mention event" about="The Mangrove Nine">The Mangrove Nine</span>. In Red, White and Blue, <span id="mention-1" class="mention person" about="John Boyega">John Boyega</span> plays the real-life <span id="mention-1" class="mention histcharacter" about="Leroy Logan">Leroy Logan</span>, who joined London's Metropolitan Police in 1983, defying the racist atmosphere to try to change it from within. Together, the five stories tell us that the racism on screen is not due to an occasional rogue action or racist cop, but evidence of a deeply accepted social bias. 
+ 		</p>
+ 		<p id="same" class="hide">
+ 			"These films should have been made 35 years ago, 25 years ago, but they weren't," <span id="mention-5" class="mention person" about="Steve McQueen">McQueen</span> said in the BFI interview. "There's no way anyone would have given me, or anybody else... money at that time to make a film about <span id="mention-2" class="mention event" about="The Mangrove Nine">The Mangrove Nine</span>the Mangrove Nine. You were not welcome."  
+		</p>
+		<p id="cit" class="hide"><i>
+			These creators have cracked the door a bit wider in the television industry, and expanded the audience's perspective in a major way</i>
+		</p>
+		<p id="same" class="hide">
+			While racism went mostly unexplored on TV for many decades, there were rare exceptions. The 1977 miniseries <span id="mention-1" class="mention tvserie" about="Roots">Roots</span> earned one of the biggest television audiences ever, and brought the brutality of slavery into more than 100 million homes. But it <a href="https://www.motherjones.com/media/2016/06/original-roots-hollywood-race-problem/">didn't expand opportunities</a> for black actors, writers or directors. And except for the writer, <span id="mention-1" class="mention person" about="Alex Haley">Alex Haley</span>, whose book <span id="mention-2" class="mention tvserie" about="Roots">Roots</span> was based on, behind the scenes, the major creators were white.
+		</p>
+		<img id="pose" class="hide" src="images/tvseries/pose.jpg" style="height: auto; max-width: 100%;">
+        	<p id="citation" class="hide"><i>
+			Pose is set in the world of 1980s New York drag balls, tackles the 1990s Aids crisis, and resonates with the present day (Credit: Alamy)</i>
+       		</p>
+       <hr id="same" class="hide">
+       <p id="same" class="hide">
+			<span id="mention-6" class="mention person" about="Steve McQueen">McQueen</span> and <span id="mention-5" class="mention person" about="Barry Jenkins">Jenkins</span>, black artists reclaiming black history, and the gay and trans creators of <span id="mention-2" class="mention tvserie" about="Pose">Pose</span> (number 62), about the LBGTQ+ world in the late 20th Century, are advocating for change while also representing at least some movement toward that change themselves. Although a handful of voices from disenfranchised groups aren't enough, these creators have cracked the door a bit wider in the television industry, and expanded the audience's perspective in a major way.
+		</p>
+		<p id="same" class="hide">
+			<span id="mention-1" class="mention person" about="Steven Canals">Steven Canals</span> brought his original idea for <span id="mention-3" class="mention tvserie" about="Pose">Pose</span> to Ryan Murphy. Those two gay co-creators (along with <span id="mention-1" class="mention person" about="Brad Falchuk">Brad Falchuk</span> were joined by the trans producers <span id="mention-1" class="mention person" about="Janet Mock">Janet Mock</span> and <span id="mention-1" class="mention person" about="Our Lady J">Our Lady J</span>, and a cast of gay and trans actors, bringing a bold rush of LGBTQ+ authenticity to the television landscape. As the title suggests, <span id="mention-4" class="mention tvserie" about="Pose">Pose</span> began with a focus on the world of drag balls in New York City. Over its three seasons, spanning 1987-1996, it increasingly focused on the Aids crisis and gay rights. Its main and most beloved characters, the ballroom host and father figure Pray Tell (<span id="mention-1" class="mention person" about="Billy Porter">Billy Porter</span>) and the trans, maternal Blanca (<span id="mention-1" class="mention person" about="Mj Rodriguez">Mj Rodriguez</span>) both contracted HIV. In the final season, Pray and Blanca call out government neglect of black people in an experimental Aids drug trial, a racial crisis within a health crisis. Like <span id="mention-5" class="mention tvserie" about="Small Axe">Small Axe</span>, <span id="mention-5" class="mention tvserie" about="Pose">Pose</span> uses recent decades to create resonance with inequalities that remain today.
+		</p>
+		<p id="same" class="hide">
+			Reshaping history doesn't always mean being a flame-thrower. Some of the most elegantly escapist series of the 21st Century question the power structures that support the characters and the sumptuous settings we love. <span id="mention-2" class="mention tvserie" about="The Crown">The Crown</span> (number 16 in the BBC Culture poll) is an interpretation of real events that takes a humanising approach to the monarchy. From the series' start, when we see <span id="mention-1" class="mention histcharacter" about="Princess Elizabeth">Princess Elizabeth</span> (<span id="mention-1" class="mention people" about="Claire Foy">Claire Foy</span>) as a young woman in 1947, <span id="mention-1" class="mention person" about="Peter Morgan">Peter Morgan</span>'s series speculates about what happened behind the public image, and with enormous sympathy takes us into her private life. We see all the personal insecurities and tensions of any family, magnified by an enormous weight of responsibility to the country.
+		</p>
+		<img id="crown" class="hide" src="images/tvseries/thecrown.jpg" style="height: auto; max-width: 100%;">
+        	<p id="citation" class="hide"><i>
+			An interpretation of real events, The Crown depicts a changing British monarchy through the decades (Credit: Alamy)</i>
+		</p>
+		<hr id="same" class="hide">
+		<p id="same" class="hide">
+			That sense of duty is shown as even stronger in the middle-aged Queen (<span id="mention-1" class="mention person" about="Olivia Colman">Olivia Colman</span>) in seasons three and four. But so is the portrayal of how emotionally damaged her children may be, particularly <span id="mention-1" class="mention histcharacter" about="Charles">Charles</span> (<span id="mention-1" class="mention person" about="Josh O'Connor">Josh O'Connor</span>). By the time the series arrives in the 1980s, and the family is seen choosing <span id="mention-1" class="mention histcharacter" about="Diana">Diana</span> (<span id="mention-1" class="mention person" about="Emma Corrin">Emma Corrin</span>) to be <span id="mention-2" class="mention histcharacter" about="Charles">Charles</span>'s wife, presented as a cold-blooded decision all around, the mood of the country we see on screen has shifted. The monarchy's hold on power is still firm, but not in the unquestioned way it was when <span id="mention-2" class="mention histcharacter" about="Princess Elizabeth">Elizabeth</span> inherited the crown in 1952. Her role and her authority are increasingly challenged by striking miners, politicians like <span id="mention-1" class="mention histcharacter" about="Margaret Thatcher">Margaret Thatcher</span> (<span id="mention-1" class="mention person" about="Gillian Anderson">Gillian Anderson</span>), and a less deferential press.
+		</p>
+		<p id="same" class="hide">
+			The ultrasharp <span id="mention-1" class="mention tvserie" about="Mad Men">Mad Men</span> (number two in the poll), set in the very different and more overtly vicious world of US advertising, charts a similar, realistic cultural shift, far from a comforting vision of the past. As the timeline moves from 1960 to 1971, each season focuses more on the sexism its women characters endure, from Peggy's (<span id="mention-1" class="mention person" about="Elisabeth Moss">Elisabeth Moss</span>) need to hide her pregnancy to the way Joan (<span id="mention-1" class="mention person" about="Christina Hendricks">Christina Hendricks</span>) is used as a sex object by the men around her, until she finally asserts some power and business acumen of her own. Don Draper (<span id="mention-1" class="mention person" about="Jon Hamm">Jon Hamm</span>) is ever the handsome charmer, but the world around him is leaving his type behind.
+        	</p>
+       		<p id="same" class="hide">
+			Even the sublime <span id="mention-2" class="mention tvserie" about="Downton Abbey">Downton Abbey</span> (number 36), known as the ultimate in blissful escapism, is more rooted in the real world than it gets credit for. Its characters know that the old, hierarchical class order is shifting under their feet. The order itself threatens them in the very first episode, when the heir to Downton, who is also Mary Crawley's (<span id="mention-1" class="mention person" about="Michelle Dockery">Michelle Dockery</span>) fiancé, dies in the Titanic. Of course a woman cannot inherit their beloved Downton. Lucky for them she falls in love with the new heir, Matthew (<span id="mention-1" class="mention person" about="Dan Stevens">Dan Stevens</span>).
+        	</p>
+        	<img id="crown" class="hide" src="images/tvseries/dabbey.jpg" style="height: auto; max-width: 100%;">
+		<p id="citation" class="hide"><i>	
+			Downton Abbey, often considered escapist TV, tells us some interesting truths about class and power (Credit: Alamy)</i>
+        	</p>
+        <hr id="same" class="hide">
+        <p id="same" class="hide">
+			But sympathising with the Crawleys and their downstairs staff isn't the same as believing in inherited wealth and power. Spurred by the reality of <span id="mention-1" class="mention event" about="World War One">World War One</span>, the story deals with the gradually shifting mores of a new world. Thomas (<span id="mention-1" class="mention person" about="Rob James-Collier">Rob James-Collier</span>) still hides his homosexuality, which was then illegal, and in one episode is hauled in by the police. Perhaps fancifully, the open-minded Crawleys not only don't dismiss him; eventually they make him the new butler. More realistically, in the 1920s cousin Rose (<span id="mention-1" class="mention person" about="Lily James">Lily James</span>) falls in love with a black jazz musician, though that relationship is doomed by the prejudices they face.
+        </p>
+        <p id="same" class="hide">
+			These themes of sexuality and race are not sops to an enlightened 21st-Century audience, but signals that the world is changing. The characters are less aware of how significant those changes will be than we are. As 21st-Century viewers, these enticing, truth-telling period dramas are telling us more and more about who we are – and how we got to the reality of today.
+	</p>
+			<a id="back" class="hide" href="#drama">Go Back</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        
+        </div>
+      </div>
+
+        <div class="col" id="art2">
+        <div class="col" id="article-2">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 id="costume">Rewriting history: how imperfect costume dramas make the past relevant</h3>
+		<h2 class="accordion-header" id="stayOpen-headingOne">
+            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseOne" aria-expanded="true" aria-controls="stayOpen-collapseOne">
+              Article information:
+            </button>
+          </h2>
+           <div id="stayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingOne">
+            <div class="accordion-body">
+                <div class="info">
+                  <p class="byline">By <a href="https://www.theguardian.com/profile/vanessathorpe" target="_blank">Vanessa Thorpe</a><span class="publicationDate">, Sun 27 Jun 2021</span></p>
+                  <p class="sourceLine">Source: <a href="https://www.theguardian.com/tv-and-radio/2021/jun/27/rewriting-history-how-imperfect-costume-dramas-make-the-past-relevant" target="_blank">The Guardian</a></p>
+                </div>
+            </div>
+          </div>
+        <img src="images/tvseries/phoebe.jpg" style="width: 113vh; max-width: 100%;">
+        <p id="citation"><i>	
+         	Phoebe Dynevor and Adjoa Andoh on the set of the hugely popular Bridgerton. Photograph: Liam Daniel/Netflix</i>
+        </p>
+        <p class="mb-auto" id="auto2"><b>Historians embrace inaccuracies in TV adaptations as a way to tell new stories</b></p>
+        <p id="visibletwo">Continue reading</p>
+        <p id="guardian" class="hide">
+         	<span class="red" id="w">W</span>hen Ada Shelby in <a href="https://www.theguardian.com/tv-and-radio/peaky-blinders"><span id="mention-1" class="mention tvserie" about="Peaky Blinders">Peaky Blinders</span></a> ate popcorn as she watched a silent film, some historically minded viewers may have choked on their own popcorn at home, since the snack was not invented until “talking pictures” came in. Fans of authentic detail were also upset when female characters in early episodes of the BBC drama <span id="mention-1" class="mention tvserie" about="The Tudors">The Tudors</span> sported long, billowing sleeves, a style only introduced later when <span id="mention-1" class="mention histcharacter" about="Anne Boleyn">Anne Boleyn</span> became queen.
+        </p>
+        <p id="sametwo" class="hide">
+         	Charges of historical inaccuracy have dogged costume dramas from the outset, prompting complaints about anachronistic language, decor and technology. Occasionally, attacks on the fidelity of a show can become a question of national importance, as when the culture secretary, <span id="mention-1" class="mention person" about="Oliver Dowden">Oliver Dowden</span>, called for the Netflix series <span id="mention-1" class="mention tvserie" about="The Crown">The Crown</span> to be <a href="https://www.theguardian.com/tv-and-radio/2020/nov/29/the-crown-netflix-health-warning-fictional-oliver-dowden">prominently labelled “fiction”</a>.
+        </p>
+        <p id="sametwo" class="hide">
+        	Next month, however, historians are extending the hand of friendship to film-makers and television production companies.
+    	</p>
+    	<p id="sametwo" class="hide">
+    		A <a href="https://www.eventbrite.co.uk/e/whats-next-for-period-drama-tickets-160721056005">virtual conference</a> on 9 July is to invite new collaborations between academics, dramatists and the entertainment industry in an effort to see if they can help each other. Popular costume dramas such as <span id="mention-2" class="mention tvserie" about="The Crown">The Crown</span>, <span id="mention-1" class="mention tvserie" about="The Terror">The Terror</span> and <a href="https://www.theguardian.com/tv-and-radio/2021/jan/06/pomp-and-romps-how-bridgerton-became-the-most-talked-about-show-on-tv"><span id="mention-1" class="mention tvserie" about="Bridgerton">Bridgerton</span></a> have proven once again how ready the public are to be transported back in time. And each hit drama has its own trademark attitude to period detail.
+        </p>
+        <p id="sametwo" class="hide">
+        	“So many historians have ideas they want to share, and so we want to see how these two worlds could start to talk to each other, particularly as there is such a flourish of such dramas at the moment,” said Dr <span id="mention-1" class="mention person" about="Madeleine Pelling">Madeleine Pelling</span> of the centre for 18th century studies at <span id="mention-1" class="mention institution" about="York University">York University</span>, one of the organisers of the <span id="mention-1" class="mention institution" about="Exeter">Exeter University</span> conference. “It is not so much about checking up on whether a teacup in a scene is the right teacup – it is about perhaps getting historians involved at an earlier stage.”
+        </p>
+        <img id="corrin" class="hide" src="images/tvseries/Corrin.jpg" style="width: 115vh; max-width: 100%;">
+        <p id="citationtwo" class="hide"><i>
+        	The Crown, starring Emma Corrin, should be labelled ‘fiction’, according to the culture secretary, Oliver Dowden. Photograph: Des Willie/AP</i>
+        </p>
+        <hr id="sametwo" class="hide">
+        <p id="sametwo" class="hide">
+        	History professors, Pelling argues, are actually more open-minded than dramatists fear and have a wealth of untold stories to tell.
+        </p>
+        <p id="sametwo" class="hide"> 
+        	Running the conference with Pelling is <span id="mention-1" class="mention person" about="Anthony Delaney">Anthony Delaney</span>, a history PhD student at <span id="mention-2" class="mention institution" about="Exeter University">Exeter</span>, who has detected a shared enthusiasm in the two worlds for approaching the past with greater freedom.
+        </p>
+    	<p id="sametwo" class="hide"> 
+			“Screenwriters can’t find enough new stories at the moment and academics have all this research. This could be a way to begin that conversation, as they’d be surprised to find that historians are not so precious at all and are very open to stories being told in a new way,” he said.
+		</p>
+		<p id="sametwo" class="hide"> 
+			Like a good historian, <span id="mention-2" class="mention person" about="Anthony Delaney">Delaney</span> can see it from both sides. He is also a working actor and writer, and is in Ireland filming a new costume drama, <span id="mention-1" class="mention tvserie" about="Harry Wild">Harry Wild</span>, a mystery thriller starring <span id="mention-2" class="mention person" about="Jane Seymour">Jane Seymour</span>.
+		</p>
+		<p id="sametwo" class="hide"> 
+			“This is not all about a heavy, instructive relationship. Another show I was in, <span id="mention-1" class="mention tvserie" about="Penny Dreadful">Penny Dreadful</span>, was a good way of bringing lots of stories together and prompting a debate about literary history,” said <span id="mention-3" class="mention person" about="Anthony Delaney">Delaney</span>.
+		</p>
+		<p id="sametwo" class="hide"> 
+			Pelling, an expert in 18th-century material and visual culture, believes there has been a move away from overriding concerns about historical accuracy in recent years.
+		</p>
+		<p id="cit2" class="hide"><i> 
+			Anachronism is something I’m very interested in. It does not mean they are being unfaithful to a story <span id="mention-1" class="mention person" about="Madeleine Pelling">Madeleine Pelling</span></i>
+		</p>
+		<p id="sametwo" class="hide"> 
+			“Historians are often now more interested in the creative ways that a story can be told to make it fresh and to emphasise different things, such as gender, sexuality or race,” she said.
+		</p>
+		<p id="sametwo" class="hide"> 
+			Deliberate anachronisms in costume drama are also a trend. Not only do shows such as <span id="mention-2" class="mention tvserie" about="Peaky Blinders">Peaky Blinders</span> and <span id="mention-1" class="mention tvserie" about="The Pursuit of Love">The Pursuit of Love</span> use rock soundtracks to underline modern comparisons, but the use of discordant images, such as the striking black-and-white costumes in the award-winning film <a href="https://www.theguardian.com/film/2018/dec/30/the-favourite-review-olivia-colman-emma-stone-rachel-weisz-yorgos-lanthimos">The Favourite</a>, can change a mood and draw attention to a neglected era of history.
+		</p>
+		<p id="sametwo" class="hide"> 
+			“Anachronism is something I’m very interested in,” said Pelling. “It is often the moment when there is a creative departure as a storyteller reaches for something else. It does not mean they are being unfaithful to a story. In <span id="mention-1" class="mention person" about="Sofia Coppola">Sofia Coppola</span>’s film <span id="mention-1" class="mention histcharacter" about="Marie Antoinette">Marie Antoinette</span>, we see a pair of Converse shoes and it says something about the world she is portraying, something about the world of acquisition and luxury.”
+		</p>
+		<p id="sametwo" class="hide">
+		<span id="mention-2" class="mention tvserie" about="Bridgerton">Bridgerton</span>, now to be the subject of an immersive Secret Cinema event, even linked its Netflix audience to the world of gossip in the show by running a Twitter account in the name of the narrator.
+		</p>
+		<p id="sametwo" class="hide">
+			“Our perceptions of what is anachronistic and what is shocking change,” said Pelling. “For example, in 1995, <span id="mention-1" class="mention person" about="Colin Firth">Colin Firth</span> was shocking when he came out of the lake with a soaking shirt. Our expectations of period drama will change, just as our expectations of history change. History is also a form of storytelling, after all.”
+		</p>
+			<a id="backtwo" class="hide" href="#costume">Go Back</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        
+        </div>
+      </div>
+      	</div>
+      
+       <div class="col" id="art3">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h2 id="stay">Stay tuned!</h2>
+		<h2 class="accordion-header" id="stayOpen-headingOne">
+  
+ 		 </div>
+  	</div>
+  	</div>
+  	</div>
+  <!-- metadata viewer start -->
+   
+      <div class="card row overflow-auto position-absolute top-50 end-0 translate-middle-x" id="meta">
+      <h5 class="card-title p-3">About the articles</h5>
+      <div class="card-body overflow-auto p-0">
+
+        <!-- accordion start -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+				BBC: Historical drama and TV's reckoning with the past             
+			  </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-1-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-1-tvseries-tab" data-bs-toggle="tab" data-bs-target="#article-1-tvseries" type="button" role="tab" aria-controls="home" aria-selected="true">TVSeries</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-1-histcharacters-tab" data-bs-toggle="tab" data-bs-target="#article-1-histcharacters" type="button" role="tab" aria-controls="profile" aria-selected="false">Histcharacters</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-1-people-tab" data-bs-toggle="tab" data-bs-target="#article-1-people" type="button" role="tab" aria-controls="contact" aria-selected="false">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-1-events-tab" data-bs-toggle="tab" data-bs-target="#article-1-events" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-center" id="myTabContent">
+                     <div class="tab-pane fade show active" id="article-1-tvseries" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Small Axe: 5 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Crown: 2 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Downton Abbey: 2 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Underground Railroad: 3 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Pose: 5 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Roots: 2 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Mad Men: 1 <span></span></span></li>
+                          </div>
+                      <div class="tab-pane fade" id="article-1-histcharacters" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Frank Crichlow: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Leroy Logan: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Princess Elizabeth: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Charles: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Diana: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="histcharacters-nav">Margaret Thatcher: 1 <span ></span></span></li>
+                          </div>
+                     <div class="tab-pane fade show active" id="article-1-people" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Caryn James: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Steve McQueen: 6 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Barry Jenkins: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Colson Whitehead: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Thuso Mbedu: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Shaun Parkes: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">John Boyega: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Alex Haley: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Steven Canals: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Brad Falchuk: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Janet Mock: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Our Lady J: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Billy Porter: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Mj Rodriguez: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Claire Foy: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Peter Morgan: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Olivia Colman: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Josh O'Connor: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Emma Corrin: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Gillian Anderson: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Elisabeth Moss: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Christina Hendricks: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Jon Hamm: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Michelle Dockery: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Dan Stevens: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Rob James-Collier: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Lily James: 1 <span ></span></span></li>
+                          </div>
+                      <div class="tab-pane fade" id="article-1-events" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="events-nav">West Indians in Britain: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
+                        	<li><span onclick="highlightData(1, this)" class="events-nav">The Mangrove Nine: 2 <span ></span></span></li>
+                        	<li><span onclick="highlightData(1, this)" class="events-nav">World War One: 1 <span ></span></span></li>
+                          </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+				The Guardian: Rewriting history: how imperfect costume dramas make the past relevant        
+			  </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-2-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-2-tvseries-tab" data-bs-toggle="tab" data-bs-target="#article-2-tvseries" type="button" role="tab" aria-controls="home" aria-selected="true">TVSeries</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-histcharacters-tab" data-bs-toggle="tab" data-bs-target="#article-2-histcharacters" type="button" role="tab" aria-controls="profile" aria-selected="false">Histcharacters</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-people-tab" data-bs-toggle="tab" data-bs-target="#article-2-people" type="button" role="tab" aria-controls="contact" aria-selected="false">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-2-institutions-tab" data-bs-toggle="tab" data-bs-target="#article-2-institutions" type="button" role="tab" aria-controls="contact" aria-selected="false">Institutions</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content  text-center" id="myTabContent">
+                     <div class="tab-pane fade show active" id="article-2-tvseries" role="tabpanel" aria-labelledby="home-tab">
+                     	<ul>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Peaky Blinders: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Tudors: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Crown: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Terror: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Bridgerton: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Harry Wild: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">Penny Dreadful: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="tvseries-nav">The Pursuit of Love: 1 <span ></span></span></li>
+                      </ul>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-histcharacters" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(2, this)" class="histcharacters-nav">Anne Boleyn: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="histcharacters-nav">Marie Antoinette: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-people" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Oliver Dowden: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Madeleine Pelling: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Anthony Delaney: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jane Seymour: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Sofia Coppola: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Colin Firth: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-institutions" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="institutions-nav">York University: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="institutions-nav">Exeter University: 2 <span ></span></span></li>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+		</div>
+        </div>
+
+
+  <!-- Metadata viewer end -->
+
+</div>
+</div>
+</div>
+    
+   <!--fab-->
+   
+   <a href="#" class="to-top">
+ 		<i class="fas fa-chevron-up"></i>
+	</a>
+	
+              <div class="fab-container">
+                <div class="fab shadow">
+                  <div class="fab-content">
+                    <span class="material-icons"></span>
+                  </div>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="1500" data-content="1500" onclick="changeThemeHome(this.id)" href="#" id="enable-past">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="Futurism" data-content="Futurism" onclick="changeThemeHome(this.id)" href="#" id="enable-futurism">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Present" data-content="Present" onclick="changeThemeHome(this.id)" href="#" id="enable-present">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Future" data-content="Future" onclick="changeThemeHome(this.id)" href="#" id="enable-future">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+              </div>
+              
+               <footer>
+            	<div class="container p-3">
+              	<div class="row">
+              	</div>
+              	</div>
+              </footer>
+
+    <!-- script-->
+        <script src="js/change.js"></script>
+        <script src="js/future.js"></script>
+        <script src="js/metadatatvseries.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../js/showtext.js"></script>
+        <script src="js/scroll.js"></script>
+        
+  </body>
+</html>
