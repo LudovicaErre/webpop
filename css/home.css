@@ -735,10 +735,6 @@ li:hover{
 	margin-right: 10 em;
 }
 
-.fas{
-	margin-right: 1em;
-}
-
 .to-top.active {
 	bottom:32px;
 	pointer-events: auto;
