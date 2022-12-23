@@ -72,6 +72,10 @@ body {
 	display: block;
 	background-color: #000;
 }
+
+#box{
+	margin-left: 1em;
+}
   
 .future{
     position: fixed;
