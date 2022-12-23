@@ -1,12 +1,12 @@
-(function (){
-	('#visible').click(function(){
-		('#invisible, #same, #cora, #citation, #cit, #mcqueen, #title, #pose, #crown, #back').toggleClass("show");
+$(function (){
+	$('#visible').click(function(){
+		$('#invisible, #same, #cora, #citation, #cit, #mcqueen, #title, #pose, #crown, #back').toggleClass("show");
 	});
 });
 
-(function (){
-	('#visibletwo').click(function(){
-		('#guardian, #sametwo, #corrin, #citationtwo, #cit2, #backtwo').toggleClass("show");
+$(function (){
+	$('#visibletwo').click(function(){
+		$('#guardian, #sametwo, #corrin, #citationtwo, #cit2, #backtwo').toggleClass("show");
 	});
 });
 
