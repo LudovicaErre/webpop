@@ -50,6 +50,7 @@ src: url("../fonts/Oxford.ttf");
 p {
   font-family: "Present-macch";
   font-size: 1.2em;
+  margin-left: 0.3em;
 }
 
 .row{
