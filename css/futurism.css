@@ -839,10 +839,6 @@ footer p{
 	margin-right: 10em;
 }
 
-.fas{
-	margin-right: 1em;
-}
-
 .to-top.active {
 	bottom:32px;
 	pointer-events: auto;
