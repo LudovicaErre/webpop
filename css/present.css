@@ -752,6 +752,10 @@ footer p{
 	font-size: 1.1rem;
 }
 
+.card-title{
+    font-size: 1.2rem;
+}
+
 #metadata .nav-link{
     color: #FFDE00 !important;
 }
