@@ -41,13 +41,11 @@ src: url("../fonts/Leorio.ttf");
 
 .dropdown-menu{
   background-color: #F4F2DC;
-  font-size: 2vw;
 }
 
 .dropdown-item:hover{
     color: black !important;
     background-color: #D7D8BF;
-	font-size: 2.3vw;
 }
 
 #enable-past, #enable-future {
