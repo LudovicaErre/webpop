@@ -744,23 +744,20 @@ footer p{
 .accordion-button:not(.collapsed) {
   color: #000  !important;
   background-color: #697e66 !important;
-  font-size: 0.45em;
 }
 
 .accordion-button:hover, .accordion-button:active  {
   	background-color: #e5c9a8 !important;
     color:#000 !important; 
-    font-size: 0.45em;
 }
 
 .accordion-button{
 	background-color: #697e66 !important;
-	font-size: 0.45em;
+	font-size: 0.30em;
 }
 
 .accordion-button:not(.collapsed)::after {
 	color: #000;
-	font-size: 0.45em;
 }
 
 #box{
