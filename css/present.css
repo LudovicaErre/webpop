@@ -936,6 +936,9 @@ li{
 	font-family: "Present-macch";
 }
 
+#sito li:hover{
+background-color: #FFDE00;
+}
 
 h1{
 	font-size:3em;
