@@ -33,12 +33,10 @@
   height: 10vh;
   position: fixed;
   font-family: "Past";
-  font-size: 1.5vw;
 }
 
 .dropdown-menu{
   background-color: #f5eca8;
-   font-size: 1em;
 }
 
 .dropdown-item:hover{
