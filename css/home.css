@@ -53,7 +53,6 @@ src: url("../fonts/Blacklightning.ttf");
 .dropdown-item:hover{
     color: #9400ff !important;
     background-color: #D4ADE0;
-    font-size: 1.2vw;
 }
 
 /*body*/
