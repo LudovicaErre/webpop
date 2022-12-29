@@ -752,6 +752,7 @@ i {
 	-webkit-text-stroke:0.5px #FFDE00;
 	color: #FFDE00;
 	background-color: #A89D8E; 
+	font-size: 1.1rem;
 }
 
 #metadata .nav-link{
@@ -810,13 +811,13 @@ i {
 /*tvseries*/
  #article-1-people-tab, #article-1-histcharacters-tab, #article-1-tvseries-tab, #article-1-events-tab{
  	color: black;
- 	font-size: 1.3vw;
+ 	font-size: 1.2vw;
 	padding-left:1em;
  }
 
  #article-2-people-tab, #article-2-histcharacters-tab, #article-2-tvseries-tab, #article-2-institutions-tab{
  	color: black;
- 	font-size: 1.3vw;
+ 	font-size: 1.2vw;
 	padding-left:1em;
  }
  
