@@ -641,7 +641,8 @@ footer p{
 	margin-right: 2em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	border-left: 3px solid #848474;
+	padding-left: 1em;
+	border-left: 0.25em solid #848474;
   	height: 55px;
   	font-size: 1.5vw;
 }
