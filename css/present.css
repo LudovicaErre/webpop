@@ -38,13 +38,11 @@ src: url("../fonts/Oxford.ttf");
 
 .dropdown-menu{
   background-color: #C9C9C9;
-  font-size: 1.3vw;
 }
 
 .dropdown-item:hover{
     color: #FFDE00 !important;
     background-color: #A89D8E;
-	font-size: 1.6vw;
 }
 
 /*body*/
