@@ -107,21 +107,19 @@ h5{
     color: #9400ff;
 }
 
+/*tap on logo*/
+
 #tap{
 	margin-top: 5em;
 	margin-bottom: -1em;
 	font-size: 0.50em;
 }
 
-#totheintro{
-	margin-top: 2em;
-	font-size: 1em;
-	color: #9400ff;
-}
-
 .d-grid{
 	margin-top: -4em;
 }
+
+/*first container*/
   
 #first{
 	margin-top: 5rem;
@@ -194,6 +192,8 @@ h5{
 	padding-top: 2em;
     font-size: 1em;
 }
+
+/*btn home wp*/
 
 .btn-default{
     cursor: pointer;
@@ -300,6 +300,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 	padding-left:1em;
 }
 
+/*second container*/
+
 #second{
   	padding: 6em;
 }
@@ -307,6 +309,16 @@ a:hover, #visible:hover, #visibletwo:hover {
 #second p{
     font-size: 1.2em;
 }
+
+/*make your choice*/
+
+#totheintro{
+	margin-top: 2em;
+	font-size: 1em;
+	color: #9400ff;
+}
+
+/*third container*/
 
 #third{
   	padding: 5em;
@@ -320,10 +332,6 @@ b{
 	color: #9aaee2;
 }
 
-.bor{
-	margin: -1em;
-}
-
 .btn-third{
     background-color: #ffed5e;
     color: #D4ADE0;
@@ -333,6 +341,9 @@ b{
     margin-right: 1rem !important;
     border-style: none;
 }
+
+/*btn full doc*/
+
 .btn-third:first-child{
     background-color: #ffed5e;
     color: #D4ADE0;
@@ -346,6 +357,8 @@ b{
 .btn-third:first-child:hover{
    color: #9400ff !important;
 }
+
+/*btn check issue*/
 
 .btn-third:nth-child(2){
     background-color: #ffed5e;
@@ -372,6 +385,8 @@ b{
 #third p{
     font-size: 1em;
 }
+
+/*btn see doc*/
 
 .btn-doc{
     background-color: #ffed5e;
@@ -423,9 +438,19 @@ b{
 	margin-top: 2em;
 }
 
+/*border card*/
+
+.bor{
+	margin: -1em;
+}
+
+/*fourth container*/
+
 #fourth{
 	padding: 6em;
 }
+
+/*card tv*/
 
 #card-iss1 .fadedbox{
     background-color: #ffed5e;
@@ -433,6 +458,8 @@ b{
     font-family: "Bold";
     border: solid;
 }  
+
+/*card music*/
 
 #card-iss2 .fadedbox{
     background-color: #ffed5e;
@@ -444,6 +471,8 @@ b{
 .card-txt{
     font-size: 2.5vh;
 }
+
+/*btn card fourth container*/
 
 .see-article{
     background-color: #D4ADE0;
@@ -458,6 +487,8 @@ b{
 .see-article:hover{
     background-color: #d9cbde;
 }
+
+/*position cards*/
 
 #fourth .card{
     margin: 2em;
@@ -529,6 +560,8 @@ footer p{
     transform: translateY(-45vh);
 }
 
+/*fab tavolozza*/
+
 .fab-container .fab {
     height: 8vh;
     width: 8vh;
@@ -546,6 +579,8 @@ footer p{
     border-radius: 10px;
     z-index: -1;
 }
+
+/*fab open*/
 
 .fab-container .sub-button {
     position: absolute;
