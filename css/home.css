@@ -651,6 +651,7 @@ a:hover, #visible:hover, #visibletwo:hover {
 	margin-top: -5em;
  	margin-right: -4em;
 	background-color: #D4ADE0;
+	padding-right: 0;
 }
 
 /*hide about the article*/
