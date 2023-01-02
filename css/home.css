@@ -77,7 +77,9 @@ h1{
 h2{
     font-size: 6vh;
 }
-  
+
+/* first container */
+
 #first{
 	margin-top: 8rem;
 	padding: 2em;
@@ -89,6 +91,8 @@ h2{
 #first h1{
     color: black;
 }
+
+/*position webpop*/
 
 #main-title{
 	margin-top: -0.5em;
@@ -132,34 +136,7 @@ h2{
   }
 }
 
-#new1, #documentation{
-	background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  	background-size: auto auto;
-  	background-clip: border-box;
- 	background-size: 200% auto;
-  	color: #fff;
-  	background-clip: text;
-  	text-fill-color: transparent;
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	animation: textclip 2s linear infinite;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-#documentation{
-	font-size: 1.3em;
-}
+/*btn home wp*/
 
 .btn-default{
     cursor: pointer;
@@ -197,11 +174,15 @@ h2{
     color: black;
 }
 
+/*tap on logo*/
+
 #tap{
 	margin-top: 4em;
 	margin-bottom: -0.5em;
     font-size: 1em;
 }
+
+/*second container*/
 
 #about-proj p{
 	padding-top: 2em;
@@ -231,62 +212,13 @@ h2{
     border-style: none; 
 }
 
-a, #visible, #visibletwo {
-	outline: none;
-	text-decoration: none;
-	color: #9400ff;
-} 
-
-a:hover, #visible:hover, #visibletwo:hover {
-	color: #9aaee2;
-}
-
-#visible, #visibletwo {
-	font-weight: bold;
-	font-size: 3vh;
-}
-
-#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
-#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas,
-#article-2-institutions-tab-offcanvas, #article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas,
-#article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
-	color: #9400ff;
-	padding-left:1em;
-	border: solid 1px #bbb9b9;
-	font-weight: bold;
-	font-size: 1.3vw;
-}
-
-#article-1-tvseries-tab-offcanvas:hover, #article-1-histcharacters-tab-offcanvas:hover,
-#article-1-people-tab-offcanvas:hover, #article-1-events-tab-offcanvas:hover, #article-2-tvseries-tab-offcanvas:hover, 
-#article-2-histcharacters-tab-offcanvas:hover, #article-2-people-tab-offcanvas:hover, #article-2-institutions-tab-offcanvas:hover,
-#article-1-places-tab-offcanvas:hover, #article-1-people-tab-offcanvas-music:hover, #article-1-companies-tab-offcanvas:hover, #article-1-videogames-tab-offcanvas:hover
-#article-2-places-tab-offcanvas:hover, #article-2-people-tab-offcanvas-music:hover, #article-2-companies-tab-offcanvas:hover, #article-2-videogames-tab-offcanvas:hover{
-	color: #9aaee2;
-	padding-left:1em;
-}
-
-#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
-#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas, 
-#article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas
-#article-2-institutions-tab-offcanvas, #article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
-	font-weight: bold;
-	font-size: 3vh;
-	border: solid 1px #bbb9b9;
-	padding-right: 1em;
-	padding-left:1em;
-	font-size: 1.3vw;
-}
-
 #second{
   	min-height:100vh;
   	padding: 8em;
   	background-color: #dfdfeb;
 }
 
-#par1{
-    font-size: 1.5em;
-}
+/*make your choice*/
 
 #totheintro{
 	margin-top: 2em;
@@ -294,11 +226,26 @@ a:hover, #visible:hover, #visibletwo:hover {
 	font-size: 1.5em;
 }
 
+/*paragraph second container*/
+
+#par1{
+    font-size: 1.5em;
+}
+
+.d-grid{
+ 	margin-right: 6.5rem;
+ 	margin-left: 3em;
+ }
+
+/*third container*/
+
 #third{
   	min-height:100vh;
   	padding: 5.5%;
   	background-color: #f5f8f9;
 }
+
+/*btn full doc*/
 
 .btn-third:first-child{
     background-color: #ffed5e;
@@ -313,6 +260,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .btn-third:first-child:hover{
    color: #9400ff !important;
 }
+
+/*btn check issue*/
 
 .btn-third:nth-child(2){
     background-color: #ffed5e;
@@ -332,6 +281,8 @@ a:hover, #visible:hover, #visibletwo:hover {
     font-size: 1.3em;
 }
 
+/*btn see doc*/
+
 .btn-doc{
     background-color: #ffed5e;
     color: #D4ADE0;
@@ -345,6 +296,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .btn-doc:hover{
     color: #9400ff;
 }
+
+/*card effect*/
 
 .theme{
 	margin-top: 1em;
@@ -369,9 +322,13 @@ a:hover, #visible:hover, #visibletwo:hover {
   	transform:scale(1.15);
 }
 
+/*border card*/
+
 .bor{
 	margin: -1em;
 }
+
+/*fourth container*/
 
 #fourth{
 	padding:5%;
@@ -379,9 +336,13 @@ a:hover, #visible:hover, #visibletwo:hover {
   	background-color: #efd9f8;
 }
 
+/*fourth paragraph text*/
+
 #issue-text{
     font-size: 1.3em;
 }
+
+/*card tv*/
 
 #card-iss1 .fadedbox{
     background-color: #ffed5e;
@@ -389,6 +350,8 @@ a:hover, #visible:hover, #visibletwo:hover {
     font-family: "Bold";
     border: solid;
 }  
+
+/*card music*/
 
 #card-iss2 .fadedbox{
     background-color: #ffed5e;
@@ -400,6 +363,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .card-txt{
     font-size: 2.5vh;
 }
+
+/*btn card fourth container*/
 
 .see-article{
     background-color: #D4ADE0;
@@ -414,6 +379,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .see-article:hover{
     background-color: #d9cbde;
 }
+
+/*position cards*/
 
 #fourth .card{
     margin: 2em;
@@ -445,11 +412,6 @@ footer p{
     padding-top: 50px;
 }
 
-
-.fab-content, .fab-shadow, .sub-button, .fab{
-    background-color: white !important;
-}
-
 #discl{
     text-align: center !important;
     padding-top: 0;
@@ -457,6 +419,11 @@ footer p{
 }
 
 /*fab*/
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
 .fab-container {
     display: flex;
     flex-direction: column;
@@ -483,6 +450,8 @@ footer p{
     transform: translateY(-45vh);
 }
 
+/*fab tavolozza*/
+
 .fab-container .fab {
     height: 8vh;
     width: 8vh;
@@ -500,6 +469,8 @@ footer p{
     border-radius: 10px;
     z-index: -1;
 }
+
+/*fab open*/
 
 .fab-container .sub-button {
     position: absolute;
@@ -559,6 +530,8 @@ li{
 	font-family: "Regular";
 }
 
+/*disclaimer windows*/
+
 .modal-dialog{
     max-width: 100vh !important;
 }
@@ -585,92 +558,107 @@ li{
     color: black;
 }
 
-#art2{
-	padding-top: 1.5rem;
+/*ISSUE*/
+/*art*/
+
+/*effect links and continue readings*/
+
+a, #visible, #visibletwo {
+	outline: none;
+	text-decoration: none;
+	color: #9400ff;
+} 
+
+a:hover, #visible:hover, #visibletwo:hover {
+	color: #9aaee2;
 }
+
+/*continue readings*/
+
+#visible, #visibletwo {
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+/*title art and doc effects*/
+
+#new1, #documentation{
+	background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  	background-size: auto auto;
+  	background-clip: border-box;
+ 	background-size: 200% auto;
+  	color: #fff;
+  	background-clip: text;
+  	text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*metadata offcanvas*/
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas,
+#article-2-institutions-tab-offcanvas, #article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas,
+#article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	color: #9400ff;
+	padding-left:1em;
+	border: solid 1px #bbb9b9;
+	font-weight: bold;
+	font-size: 1.3vw;
+}
+
+#article-1-tvseries-tab-offcanvas:hover, #article-1-histcharacters-tab-offcanvas:hover,
+#article-1-people-tab-offcanvas:hover, #article-1-events-tab-offcanvas:hover, #article-2-tvseries-tab-offcanvas:hover, 
+#article-2-histcharacters-tab-offcanvas:hover, #article-2-people-tab-offcanvas:hover, #article-2-institutions-tab-offcanvas:hover,
+#article-1-places-tab-offcanvas:hover, #article-1-people-tab-offcanvas-music:hover, #article-1-companies-tab-offcanvas:hover, #article-1-videogames-tab-offcanvas:hover
+#article-2-places-tab-offcanvas:hover, #article-2-people-tab-offcanvas-music:hover, #article-2-companies-tab-offcanvas:hover, #article-2-videogames-tab-offcanvas:hover{
+	color: #9aaee2;
+	padding-left:1em;
+}
+
+/*about the articles metadata*/
+
+#article-1-tvseries-tab-offcanvas, #article-1-histcharacters-tab-offcanvas, #article-1-people-tab-offcanvas,
+#article-1-events-tab-offcanvas, #article-2-tvseries-tab-offcanvas, #article-2-histcharacters-tab-offcanvas, #article-2-people-tab-offcanvas, 
+#article-1-places-tab-offcanvas, #article-1-people-tab-offcanvas-music, #article-1-companies-tab-offcanvas, #article-1-videogames-tab-offcanvas
+#article-2-institutions-tab-offcanvas, #article-2-places-tab-offcanvas, #article-2-people-tab-offcanvas-music, #article-2-companies-tab-offcanvas, #article-2-videogames-tab-offcanvas{
+	font-weight: bold;
+	font-size: 3vh;
+	border: solid 1px #bbb9b9;
+	padding-right: 1em;
+	padding-left:1em;
+	font-size: 1.3vw;
+}
+
+/*characteristics about article metadata*/
 
 #meta{
 	width: 15em;
 	padding-right: 2em;
-	margin-top: 3.5em;
-	margin-right: 2em;
+	margin-top: -5em;
+ 	margin-right: -4em;
 	background-color: #D4ADE0;
 }
+
+/*hide about the article*/
 
 @media only screen and (max-width: 1026px) {
     #meta {
         display: none;
     }
-}
-
-.accordion-button:not(.collapsed) {
-  color: #ffed5e  !important;
-  background-color: #D4ADE0 !important;
-}
-
-.accordion-button:hover, .accordion-button:active  {
-  	background-color: #9aaee2 !important;
-    color:#ffed5e !important; 
-}
-
-.accordion-button{
-	background-color: #9aaee2 !important;
-}
-
-.accordion-button::after {
-	background-image: url("../images/WebPop.png");
-}
-.accordion-button:not(.collapsed)::after {
-	background-image: url("../images/WebPop.png");
-	color: #000;
-}
-
-#new{
-	margin-top: 3rem;
-	padding: 2rem;
-	font-family: "Bold";
-}
-
-#box{
-	margin-left: 3em;
-}
-
-
-.mb-auto{
-	margin-top: 1em;
-	font-size: 1.5vw;
-}
-
-#auto2{
-	margin-top: 0em;
-}
-
-#citation, #citationtwo{
-	font-size: 1vw;
-	padding: 0.5em;
-}
-
-#cit, #cit2{
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  padding-left: 1em;
-  border-left: 0.25em solid #9400ff;
-} 
-
-#titart{
-	margin-top: 0.2em;
-	font-size: 3em;
-}
-
-/*showtext*/
-
-.hide{
-	display: none;
-}
-
-.show{
-	display: block;
 }
 
 /*music*/
@@ -698,16 +686,104 @@ li{
  	font-size:1.3vw;
  	padding-left:1em;
  }
-
- #meta{
- 	margin-top: -5em;
- 	margin-right: -4em;
- 	padding-right: 0;
- }
  
 /*metadata selector*/
 li:hover{
     background-color: #d9cbde !important;
+}
+
+/*btn article info*/
+
+.accordion-button:not(.collapsed) {
+  color: #ffed5e  !important;
+  background-color: #D4ADE0 !important;
+}
+
+.accordion-button:hover, .accordion-button:active  {
+  	background-color: #9aaee2 !important;
+    color:#ffed5e !important; 
+}
+
+/*btn metadata about the article*/
+
+.accordion-button{
+	background-color: #9aaee2 !important;
+}
+
+.accordion-button::after {
+	background-image: url("../images/WebPop.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url("../images/WebPop.png");
+	color: #000;
+}
+
+/*title new section*/
+
+#new{
+	margin-top: 3rem;
+	padding: 2rem;
+	font-family: "Bold";
+}
+
+/*article 2*/
+
+#art2{
+	padding-top: 1.5rem;
+}
+
+/*left space box articles*/
+
+#box{
+	margin-left: 3em;
+}
+
+/*subheading article1*/
+
+.mb-auto{
+	margin-top: 1em;
+	font-size: 1.5vw;
+}
+
+/*subheading article2*/
+
+#auto2{
+	margin-top: 0em;
+}
+
+/*description pictures*/
+
+#citation, #citationtwo{
+	font-size: 1vw;
+	padding: 0.5em;
+}
+
+/*citatons articles*/
+
+#cit, #cit2{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-left: 1em;
+  border-left: 0.25em solid #9400ff;
+} 
+
+/*title what's*/
+
+#titart{
+	margin-top: 0.2em;
+	font-size: 3em;
+}
+
+/*showtext*/
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
 }
 
 /*scroll to-top*/
@@ -741,15 +817,18 @@ li:hover{
 
 html{
  	scroll-behavior: smooth;
- }
- 
-.d-grid{
- 	margin-right: 6.5rem;
- 	margin-left: 3em;
- }
- 
+}
+
+/*sitography*/
+
 #sito{
 	font-family: "Regular";
+}
+
+/*characteristics documentation*/
+
+#documentation{
+	font-size: 1.3em;
 }
  
  /*documentation selector*/
