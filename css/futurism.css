@@ -82,16 +82,21 @@ h1{
 	text-shadow: 4px 4px #C1BFAC;
 }
 
+/*make your choice*/
 
 h5, #totheintro{
 	font-size: 2em;
 }
 
+/*btn issues*/
+
 #tt1, #tt2{
 	font-size: 1.5em;
 	text-shadow: 1px 1px #C1BFAC;
 }
-  
+
+/*first container*/
+
 #first{
 	margin-top: 5rem;
 	padding: 5%;
@@ -164,10 +169,6 @@ h5, #totheintro{
     font-size: 3vh;
 }
 
-#about-proj p{
-    font-size: 3.5vh;
-}
-
 #btn-themes{
     background-color: #D7D8BF;
     color: grey;
@@ -192,22 +193,7 @@ h5, #totheintro{
     border-style: none; 
 }
 
-a, #visible, #visibletwo {
-  outline: none;
-  text-decoration: none;
-  color: #BCBB96;
-}
-
-a:hover, #visible:hover, #visibletwo:hover{
-	color: #a5a5a4;
-}
-
-#visible, #visibletwo{
-	margin-top: 1rem;
-	font-weight: bold;
-	font-size: 3vh;
-}
-
+/*second container*/
 
 #second{
   	min-height:100vh;
@@ -218,6 +204,12 @@ a:hover, #visible:hover, #visibletwo:hover{
 #second p{
     font-size: 2.5vh;
 }
+
+#about-proj p{
+    font-size: 3.5vh;
+}
+
+/*third container*/
 
 #third{
   	min-height:100vh;
@@ -234,6 +226,9 @@ a:hover, #visible:hover, #visibletwo:hover{
     margin-right: 1rem !important;
     border-style: none;
 }
+
+/*btn full doc*/
+
 .btn-third:first-child{
     background-color: #D7D8BF;
     color: grey;
@@ -247,6 +242,8 @@ a:hover, #visible:hover, #visibletwo:hover{
 .btn-third:first-child:hover{
    color: black !important;
 }
+
+/*btn check issue*/
 
 .btn-third:nth-child(2){
     background-color: #D7D8BF;
@@ -274,6 +271,8 @@ a:hover, #visible:hover, #visibletwo:hover{
     font-size: 2.5vh;
 }
 
+/*btn see doc*/
+
 #card-past .btn-doc{
     background-color: #ffed5e;
     color: #D4ADE0;
@@ -294,6 +293,8 @@ a:hover, #visible:hover, #visibletwo:hover{
 .btn-doc:hover{
     color: #C9C9C9;
 }
+
+/*card effect*/
 
 .theme{
 	margin-top: 1em;
@@ -369,11 +370,15 @@ a:hover, #visible:hover, #visibletwo:hover{
     border: none;
 }
 
+/*fourth container*/
+
 #fourth{
 	padding:5%;
   	height:auto;
   	background-color: #F4F2DC;
 }
+
+/*card tv*/
 
 #card-iss1 .fadedbox{
     background-color: #E8E8E8;
@@ -381,6 +386,8 @@ a:hover, #visible:hover, #visibletwo:hover{
     font-family: "Futurism";
     border: solid;
 }  
+
+/*card music*/
 
 #card-iss2 .fadedbox{
     background-color: #E8E8E8;
@@ -407,6 +414,8 @@ a:hover, #visible:hover, #visibletwo:hover{
     background-color: #D7D8BF;
 }
 
+/*position cards*/
+
 #fourth .card{
     margin: 2em;
     margin-top: 2em;
@@ -428,6 +437,10 @@ footer p, .contacts, #discl, #cp{
     width: 40% !important;
 }
 
+h4{
+	font-size:2.5em;
+}
+
 footer p{
     text-align: left;
     padding-left: 0;
@@ -439,22 +452,22 @@ footer p{
     padding-bottom: 20px;
 }
 
-.col-md-3{
-	font-family: "Futurism-macch";
-}
-
-
-.fab-content, .fab-shadow, .sub-button, .fab{
-    background-color: white !important;
-}
-
 #discl{
     text-align: center !important;
     padding-top: 0;
     padding-bottom: 1rem;
 }
 
+.col-md-3{
+	font-family: "Futurism-macch";
+}
+
 /*fab*/
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
 .fab-container {
     display: flex;
     flex-direction: column;
@@ -476,6 +489,8 @@ footer p{
 .fab-container:hover .sub-button:nth-child(5) {
     transform: translateY(-45vh);
 }
+
+/*fab tavolozza*/
 
 .fab-container .fab {
     height: 8vh;
@@ -503,6 +518,8 @@ footer p{
     width: 100%;
     border-radius: 50%;
 }
+
+/*fab open*/
 
 .fab-container .sub-button {
     position: absolute;
@@ -593,10 +610,34 @@ footer p{
 }
 
 
+/*ISSUE*/
+/*art*/
+
+/*effect links and continue readings*/
+
+a, #visible, #visibletwo {
+  outline: none;
+  text-decoration: none;
+  color: #BCBB96;
+}
+
+a:hover, #visible:hover, #visibletwo:hover{
+	color: #a5a5a4;
+}
+
+#visible, #visibletwo{
+	margin-top: 1rem;
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+/*article 2*/
+
 #art2{
 	padding-top: 1.5rem;
 }
 
+/*title art effects*/
 
 #new{
 	margin-top: 3rem;
@@ -610,6 +651,8 @@ footer p{
 	font-size: 12vh;
 }
 
+/*characteristics about article metadata*/
+
 #meta{
 	width: 15em;
 	padding-right: 2em;
@@ -617,24 +660,33 @@ footer p{
 	margin-right: 2em;
 }
 
+/*left space box articles*/
+
 #box{
 	margin-left: 3em;
 }
 
+/*subheading article1*/
 
 .mb-auto{
 	margin-top: 1em;
 	font-size: 1.5vw;
 }
 
+/*subheading article2*/
+
 #auto2{
 	margin-top: 0em;
 }
+
+/*description pictures*/
 
 #citation, #citationtwo{
 	font-size: 1vw;
 	padding: 0.5em;
 }
+
+/*citatons articles*/
 
 #cit, #cit2{
 	margin-left: 2em;
@@ -656,6 +708,8 @@ footer p{
 .show{
 	display: block;
 }
+
+/*hide about the article*/
 
 @media only screen and (max-width: 1026px) {
     #meta {
@@ -692,6 +746,8 @@ footer p{
     background-color: #F4F2DC;
     border: #D7D8BF;
 }
+
+/*btn article info*/
 
 .accordion-button:not(.collapsed){
 	box-shadow: #D7D8BF !important;
@@ -902,6 +958,8 @@ h3{
 	font-family: "Futurism-macch";
 }
 
+/*sitography*/
+
 #sito li{
 	font-family: "Futurism-macch";
 }
@@ -910,6 +968,4 @@ h3{
 	 background-color: #D7D8BF;
 }
 
-h4{
-	font-size:2.5em;
-}
+
