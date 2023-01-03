@@ -82,6 +82,19 @@ h1{
 	text-shadow: 4px 4px #C1BFAC;
 }
 
+h5{
+	letter-spacing:0.2vh;
+	text-shadow: 1px 1px #C1BFAC;
+	font-size:3em;
+}
+
+h3{
+	letter-spacing:0.2vh;
+	text-shadow: 1px 1px #C1BFAC;
+	font-size:2em;
+	font-family: "Futurism-macch"
+}
+
 /*make your choice*/
 
 h5, #totheintro{
@@ -941,18 +954,6 @@ html{
 	font-weight: Bold;
 }
 
-h5{
-	letter-spacing:0.2vh;
-	text-shadow: 1px 1px #C1BFAC;
-	font-size:3em;
-}
-
-h3{
-	letter-spacing:0.2vh;
-	text-shadow: 1px 1px #C1BFAC;
-	font-size:2em;
-	font-family: "Futurism-macch"
-}
 
 #disclaimer li{
 	font-family: "Futurism-macch";
