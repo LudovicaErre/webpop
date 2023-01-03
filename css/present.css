@@ -74,6 +74,8 @@ h3{
 	text-shadow: 1.2px 1.2px #D1D7DB;
 	font-size: 2.5em;
 }
+
+/*make your choice*/
   
 #totheintro{
 	font-size: 2.5em;
@@ -85,6 +87,8 @@ h3{
 #tt1,#tt2{
 	text-shadow: 1px 1px #D1D7DB;
 }
+
+/* first container */
   
 #first{
 	margin-top: 5rem;
@@ -94,11 +98,6 @@ h3{
 	text-align:center;
 }
 
-#vinyl, #videogame{
-	font-size:2.5em;
-	-webkit-text-stroke:0.5px #D1D7DB;
-	text-shadow: 1px 1px #D1D7DB;
-}
 
 #what{
 	text-shadow: 1px 1px #D1D7DB;
@@ -219,7 +218,7 @@ h3{
     font-size: 3vh;
 }
 
-
+/*second container*/
 
 #about-proj p{
 	color: white;
@@ -235,6 +234,14 @@ h3{
 	margin-left:1rem;
 }
 
+
+#second{
+  	min-height:100vh;
+  	padding: 10%;
+	background-image: url("../images/icons/presentsfondo.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+}
 
 #btn-themes{
     background-color: #C9C9C9;
@@ -261,31 +268,8 @@ h3{
     border-style: none; 
 }
 
-a, #visible, #visibletwo {
-  outline: none;
-  text-decoration: none;
-  color: white;
-}
 
-a:hover, #visible:hover, #visibletwo:hover{
-	color: #91877A;
-}
-
-#visible, #visibletwo{
-	margin-top: 1rem;
-	font-weight: bold;
-	font-size: 3vh;
-}
-
-#second{
-  	min-height:100vh;
-  	padding: 10%;
-	background-image: url("../images/icons/presentsfondo.jpg");
-    background-position: center;
-	background-repeat: no-repeat;
-}
-
-
+/*third container*/
 
 #third{
   	min-height:100vh;
@@ -302,6 +286,9 @@ a:hover, #visible:hover, #visibletwo:hover{
     margin-right: 1rem !important;
     border-style: none;
 }
+
+/*btn full doc*/
+
 .btn-third:first-child{
     background-color: #C9C9C9;
     color: #91877A;
@@ -316,6 +303,8 @@ a:hover, #visible:hover, #visibletwo:hover{
    color: #FFDE00 !important;
    -webkit-text-stroke:0.5px white;
 }
+
+/*btn check issue*/
 
 .btn-third:nth-child(2){
     background-color: #C9C9C9;
@@ -344,6 +333,8 @@ a:hover, #visible:hover, #visibletwo:hover{
     font-size: 2.5vh;
 }
 
+/*btn see doc*/
+
 #card-past .btn-doc{
     background-color: #ffed5e;
     color: #D4ADE0;
@@ -364,6 +355,8 @@ a:hover, #visible:hover, #visibletwo:hover{
 .btn-doc:hover{
     color: #C9C9C9;
 }
+
+/*card effect*/
 
 .theme{
 	margin-top: 1em;
@@ -439,11 +432,15 @@ a:hover, #visible:hover, #visibletwo:hover{
     border: none;
 }
 
+/*fourth container*/
+
 #fourth{
 	padding:5%;
   	height:auto;
   	background-color: #C9C9C9;
 }
+
+/*card tv*/
 
 #card-iss1 .fadedbox{
     background-color: #A89D8E;
@@ -451,6 +448,8 @@ a:hover, #visible:hover, #visibletwo:hover{
     font-family: "Present";
     border: solid;
 }  
+
+/*card music*/
 
 #card-iss2 .fadedbox{
     background-color: #A89D8E;
@@ -462,6 +461,8 @@ a:hover, #visible:hover, #visibletwo:hover{
 .card-txt{
     font-size: 2.5vh;
 }
+
+/*btn card fourth container*/
 
 .see-article{
     background-color: #C9C9C9;
@@ -476,6 +477,8 @@ a:hover, #visible:hover, #visibletwo:hover{
 .see-article:hover{
     background-color: #FFDE00;
 }
+
+/*position cards*/
 
 #fourth .card{
     margin: 2em;
@@ -509,20 +512,18 @@ footer p{
     padding-bottom: 20px;
 }
 
-
-.fab-content, .fab-shadow, .sub-button, .fab{
-    background-color: white !important;
-}
-
 #discl{
     text-align: center !important;
     padding-top: 0;
     padding-bottom: 1rem;
 }
 
-
-
 /*fab*/
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: white !important;
+}
+
 .fab-container {
     display: flex;
     flex-direction: column;
@@ -544,6 +545,8 @@ footer p{
 .fab-container:hover .sub-button:nth-child(5) {
     transform: translateY(-45vh);
 }
+
+/*fab tavolozza*/
 
 .fab-container .fab {
     height: 8vh;
@@ -571,6 +574,8 @@ footer p{
     width: 100%;
     border-radius: 50%;
 }
+
+/*fab open*/
 
 .fab-container .sub-button {
     position: absolute;
@@ -670,6 +675,36 @@ footer p{
 .mb-auto{
 	margin-top: 1em;
 	font-size: 1.5vw;
+}
+
+
+/*ISSUE*/
+/*art*/
+
+/*effect links and continue readings*/
+
+a, #visible, #visibletwo {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, #visible:hover, #visibletwo:hover{
+	color: #91877A;
+}
+
+/*continue readings*/
+
+#visible, #visibletwo{
+	margin-top: 1rem;
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+#vinyl, #videogame{
+	font-size:2.5em;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1px 1px #D1D7DB;
 }
 
 #auto2{
@@ -897,6 +932,8 @@ html{
 	scroll-behavior: smooth;
 }
 
+/*characteristics documentation*/
+
 #documentation{
 	color: #FFDE00;
 	width: 1.5em;
@@ -931,6 +968,8 @@ li{
 #disclaimer li{
 	font-family: "Present";
 }
+
+/*sitography*/
 
 #sito li{
 	font-family: "Present-macch";
