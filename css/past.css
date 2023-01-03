@@ -495,8 +495,8 @@ a:hover, #visible:hover, #visibletwo:hover {
   	padding-top: 10em;
   	background-image: url("../images/past/line.jpg");
   	background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: 50% 5%;
+	background-size: 70%;
+	background-position: 50% 5%;
 }
 
 /*card tv*/
@@ -729,6 +729,8 @@ footer p{
 	padding: 2rem;
 	font-family: "Past";
 }
+
+/*red capital letter*/
 
 #p, #w , #ten, #c{
 	float: left;
