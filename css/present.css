@@ -75,6 +75,18 @@ h3{
 	font-size: 2.5em;
 }
 
+h1{
+	font-size:3em;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1.2px 1.2px #D1D7DB;
+}
+
+h4{
+	font-size:2em;
+	-webkit-text-stroke:0.5px #D1D7DB;
+	text-shadow: 1.2px 1.2px #D1D7DB;
+}
+
 /*make your choice*/
   
 #totheintro{
@@ -150,6 +162,8 @@ h3{
 	font-family: "Present";
 	font-weight: 900;
 }
+
+/*title art effect*/
 
 #new1{
 	width: 18rem;
@@ -979,14 +993,4 @@ li{
 background-color: #FFDE00;
 }
 
-h1{
-	font-size:3em;
-	-webkit-text-stroke:0.5px #D1D7DB;
-	text-shadow: 1.2px 1.2px #D1D7DB;
-}
 
-h4{
-	font-size:2em;
-	-webkit-text-stroke:0.5px #D1D7DB;
-	text-shadow: 1.2px 1.2px #D1D7DB;
-}
