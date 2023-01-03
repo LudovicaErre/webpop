@@ -70,7 +70,9 @@ h2{
 
 hr{
 	color: #fffef0;
-}  
+} 
+
+/* first container */
   
 #first{
     padding: 10em;
@@ -128,6 +130,8 @@ hr{
 	padding-top: 1.5em;
     font-size: 1em;
 }
+
+/*btn home wp*/
 
 .btn-default{
     cursor: pointer;
@@ -254,13 +258,15 @@ a:hover, #visible:hover, #visibletwo:hover {
 	padding-left:1em;
 }
 
+/*second container*/
+
 #second{
 	margin-top: 2.5em;
 	padding: 6em;
   	background-image: url("../images/past/line.jpg");
   	background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: 50% 5%;
+	background-size: 70%;
+	background-position: 50% 5%;
 }
 
 #renaiss-div{
@@ -271,11 +277,15 @@ a:hover, #visible:hover, #visibletwo:hover {
     font-size: 1.5em;
 }
 
+/*tap on logo*/
+
 #tap{
 	margin-top: 3em;
 	margin-bottom: -0.5em;
 	font-size: 1em;
 }
+
+/*make your choice*/
 
 #totheintro{
 	margin-top: 2em;
@@ -286,14 +296,18 @@ a:hover, #visible:hover, #visibletwo:hover {
 	margin-top: -4em;
 }
 
+/*third container*/
+
 #third{
 	margin-top: 1.5rem;
 	padding-top: 10em;
   	background-image: url("../images/past/line.jpg");
   	background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: 50% 5%;
+	background-size: 70%;
+	background-position: 50% 5%;
 }
+
+/*border card*/
 
 .bor{
 	padding: 1em;
@@ -302,6 +316,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .col-10{
 	padding: 3em;
 }
+
+/*position third container*/
 
 #past{
 	margin-top: 3rem;
@@ -316,6 +332,9 @@ a:hover, #visible:hover, #visibletwo:hover {
     margin-right: 1rem !important;
     border-style: none;
 }
+
+/*btn full doc*/
+
 .btn-third:first-child{
     background-color: #f5eca8;
     color: #c94444;
@@ -341,6 +360,8 @@ a:hover, #visible:hover, #visibletwo:hover {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   	transform: translate3d(2px, 3px, 0);
 }
+
+/*btn check issue*/
 
 .btn-third:nth-child(2){
     background-color: #f5eca8;
@@ -379,6 +400,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 #third p{
     font-size: 1.5em;
 }
+
+/*btn see doc*/
 
 .btn-doc{
     background-color: #ffed5e;
@@ -442,6 +465,8 @@ a:hover, #visible:hover, #visibletwo:hover {
     color: #9aaee2;
 }
 
+/*text card present*/
+
 #textpre{
 	margin-bottom: 1.5em;
 }
@@ -462,6 +487,8 @@ a:hover, #visible:hover, #visibletwo:hover {
     color: #9aaee2;
 }
 
+/*fourth container*/
+
 #fourth{
 	margin-top: 3rem;
 	padding: 8em;
@@ -472,12 +499,16 @@ a:hover, #visible:hover, #visibletwo:hover {
     background-position: 50% 5%;
 }
 
+/*card tv*/
+
 #card-iss1 .fadedbox{
     background-color: #e5c9a8;
     font-size: 1.5em;
     font-family: "Bold";
     border: solid;
-}  
+} 
+
+/*card music*/
 
 #card-iss2 .fadedbox{
     background-color: #e5c9a8;
@@ -485,6 +516,8 @@ a:hover, #visible:hover, #visibletwo:hover {
     font-family: "Bold";
     border: solid;
 }
+
+/*title cards tv and music fourth sec*/
 
 #tt1, #tt2{
 	font-size: 1.5em;
@@ -497,6 +530,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .card-txt{
     font-size: 1em;
 }
+
+/*btn card fourth container*/
 
 .see-article{
     background-color: #f5eca8;
@@ -511,6 +546,8 @@ a:hover, #visible:hover, #visibletwo:hover {
 .see-article:hover{
     background-color: #d9cbde;
 }
+
+/*position cards*/
 
 #fourth .card{
     margin: 2em;
@@ -556,6 +593,7 @@ footer p{
 }
 
 /*fab*/
+
 .fab-container {
     display: flex;
     flex-direction: column;
@@ -578,6 +616,8 @@ footer p{
     transform: translateY(-45vh);
 }
 
+/*fab tavolozza*/
+
 .fab-container .fab {
     height: 8vh;
     width: 8vh;
@@ -595,6 +635,8 @@ footer p{
     border-radius: 10px;
     z-index: -1;
 }
+
+/*fab open*/
 
 .fab-container .sub-button {
     position: absolute;
@@ -679,6 +721,8 @@ footer p{
     color: black;
     background-color: #e5c9a8;
 }
+
+/*ISSUE*/
 
 #new{
 	margin-top: 3rem;
